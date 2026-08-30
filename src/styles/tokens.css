@@ -1,0 +1,152 @@
+/**
+ * Design tokens extracted from the public Nongshim English site.
+ *
+ * Two colour signals exist in the source and both are honoured:
+ *
+ *  1. The corporate identity. /about/ci states "a red colour ... is a
+ *     representative colour of Nongshim. The secondary colour is orange".
+ *     The exact values are sampled from the official CI artwork
+ *     (`color_system.png`): red #df0029, orange #e4820c.
+ *  2. The interface accent. Frequency analysis across all thirteen source
+ *     stylesheets puts #96c11f (246 uses) and #539a00 (169) far ahead of
+ *     anything else — the green the live site actually uses for navigation
+ *     state, buttons and rules.
+ *
+ * So red/orange carry brand identity and green carries interaction, exactly as
+ * the public site does. Neutrals are the source's own ramp, adjusted only where
+ * a value failed WCAG contrast against its ground — noted inline.
+ */
+
+:root {
+  /* ---- Corporate identity (from /about/ci artwork) ---- */
+  --color-brand-red: #df0029;
+  --color-brand-red-dark: #b30021;
+  --color-brand-orange: #e4820c;
+  --color-brand-orange-dark: #b26509;
+
+  /* ---- Interface accent (from the live site's stylesheets) ----
+     #96c11f and #539a00 are the source's own greens. Both are fine as
+     decoration, but #539a00 reaches only 3.51:1 against white — below AA for
+     text. So the scale gains two darker steps, used wherever the green carries
+     text or is a button ground; the source greens stay for rules and borders,
+     where the 3:1 non-text threshold applies. */
+  --color-brand-primary: #96c11f;
+  --color-brand-primary-dark: #539a00;
+  /* 5.59:1 on white, 5.17:1 on --color-surface. */
+  --color-brand-primary-text: #3f7500;
+  /* 8.03:1 on white — the hover step. */
+  --color-brand-primary-darker: #2f5800;
+
+  --color-brand-blue: #0a3398;
+
+  /* ---- Ground and surfaces ---- */
+  --color-background: #ffffff;
+  --color-surface: #f6f6f6;
+  --color-surface-strong: #f0f0f0;
+  --color-surface-inverse: #1c1c1c;
+
+  /* ---- Ink ---- */
+  /* The source uses #666 for body copy on white (4.95:1 — passes AA for normal
+     text). #767676 and lighter were used for meta text at 4.1:1; raised to
+     #5f5f5f (6.0:1) so every text token clears AA at every size. */
+  --color-text: #222222;
+  --color-text-strong: #111111;
+  --color-text-muted: #5f5f5f;
+  --color-text-inverse: #ffffff;
+  --color-text-on-brand: #1a2b00;
+
+  /* ---- Lines ---- */
+  --color-border: #e4e4e4;
+  --color-border-strong: #cccccc;
+
+  /* ---- State ---- */
+  --color-focus: #0a3398;
+  --color-link: #2c5f00;
+  --color-link-hover: #1f4300;
+
+  /* ---- Type ----
+     Red Hat Display is the source's display face (SIL OFL 1.1, self-hosted as
+     WOFF2). The body stack falls through to system UI so first paint never
+     waits on a network font. */
+  --font-display: 'Red Hat Display', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Red Hat Display', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Fluid type scale. Steps match the source's 12/14/16/18/22/28/36/76 ramp at
+     the desktop end and compress rather than overflow on a 320px viewport. */
+  --text-xs: 0.75rem;      /* 12 */
+  --text-sm: 0.875rem;     /* 14 */
+  --text-base: 1rem;       /* 16 */
+  --text-md: 1.125rem;     /* 18 */
+  --text-lg: clamp(1.125rem, 0.4vw + 1.03rem, 1.375rem);   /* 18 -> 22 */
+  --text-xl: clamp(1.375rem, 1vw + 1.15rem, 1.75rem);      /* 22 -> 28 */
+  --text-2xl: clamp(1.625rem, 1.8vw + 1.25rem, 2.25rem);   /* 26 -> 36 */
+  --text-3xl: clamp(2rem, 3.2vw + 1.3rem, 3.25rem);        /* 32 -> 52 */
+  --text-4xl: clamp(2.25rem, 5vw + 1.2rem, 4.75rem);       /* 36 -> 76 */
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.08em;
+
+  /* ---- Space (4px base) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 4rem;
+  --space-10: 5rem;
+  --space-11: 6.5rem;
+
+  /* Section rhythm compresses on small viewports rather than scaling linearly. */
+  --space-section: clamp(2.5rem, 6vw, 6rem);
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-narrow: 820px;
+  --container-pad: clamp(1rem, 4vw, 2.5rem);
+  --header-height: 4.5rem;
+
+  /* ---- Shape ---- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* ---- Elevation ---- */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06), 0 1px 3px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.12);
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-base: 220ms;
+  --duration-slow: 400ms;
+
+  --z-header: 100;
+  --z-overlay: 200;
+  --z-skip: 300;
+}
+
+/* The source site is a single light-mode brand experience and its product
+   photography is shot on white. Rather than invent a dark palette that was
+   never designed, the page keeps its light ground in both schemes and declares
+   that honestly to the browser. */
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 1ms;
+    --duration-base: 1ms;
+    --duration-slow: 1ms;
+  }
+}

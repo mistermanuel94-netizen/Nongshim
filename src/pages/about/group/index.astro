@@ -1,0 +1,126 @@
+---
+/**
+ * Group affiliates index.
+ *
+ * On the source, `/about/group` served a byte-identical copy of
+ * `/about/group/holdings` — two URLs, one page, no canonical between them.
+ * Here the index is what its URL promises: a list of the eleven affiliates,
+ * each linking to its own page with that affiliate's own published summary.
+ */
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/ui/PageHero.astro';
+import { sectionPages } from '../../../lib/content';
+import { newPath, describe } from '../../../lib/sections';
+import { graph, organizationSchema, breadcrumbSchema, itemListSchema, canonical } from '../../../lib/seo';
+
+const path = '/about/group/';
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about/overview/' },
+  { name: 'Group affiliates', path },
+];
+
+/**
+ * The affiliate pages themselves. `/about/group` (the source's duplicate of the
+ * Holdings page) is excluded — this page replaces it.
+ */
+const affiliates = sectionPages
+  .filter((p) => p.path.startsWith('/about/group/'))
+  .map((p) => ({
+    name: p.heading ?? p.path,
+    path: newPath(p.path),
+    summary: p.description ?? describe(p),
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const description = `The ${affiliates.length} companies of the Nongshim group, from Nongshim Holdings and Youlchon Chemical to Hotel Nongshim and the Youlchon Foundation.`;
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: 'Nongshim group affiliates',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  itemListSchema(affiliates, 'Nongshim group affiliates'),
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title="Group affiliates"
+  description={description}
+  path={path}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+>
+  <PageHero
+    heading="Group affiliates"
+    eyebrow="About"
+    description={`Nongshim publishes information on ${affiliates.length} group companies.`}
+  />
+
+  <div class="container section">
+    <ul class="affiliates">
+      {
+        affiliates.map((a) => (
+          <li>
+            <a href={a.path}>
+              <h2>{a.name}</h2>
+              <p>{a.summary}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .affiliates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .affiliates a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    height: 100%;
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color var(--duration-base) var(--ease-out),
+      box-shadow var(--duration-base) var(--ease-out);
+  }
+
+  .affiliates a:hover {
+    border-color: var(--color-brand-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .affiliates h2 {
+    margin: 0;
+    font-size: var(--text-md);
+  }
+
+  .affiliates p {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
+    color: var(--color-text-muted);
+  }
+</style>

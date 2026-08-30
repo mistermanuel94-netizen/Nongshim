@@ -1,0 +1,36 @@
+---
+/**
+ * `/products/{slug}/` serves two page types that share one URL space:
+ * the four category listings and the 68 product detail pages. Slugs are
+ * verified non-overlapping by `npm run validate-content`.
+ */
+import ProductDetail from '../../components/products/ProductDetail.astro';
+import CategoryPage from '../../components/products/CategoryPage.astro';
+import { products, categories, productsInCategory, type Product, type Category } from '../../lib/content';
+
+export function getStaticPaths() {
+  const categoryRoutes = categories.map((category) => ({
+    params: { slug: category.path.replace(/^\/products\/|\/$/g, '') },
+    props: { kind: 'category' as const, category, product: null },
+  }));
+  const productRoutes = products.map((product) => ({
+    params: { slug: product.slug },
+    props: { kind: 'product' as const, product, category: null },
+  }));
+  return [...categoryRoutes, ...productRoutes];
+}
+
+type Props =
+  | { kind: 'category'; category: Category; product: null }
+  | { kind: 'product'; product: Product; category: null };
+
+const props = Astro.props as Props;
+---
+
+{
+  props.kind === 'category' ? (
+    <CategoryPage category={props.category} products={productsInCategory(props.category.id)} />
+  ) : (
+    <ProductDetail product={props.product} />
+  )
+}

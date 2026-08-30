@@ -1,0 +1,55 @@
+---
+/**
+ * The single page shell. Every route renders through this, so the document
+ * skeleton, landmark structure and metadata contract are identical everywhere.
+ */
+import Head from '../components/seo/Head.astro';
+import Header from '../components/global/Header.astro';
+import Footer from '../components/global/Footer.astro';
+import Breadcrumbs from '../components/global/Breadcrumbs.astro';
+import type { Crumb } from '../lib/seo';
+import '../styles/fonts.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  image?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+  schema?: Record<string, unknown> | null;
+  preloadImage?: { href: string; srcset?: string; sizes?: string } | null;
+  /** Omit on the homepage and on top-level landing pages. */
+  breadcrumbs?: Crumb[];
+}
+
+const { breadcrumbs, ...head } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head {...head} />
+    {/* Pages that need extra head tags (rel prev/next on paginated indexes). */}
+    <slot name="head" />
+  </head>
+  <body>
+    <Header currentPath={currentPath} />
+
+    {breadcrumbs && breadcrumbs.length > 1 && <Breadcrumbs crumbs={breadcrumbs} />}
+
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  main:focus {
+    outline: none;
+  }
+</style>

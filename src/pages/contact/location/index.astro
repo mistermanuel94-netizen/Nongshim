@@ -1,0 +1,226 @@
+---
+/**
+ * Office locations.
+ *
+ * Seven Nongshim offices with published addresses and phone numbers. The
+ * source loaded a Google Maps iframe per office on page load — seven
+ * third-party frames on one page. Here each map is behind a `<details>` and
+ * loads only when the visitor opens it.
+ */
+import { Image } from 'astro:assets';
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/ui/PageHero.astro';
+import { resolveImage } from '../../../lib/images';
+import { prepareLcpImage } from '../../../lib/lcp';
+import { offices } from '../../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../../../lib/seo';
+
+const path = '/contact/location/';
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Contact', path: '/contact/overview/' },
+  { name: 'Locations', path },
+];
+
+const list = offices.offices;
+const description = `Addresses and contact numbers for ${list.length} Nongshim offices, covering Korea, China, the United States, Canada, Japan, Australia and Vietnam.`;
+const hero = resolveImage(offices.heroImage);
+const heroLcp = await prepareLcpImage(hero, { widths: [640, 960, 1280, 1920], sizes: '100vw' });
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: 'Nongshim locations',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  {
+    '@type': 'ItemList',
+    name: 'Nongshim offices',
+    numberOfItems: list.length,
+    itemListElement: list.map((o, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Organization',
+        name: o.name,
+        parentOrganization: { '@id': `${canonical('/')}#organization` },
+        ...(o.address ? { address: { '@type': 'PostalAddress', streetAddress: o.address } } : {}),
+        ...(o.phone ? { telephone: o.phone } : {}),
+      },
+    })),
+  },
+  breadcrumbSchema(crumbs),
+]);
+
+const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+---
+
+<Base
+  title="Locations"
+  description={description}
+  path={path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <PageHero
+    heading="Locations"
+    eyebrow="Contact"
+    description={offices.description ?? 'Nongshim offices worldwide.'}
+    image={offices.heroImage}
+    lcpImage={heroLcp}
+  />
+
+  <div class="container section">
+    <ul class="offices">
+      {
+        list.map((office) => {
+          const image = resolveImage(office.image);
+          const id = slugify(office.name);
+          return (
+            <li class="office" id={id}>
+              {image && (
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  widths={[320, 480, 640]}
+                  sizes="(min-width: 48rem) 20rem, 92vw"
+                  loading="lazy"
+                  decoding="async"
+                  class="office__image"
+                />
+              )}
+              <div class="office__body">
+                <h2>{office.name}</h2>
+                {office.address && (
+                  <p class="office__address">
+                    <span class="visually-hidden">Address: </span>
+                    {office.address}
+                  </p>
+                )}
+                {office.phone && (
+                  <p class="office__phone">
+                    <span class="visually-hidden">Telephone: </span>
+                    <a href={`tel:${office.phone.replace(/[^\d+]/g, '')}`}>{office.phone}</a>
+                    {office.phoneNote && <span class="office__note">{office.phoneNote}</span>}
+                  </p>
+                )}
+                {office.mapEmbed && (
+                  <details class="office__map">
+                    <summary>Show map</summary>
+                    {/* Loaded only on open, so seven third-party frames never
+                        block the initial page load. */}
+                    <iframe
+                      src={office.mapEmbed}
+                      title={`Map showing the location of ${office.name}`}
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      width="600"
+                      height="360"
+                    />
+                  </details>
+                )}
+              </div>
+            </li>
+          );
+        })
+      }
+    </ul>
+
+    <p class="see-also">
+      See also: <a href="/about/global/">Nongshim's global network of subsidiaries</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .offices {
+    display: grid;
+    gap: var(--space-6);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .office {
+    display: grid;
+    gap: var(--space-5);
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--color-border);
+    scroll-margin-top: calc(var(--header-height) + var(--space-4));
+  }
+
+  @media (min-width: 48rem) {
+    .office {
+      grid-template-columns: 20rem 1fr;
+      align-items: start;
+    }
+  }
+
+  .office__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+  .office h2 {
+    margin-top: 0;
+    font-size: var(--text-xl);
+  }
+
+  .office__address {
+    margin-bottom: var(--space-2);
+  }
+
+  .office__note {
+    display: block;
+    margin-top: var(--space-1);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .office__map {
+    margin-top: var(--space-4);
+  }
+
+  .office__map summary {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-5);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .office__map summary:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+
+  .office__map iframe {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    aspect-ratio: 5 / 3;
+    height: auto;
+    margin-top: var(--space-4);
+    border: 0;
+    border-radius: var(--radius-md);
+  }
+
+  .see-also {
+    margin-top: var(--space-6);
+  }
+</style>

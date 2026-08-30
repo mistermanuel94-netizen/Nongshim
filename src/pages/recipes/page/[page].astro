@@ -1,0 +1,32 @@
+---
+/**
+ * Recipe index pages 2..n. Page 1 lives at `/recipes/` so there is exactly one
+ * URL for the first page rather than a `/page/1/` duplicate.
+ */
+import RecipeIndex from '../../../components/recipes/RecipeIndex.astro';
+import { recipes, RECIPES_PER_PAGE, type Recipe } from '../../../lib/content';
+
+export function getStaticPaths() {
+  const totalPages = Math.ceil(recipes.length / RECIPES_PER_PAGE);
+  return Array.from({ length: totalPages - 1 }, (_, i) => {
+    const page = i + 2;
+    return {
+      params: { page: String(page) },
+      props: {
+        page,
+        totalPages,
+        items: recipes.slice((page - 1) * RECIPES_PER_PAGE, page * RECIPES_PER_PAGE),
+      },
+    };
+  });
+}
+
+interface Props {
+  page: number;
+  totalPages: number;
+  items: Recipe[];
+}
+const { page, totalPages, items } = Astro.props;
+---
+
+<RecipeIndex recipes={items} page={page} totalPages={totalPages} totalRecipes={recipes.length} />

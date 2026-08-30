@@ -1,0 +1,95 @@
+---
+/**
+ * Every indexable page's document head. A page cannot render without supplying
+ * a title and description, so the "missing metadata" class of defect is
+ * structurally impossible rather than merely audited for.
+ */
+import { SITE } from '../../config/site';
+import { canonical, absolute, pageTitle } from '../../lib/seo';
+
+interface Props {
+  /** The page subject. The brand suffix is appended automatically. */
+  title: string;
+  /** A specific description of what this page contains. Never boilerplate. */
+  description: string;
+  /** Site-relative path of this page, used for the canonical URL. */
+  path: string;
+  /** Absolute or site-relative URL of the social preview image. */
+  image?: string;
+  /** og:type — 'website' for indexes, 'article' for content pages. */
+  ogType?: 'website' | 'article';
+  /** Set for pages that must not be indexed (search, error). */
+  noindex?: boolean;
+  /** JSON-LD graph for this page. */
+  schema?: Record<string, unknown> | null;
+  /** LCP image to preload. Only ever the actual LCP element. */
+  preloadImage?: { href: string; srcset?: string; sizes?: string } | null;
+}
+
+const { title, description, path, image, ogType = 'website', noindex = false, schema, preloadImage } = Astro.props;
+
+const fullTitle = pageTitle(title);
+const canonicalUrl = canonical(path);
+const ogImage = absolute(image);
+---
+
+<meta charset="utf-8" />
+{/* No `user-scalable=no`: the source blocked pinch-zoom, failing WCAG 1.4.4. */}
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light" />
+<meta name="theme-color" content="#df0029" />
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+
+{
+  noindex ? (
+    <meta name="robots" content="noindex, follow" />
+  ) : (
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  )
+}
+
+{/* Open Graph */}
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:locale" content={SITE.ogLocale} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+{ogImage && <meta property="og:image" content={ogImage} />}
+{ogImage && <meta property="og:image:alt" content={title} />}
+
+{/* Twitter/X */}
+<meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+{ogImage && <meta name="twitter:image" content={ogImage} />}
+
+{/* Icons and manifest */}
+{/* The icon set is generated from the official CI symbol published on
+    /about/ci. No vector favicon is shipped: tracing a registered mark would
+    mean redrawing it, so the official raster is used at every size. */}
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link rel="manifest" href="/site.webmanifest" />
+
+{/* The only font file the site loads; preloaded because it paints headings. */}
+<link rel="preload" href="/fonts/red-hat-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+{
+  preloadImage && (
+    <link
+      rel="preload"
+      as="image"
+      href={preloadImage.href}
+      imagesrcset={preloadImage.srcset}
+      imagesizes={preloadImage.sizes}
+      fetchpriority="high"
+    />
+  )
+}
+
+{schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} is:inline />}

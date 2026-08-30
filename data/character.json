@@ -1,0 +1,100 @@
+{
+  "id": "shin",
+  "name": "SHIN",
+  "intro": "Hello! My name is SHIN, I’m traveling around the world to deliver spicy happiness to people everywhere.",
+  "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/img-shin-01.png",
+  "storyHeading": "This is how my journey began.",
+  "storyImage": "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/img-shin-02.png",
+  "story": [
+    "On a shelf where all the flavors of the world come together, all my friends waited to be chosen by someone, but SHIN thought to himself\"Why do I have to wait?\" \"There are so many people who want me!\"",
+    "One night, when everyone was asleep, SHIN jumped off the shelf. That was the start of SHIN’s journey to spread Spicy Happiness around the world.",
+    "Sometimes my enthusiasm gets ahead of me and I stumble. Other times, I end up on the wrong path. or instead of sitting down right there, SHIN shouts bravely.",
+    "\"Even better!\" \"Thanks to that, I get to see this amazing view!\" Even in those unpredictable moments, a new challenge for the next Happiness begins.",
+    "Until the day people all around the world enjoy the happiness of spiciness with Spicy Happiness In Noodles, Let's join SHIN's journey together!"
+  ],
+  "profileHeading": "This is SHIN.",
+  "profileImage": "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/shin-img-icon.png",
+  "profile": [
+    {
+      "label": "Name",
+      "value": "SHIN"
+    },
+    {
+      "label": "Dream",
+      "value": "Enjoying ramyun together with people all around the world"
+    },
+    {
+      "label": "Hobby",
+      "value": "Finding perfect spicy food combinations"
+    },
+    {
+      "label": "Likes",
+      "value": "Communicating with people on social media"
+    },
+    {
+      "label": "Personality",
+      "value": "Sociable and friendly"
+    },
+    {
+      "label": "Features",
+      "value": "A sparkling '辛' in his eyes, curly noodle hair"
+    },
+    {
+      "label": "Strength",
+      "value": "Lifts the mood with spicy charm!"
+    },
+    {
+      "label": "Weakness",
+      "value": "Unexpected mistakes caused by overflowing enthusiasm"
+    }
+  ],
+  "galleryHeading": "Meet the playful side of SHIN.",
+  "gallery": [
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-01.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-02.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-03.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-04.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-05.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-06.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-07.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-08.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-09.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-10.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-11.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-12.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-13.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-14.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-15.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-16.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-17.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-18.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-19.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-20.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-21.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-22.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-23.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-24.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-25.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-26.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-27.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-28.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-29.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-30.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-31.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-32.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-33.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-34.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-35.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-36.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-37.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-38.png",
+    "https://eng.nongshim.com/resources/nongshimCss/images/shinRamyun/swiper-img-39.png"
+  ],
+  "provenance": {
+    "sourceUrls": [
+      "https://eng.nongshim.com/brand/main/index"
+    ],
+    "sourceChecked": "2026-08-30",
+    "transformation": "structure-only: modal content lifted to a document; \"SHIN\" wordmark images replaced by the literal text they depict; Korean alt text replaced with English equivalents at render time"
+  }
+}

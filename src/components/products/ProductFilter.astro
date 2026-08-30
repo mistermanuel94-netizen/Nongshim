@@ -1,0 +1,146 @@
+---
+/**
+ * Catalogue filter — the one interactive island in the product section.
+ *
+ * It is progressive enhancement over a complete server-rendered list: the whole
+ * control is hidden until its script runs, so a no-JS visitor sees all 68
+ * products and uses the category links instead of a control that does nothing.
+ *
+ * ~1 KB of vanilla JS, no framework, no hydration runtime.
+ */
+import type { Category } from '../../lib/content';
+
+interface Props {
+  categories: Category[];
+  total: number;
+}
+const { categories, total } = Astro.props;
+---
+
+<form class="product-filter" id="product-filter" role="search" aria-label="Filter products" hidden>
+  <div class="product-filter__field">
+    <label for="product-search">Search products</label>
+    <input
+      type="search"
+      id="product-search"
+      name="q"
+      autocomplete="off"
+      placeholder="Shin Ramyun, Chapaghetti…"
+      enterkeyhint="search"
+    />
+  </div>
+
+  <div class="product-filter__field">
+    <label for="product-category">Category</label>
+    <select id="product-category" name="category">
+      <option value="">All categories</option>
+      {categories.map((c) => <option value={c.id}>{c.name}</option>)}
+    </select>
+  </div>
+
+  <p class="product-filter__count" role="status" aria-live="polite" data-count data-total={total}>
+    Showing all {total} products
+  </p>
+</form>
+
+<style>
+  .product-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+  }
+
+  .product-filter__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    flex: 1 1 14rem;
+  }
+
+  .product-filter label {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .product-filter input,
+  .product-filter select {
+    min-height: 44px;
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    background: #fff;
+  }
+
+  .product-filter__count {
+    flex: 1 1 100%;
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  @media (min-width: 48rem) {
+    .product-filter__count {
+      flex: 0 0 auto;
+      margin-bottom: var(--space-3);
+    }
+  }
+</style>
+
+<script>
+  const form = document.getElementById('product-filter') as HTMLFormElement | null;
+  const grid = document.getElementById('product-grid');
+  const empty = document.getElementById('product-empty');
+  if (form && grid) {
+    // Only reveal the control once it can actually do something.
+    form.hidden = false;
+
+    const search = form.querySelector<HTMLInputElement>('#product-search')!;
+    const category = form.querySelector<HTMLSelectElement>('#product-category')!;
+    const count = form.querySelector<HTMLElement>('[data-count]')!;
+    const total = Number(count.dataset.total ?? 0);
+    const items = Array.from(grid.children) as HTMLElement[];
+
+    const apply = () => {
+      const q = search.value.trim().toLowerCase();
+      const cat = category.value;
+      let shown = 0;
+      for (const item of items) {
+        const matches =
+          (!q || (item.dataset.name ?? '').includes(q)) && (!cat || item.dataset.category === cat);
+        item.hidden = !matches;
+        if (matches) shown++;
+      }
+      count.textContent =
+        shown === total ? `Showing all ${total} products` : `Showing ${shown} of ${total} products`;
+      if (empty) empty.hidden = shown !== 0;
+
+      // Keep the URL shareable and the back button meaningful.
+      const params = new URLSearchParams();
+      if (q) params.set('q', q);
+      if (cat) params.set('category', cat);
+      const next = params.toString() ? `?${params}` : location.pathname;
+      history.replaceState(null, '', next);
+    };
+
+    // Restore state from the URL so a shared filtered link opens filtered.
+    const initial = new URLSearchParams(location.search);
+    search.value = initial.get('q') ?? '';
+    category.value = initial.get('category') ?? '';
+    if (search.value || category.value) apply();
+
+    form.addEventListener('input', apply);
+    form.addEventListener('submit', (event) => event.preventDefault());
+    document.querySelector('[data-clear]')?.addEventListener('click', () => {
+      search.value = '';
+      category.value = '';
+      apply();
+      search.focus();
+    });
+  }
+</script>

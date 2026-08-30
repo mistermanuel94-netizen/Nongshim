@@ -1,0 +1,164 @@
+---
+/**
+ * Product category page.
+ *
+ * On the source these were client-side tabs on one URL (`?tabType=snacks`), so
+ * none of the four categories was an indexable document. Each is now a real
+ * page that says what the category contains and lists every product in it.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../ui/PageHero.astro';
+import ProductCard from './ProductCard.astro';
+import { categories, type Category, type Product } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, itemListSchema, canonical } from '../../lib/seo';
+import { resolveImage } from '../../lib/images';
+import { prepareLcpImage } from '../../lib/lcp';
+
+interface Props {
+  category: Category;
+  products: Product[];
+}
+const { category, products } = Astro.props;
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Products', path: '/products/' },
+  { name: category.name, path: category.path },
+];
+
+const description = `${products.length} Nongshim ${category.name.toLowerCase()}. ${category.description}`;
+const lead = resolveImage(products[0]?.cardImage);
+const leadLcp = await prepareLcpImage(lead, {
+  widths: [200, 320, 480],
+  sizes: '(min-width: 64rem) 15rem, (min-width: 40rem) 33vw, 50vw',
+});
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${canonical(category.path)}#webpage`,
+    url: canonical(category.path),
+    name: `Nongshim ${category.name}`,
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  itemListSchema(
+    products.map((p) => ({ name: p.name, path: p.path })),
+    `Nongshim ${category.name}`
+  ),
+  breadcrumbSchema(crumbs),
+]);
+
+const others = categories.filter((c) => c.id !== category.id);
+
+/** Release years present in this category, stated only from published dates. */
+const years = products
+  .map((p) => p.released?.slice(0, 4))
+  .filter((y): y is string => Boolean(y && /^\d{4}$/.test(y)))
+  .sort();
+const span = years.length > 1 ? `${years[0]} to ${years[years.length - 1]}` : years[0] ?? null;
+---
+
+<Base
+  title={category.name}
+  description={description}
+  path={category.path}
+  image={lead?.src.src}
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={leadLcp?.preload}
+>
+  <PageHero heading={category.name} eyebrow="Products" description={category.description} />
+
+  <div class="container section">
+    <p class="category-summary">
+      Nongshim publishes <strong>{products.length}</strong>
+      {products.length === 1 ? 'product' : 'products'} in this category{span && <> , with release dates from {span}</>}.
+    </p>
+
+    <ul class="grid grid--cards product-grid">
+      {
+        products.map((product, i) => (
+          <li class="product-grid__item">
+            <ProductCard product={product} headingLevel={2} lcp={i === 0 ? leadLcp : null} />
+          </li>
+        ))
+      }
+    </ul>
+
+    <nav class="category-more" aria-label="Other product categories">
+      <h2>Other categories</h2>
+      <ul>
+        <li><a href="/products/">All products</a></li>
+        {
+          others.map((c) => (
+            <li>
+              <a href={c.path}>{c.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</Base>
+
+<style>
+  .category-summary {
+    margin-bottom: var(--space-6);
+    color: var(--color-text-muted);
+  }
+
+  .product-grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .product-grid__item {
+    display: flex;
+  }
+
+  .product-grid__item > :global(*) {
+    flex: 1;
+  }
+
+  .category-more {
+    margin-top: var(--space-9);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .category-more h2 {
+    font-size: var(--text-lg);
+  }
+
+  .category-more ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-more a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .category-more a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+</style>

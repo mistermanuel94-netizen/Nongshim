@@ -1,0 +1,894 @@
+[
+  {
+    "path": "/",
+    "type": "home"
+  },
+  {
+    "path": "/products/",
+    "type": "product-listing"
+  },
+  {
+    "path": "/products/instant-noodles/",
+    "type": "product-category"
+  },
+  {
+    "path": "/products/snacks/",
+    "type": "product-category"
+  },
+  {
+    "path": "/products/beverages/",
+    "type": "product-category"
+  },
+  {
+    "path": "/products/home-meal-replacement/",
+    "type": "product-category"
+  },
+  {
+    "path": "/products/angry-chapaguri/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/ansung-noodle-soup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/baeksan-artesian-water-2l/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/baked-cuttlefish-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/baked-shrimp-chips/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/banana-kick/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/beef-flavor-noodles/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/bibim-cold-noodles/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/budae-jjigae/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/capri-sun-orange/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/chal-bibimmyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/champong-noodle-soup-2015/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/champong-noodle-soup-1992/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/chapaghetti/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/chicken-nuggets/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/chochung-u-gua/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/cook-tam-beef-soup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/cook-tam-pork-kimchi-hot-pot/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/cook-tam-spicy-sweet-soup-rabokki/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/corn-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/cuttlefish-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/dried-champong-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/honey-twist-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/hooroorook/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/indian-corn-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/kal-guk-soo/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/kal-guk-su/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/kimchi-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/mr-bibim-korean-spicy-chicken/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/mupamatangmyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/neogubonara/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/nongshim-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/nongshim-rice-noodle/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/nongshim-sarimyun-noodle/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/onion-rings/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/onion-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/oolongmen-1/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/pawn-snack-ansungtangmyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/pizza-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/potato-chips/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/potato-french-fries-red-chili-flavor/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/potato-noodle-soup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/potato-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/potato-stick/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/premium-beef-bowl-noodle-soup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/pretzel-salted-caramel-flavor/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/saeng-saeng-udon/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/sarigomtangmyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/seafood-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shin-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shin-ramyun-black-bowl/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shin-ramyun-light/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shrimp-big-bowl/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shrimp-chips/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/shrimp-crackers/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/soba-noodle/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/soon-veggie-ramyun/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/star-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/stir-fried-neoguri-big-bowl/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/sumi-potato-chip-original/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/sweet-potato-snack/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/tako-chips/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/tempura-udon-big-bowl/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/tuna-mayo-big-cup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/vegetable-noodle-soup/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/welchs-strawberry-soda/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/yukejang/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/products/zha-wang/",
+    "type": "product-detail"
+  },
+  {
+    "path": "/recipes/",
+    "type": "recipe-listing"
+  },
+  {
+    "path": "/recipes/page/2/",
+    "type": "recipe-listing"
+  },
+  {
+    "path": "/recipes/page/3/",
+    "type": "recipe-listing"
+  },
+  {
+    "path": "/recipes/page/4/",
+    "type": "recipe-listing"
+  },
+  {
+    "path": "/recipes/page/5/",
+    "type": "recipe-listing"
+  },
+  {
+    "path": "/recipes/chicken-jang-kal-guk-su/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/mushroom-jang-kal-guk-su/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/crab-soup-kal-guk-su/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/italian-dressing-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/corn-budae-jjigae-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/japanese-style-natto-dressing-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/kiwi-yogurt-dressing-noodles/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/vietnamese-style-dressing-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/guacamole-dressing-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/meatball-budae-jjigae-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/budae-jjigae-noodle-shakshouka/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-cioppino/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/beef-bone-chajang-soup/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-pizza-enjoyed-at-home/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-shabu-ramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-captivated-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-black-bean-soup-pasta/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chalbibim-canape/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/stir-fried-chapaghetti-with-bulgogi/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-cup-spring-roll/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/salmond-roll-ramyun-with-soy-paste-sauce/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ramyun-chocolate-ball/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/colorful-ansungtangmyun-cupcakes/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-moussaka/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-hamburger-steak/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-cup-burger/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-fried-chicken/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/vietnamese-chicken-rice-noodles/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/taiwanese-fried-noodle-eggnet/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/rice-noodle-okonomiyaki/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/rice-noodle-guobatang/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/noodles-topped-with-seafood/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/shin-noodles-topped-with-bulgogi/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/sweet-potato-ramyun-croquette/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fried-ramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fried-ramyun-with-seafood-sauce/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/pork-ramyun-cheese-ball/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ramyun-pizza/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/pizza-shin-ramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fried-shin-ramyun-with-crepe/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fried-udon-with-bulgogi/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/seafood-yaki-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/udon-with-seasoned-vegetables/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/roasted-chicken-champong-noodle-soup/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-without-soup/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-cabbage-roll/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/hooroorook-pasta-with-basil-pesto/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/pizza-chalbibimmyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chalbibimmyun-salad-yam-un-sen/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/tomato-kimchi-chalbibimmyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chapaghetti-with-rice/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/cha-cheegg/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chapadog/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/sichuan-zhawang/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/spanish-zha-wang-omelet/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/zha-wang-with-meatballs/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/jinjja-jinjja-cold-ramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/jinjja-jinjja-cream-pasta/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/jinjja-jinjja-komkomkom-mie-goreng/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/champaghetti/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/salad-ni-oise-vegetable-soup-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ramyun-with-paprika-and-burdock/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/ansungtangmyun-frittata/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/kimchi-nabe-ansungtangmyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/nongshim-rice-chajangmyun-with-shrimp-and-broccoli/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/napolitan-shinramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/tomato-egg-shinramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/kimchi-egg-fried-noodles/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fried-tofu-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/seafood-fried-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/mupama-seafood-cream-pasta/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/yukgejang-mupamatangmyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/bean-sprout-mupamatangmyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/japanesse-hot-pot-kalguksoo/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/green-onion-oil-sauce-kalguksoo/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/tofu-cup-soba-noodle-salad/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/salad-soba-noodles/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/champong-noodle-soup-tensin-noodles-tamago-donburi/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/mongolian-champong-noodle-soup-matchampong/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/savory-rice-cake-noodle-pasta/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/rice-cake-noodle-pad-thai/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/kimchibroth-cold-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/tray-doongji-cold-noodle-6/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/seafood-salad-doongji-cold-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/potato-noodle-soup-seaweed-roll-tempura/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/potato-noodle-soup-mushroom-stew/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/neoguri-with-dried-shrimp/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/neoguri-fish-cake-ramyun/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/shin-ramen-spicy-cold-noodle/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/bamboo-shoot-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/mushroom-yaki-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/fresh-udon-saut-ed-in-light-curry/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/bulgogi-kochi-udon-mix/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/sangsang-fried-bean-curds-udon-2/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/sangsang-fried-bean-curds-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chicken-yaki-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/vegetable-anchovy-thick-noodles-kalguksu/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/tray-doongji-cold-noodle-119/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/jjasai-parsley-udon/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/chapaguri/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/recipes/champong-noodle-soup-tantan-noodles/",
+    "type": "recipe-detail"
+  },
+  {
+    "path": "/shin/",
+    "type": "character"
+  },
+  {
+    "path": "/search/",
+    "type": "search"
+  },
+  {
+    "path": "/about/overview/",
+    "type": "section"
+  },
+  {
+    "path": "/about/profile/mission/",
+    "type": "section"
+  },
+  {
+    "path": "/about/profile/way/",
+    "type": "section"
+  },
+  {
+    "path": "/about/history/",
+    "type": "section"
+  },
+  {
+    "path": "/about/ci/",
+    "type": "section"
+  },
+  {
+    "path": "/about/global/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/holdings/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/hotelNongshim/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/megaMart/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/nds/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/nongshimCommunication/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/nongshimDevelopment/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/nongshimEngineering/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/rfm/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/taekyungNongsan/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/youlchonChemical/",
+    "type": "section"
+  },
+  {
+    "path": "/about/group/youlchonFoundation/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/overview/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/governance/governance/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/governance/compliance/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/people/safety/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/people/shared/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/people/social/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/people/youlchon/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/planet/response/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/planet/sustainable/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/prosperity/consumer/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/prosperity/rnd/",
+    "type": "section"
+  },
+  {
+    "path": "/sustainability/report/",
+    "type": "section"
+  },
+  {
+    "path": "/press/",
+    "type": "section"
+  },
+  {
+    "path": "/press/baduk/",
+    "type": "section"
+  },
+  {
+    "path": "/pr/tv/",
+    "type": "section"
+  },
+  {
+    "path": "/investors/overview/",
+    "type": "section"
+  },
+  {
+    "path": "/investors/report/",
+    "type": "section"
+  },
+  {
+    "path": "/investors/ir/",
+    "type": "section"
+  },
+  {
+    "path": "/investors/audit/",
+    "type": "section"
+  },
+  {
+    "path": "/contact/overview/",
+    "type": "section"
+  },
+  {
+    "path": "/contact/location/",
+    "type": "section"
+  },
+  {
+    "path": "/contact/inquiry/",
+    "type": "section"
+  },
+  {
+    "path": "/404.html",
+    "type": "error"
+  }
+]

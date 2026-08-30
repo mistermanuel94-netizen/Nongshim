@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-30T07:22:21.980Z",
+  "passes": [
+    "No horizontal overflow across 13 pages x 10 widths",
+    "Reflow at 400% zoom (320px equivalent) with no horizontal scroll",
+    "Text-spacing overrides cause no clipping or overflow",
+    "Keyboard focus order and focus visibility",
+    "Interactive components: menus, Escape, catalogue filter",
+    "Site is complete and navigable with JavaScript disabled",
+    "No console errors or failed same-origin requests",
+    "Unknown paths return HTTP 404 — got 404",
+    "The 404 response renders the custom error page — h1 was \"That page does not exist\""
+  ],
+  "failures": []
+}

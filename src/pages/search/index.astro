@@ -1,0 +1,301 @@
+---
+/**
+ * Site search.
+ *
+ * Deliberately `noindex, follow`: search result pages are not content, and
+ * indexing them would create an unbounded set of thin, near-duplicate URLs.
+ * The links out of the page are still followed, so nothing is orphaned.
+ *
+ * The index is a small JSON file built at compile time (~40 KB) and fetched
+ * only when the visitor types, so the page itself ships almost no JavaScript.
+ * With JavaScript disabled the page still lists every product category and
+ * links to the full catalogue and recipe index — a usable fallback, not a
+ * broken control.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/ui/PageHero.astro';
+import { products, recipes, categories } from '../../lib/content';
+import { graph, organizationSchema, canonical } from '../../lib/seo';
+
+const description = `Search the Nongshim site: ${products.length} products across four categories, ${recipes.length} cooking recipes, and the company sections.`;
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical('/search/')}#webpage`,
+    url: canonical('/search/'),
+    name: 'Search',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+]);
+---
+
+<Base title="Search" description={description} path="/search/" noindex schema={schema}>
+  <PageHero
+    heading="Search"
+    description={`Search ${products.length} products and ${recipes.length} recipes.`}
+  />
+
+  <div class="container section">
+    <form class="search-form" action="/search/" method="get" role="search">
+      <label for="q">Search products and recipes</label>
+      <div class="search-form__row">
+        <input
+          type="search"
+          id="q"
+          name="q"
+          autocomplete="off"
+          autofocus
+          enterkeyhint="search"
+          placeholder="Shin Ramyun, chapaghetti, budae jjigae…"
+        />
+        <button type="submit" class="button button--primary">Search</button>
+      </div>
+    </form>
+
+    <div id="search-status" role="status" aria-live="polite" class="search-status"></div>
+    <div id="search-results" class="search-results"></div>
+
+    <noscript>
+      <p class="search-note">
+        Search needs JavaScript. Browse the catalogue and recipe index instead — every product and recipe is
+        linked from them.
+      </p>
+    </noscript>
+
+    <section class="search-fallback" aria-labelledby="browse-heading">
+      <h2 id="browse-heading">Browse instead</h2>
+      <ul>
+        <li><a href="/products/">All {products.length} products</a></li>
+        {
+          categories.map((c) => (
+            <li>
+              <a href={c.path}>{c.name}</a>
+            </li>
+          ))
+        }
+        <li><a href="/recipes/">All {recipes.length} recipes</a></li>
+        <li><a href="/shin/">SHIN, the Shin Ramyun character</a></li>
+      </ul>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .search-form label {
+    display: block;
+    margin-bottom: var(--space-2);
+    font-weight: 700;
+  }
+
+  .search-form__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    max-width: 40rem;
+  }
+
+  .search-form input {
+    flex: 1 1 16rem;
+    min-height: 48px;
+    padding: var(--space-3) var(--space-4);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+  }
+
+  .search-status {
+    margin-top: var(--space-5);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+
+  .search-results {
+    margin-top: var(--space-4);
+  }
+
+  .search-results :global(ul) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .search-results :global(a) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    height: 100%;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .search-results :global(a:hover) {
+    border-color: var(--color-brand-primary);
+  }
+
+  .search-results :global(.result__kind) {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-brand-primary-text);
+  }
+
+  .search-results :global(.result__name) {
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .search-results :global(.result__meta) {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-snug);
+  }
+
+  .search-note {
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius-md);
+  }
+
+  .search-fallback {
+    margin-top: var(--space-9);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .search-fallback h2 {
+    font-size: var(--text-lg);
+  }
+
+  .search-fallback ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+</style>
+
+<script>
+  interface Entry {
+    t: string; // title
+    p: string; // path
+    k: string; // kind label
+    m: string; // meta line
+  }
+
+  const input = document.getElementById('q') as HTMLInputElement | null;
+  const form = document.querySelector<HTMLFormElement>('.search-form');
+  const status = document.getElementById('search-status');
+  const results = document.getElementById('search-results');
+
+  if (input && form && status && results) {
+    let index: Entry[] | null = null;
+    let loading: Promise<Entry[]> | null = null;
+
+    const loadIndex = () => {
+      if (index) return Promise.resolve(index);
+      loading ??= fetch('/search-index.json')
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+        .then((data: Entry[]) => (index = data));
+      return loading;
+    };
+
+    const escapeHtml = (s: string) =>
+      s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+    const render = (query: string, matches: Entry[]) => {
+      if (!query) {
+        status.textContent = '';
+        results.innerHTML = '';
+        return;
+      }
+      if (!matches.length) {
+        status.textContent = `No products or recipes match “${query}”.`;
+        results.innerHTML = '';
+        return;
+      }
+      status.textContent = `${matches.length} ${matches.length === 1 ? 'result' : 'results'} for “${query}”.`;
+      results.innerHTML =
+        '<ul>' +
+        matches
+          .slice(0, 60)
+          .map(
+            (m) =>
+              `<li><a href="${escapeHtml(m.p)}"><span class="result__kind">${escapeHtml(m.k)}</span>` +
+              `<span class="result__name">${escapeHtml(m.t)}</span>` +
+              (m.m ? `<span class="result__meta">${escapeHtml(m.m)}</span>` : '') +
+              '</a></li>'
+          )
+          .join('') +
+        '</ul>';
+    };
+
+    const run = async () => {
+      const query = input.value.trim();
+      const params = new URLSearchParams(location.search);
+      if (query) params.set('q', query);
+      else params.delete('q');
+      history.replaceState(null, '', params.toString() ? `?${params}` : location.pathname);
+
+      if (!query) return render('', []);
+
+      let data: Entry[];
+      try {
+        status.textContent = 'Searching…';
+        data = await loadIndex();
+      } catch {
+        status.textContent = 'Search is unavailable right now. Browse the product and recipe indexes instead.';
+        return;
+      }
+
+      const needle = query.toLowerCase();
+      const terms = needle.split(/\s+/).filter(Boolean);
+      const matches = data
+        .map((entry) => {
+          const haystack = `${entry.t} ${entry.m}`.toLowerCase();
+          if (!terms.every((t) => haystack.includes(t))) return null;
+          // Rank exact title prefix highest, then title match, then body.
+          const title = entry.t.toLowerCase();
+          const score = title.startsWith(needle) ? 0 : title.includes(needle) ? 1 : 2;
+          return { entry, score };
+        })
+        .filter((m): m is { entry: Entry; score: number } => Boolean(m))
+        .sort((a, b) => a.score - b.score || a.entry.t.localeCompare(b.entry.t))
+        .map((m) => m.entry);
+
+      render(query, matches);
+    };
+
+    let timer: number;
+    input.addEventListener('input', () => {
+      clearTimeout(timer);
+      timer = window.setTimeout(run, 120);
+    });
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      run();
+    });
+
+    // Warm the index on focus so the first keystroke feels instant.
+    input.addEventListener('focus', () => void loadIndex().catch(() => {}), { once: true });
+
+    const initial = new URLSearchParams(location.search).get('q');
+    if (initial) {
+      input.value = initial;
+      run();
+    }
+  }
+</script>

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "instant-noodles",
+    "name": "Instant Noodles",
+    "path": "/products/instant-noodles/",
+    "description": "Nongshim instant noodles, including Shin Ramyun, Chapaghetti, Neoguri and Ansung Noodle Soup, in packet, cup and bowl formats."
+  },
+  {
+    "id": "snacks",
+    "name": "Snacks",
+    "path": "/products/snacks/",
+    "description": "Nongshim snacks, including Shrimp Crackers, Banana Kick, Onion Rings and Honey Twist, in baked and fried varieties."
+  },
+  {
+    "id": "beverages",
+    "name": "Beverages",
+    "path": "/products/beverages/",
+    "description": "Nongshim beverages, including Baeksan Artesian Water, Capri-Sun and Welch’s."
+  },
+  {
+    "id": "home-meal-replacement",
+    "name": "Home Meal Replacement",
+    "path": "/products/home-meal-replacement/",
+    "description": "Nongshim home meal replacement products from the Cooktam range."
+  }
+]

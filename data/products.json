@@ -1,0 +1,4538 @@
+[
+  {
+    "id": "chapaguri",
+    "slug": "angry-chapaguri",
+    "name": "Angry Chapaguri",
+    "tagline": "Today, I am the chef!Chapaghetti",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620734841107.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621302547260.png",
+    "weight": "140",
+    "released": "2021.01.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "620"
+    },
+    "description": [
+      "Chapaguri is a combination of two different kinds of ramyun: ‘Chapaghetti’, which is representative Chajang ramyun with unique taste and ‘Neoguri’ which boasts chewy and elastic noodles.",
+      "In particular, ‘Korean Beef Sirloin Chapaguri’ introduced in 2019 film ‘Parasite’ by Director Bong Joon-ho is gaining popularity as a famous Korean food recipe all over the world.",
+      "Enjoy Chapaguri Bowl, which is originated from modisumers, conveniently! Different taste with stronger spicy taste!! Chewier noodle by cooking it with microwave oven!! A deeper Chajang taste!!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10108",
+        "name": "Angry Chapaguri Big bowl",
+        "slug": "angry-chapaguri-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621302547260.png",
+        "weight": "114",
+        "released": "2020.12.31",
+        "certification": "HALAL",
+        "otherSpecs": {
+          "calories": "528"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10108"
+      },
+      {
+        "prodCode": "10107",
+        "name": "Chapaguri(Big bowl)",
+        "slug": "chapaguri-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621302376692.png",
+        "weight": "114",
+        "released": "2020.12.31",
+        "certification": "HALAL",
+        "otherSpecs": {
+          "calories": "530"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10107"
+      },
+      {
+        "prodCode": "10106",
+        "name": "Angry Chapaguri",
+        "slug": "angry-chapaguri",
+        "image": "https://image.nongshim.com/non/pro/1621302239256.png",
+        "weight": "140",
+        "released": "2021.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "620"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10106"
+      },
+      {
+        "prodCode": "10105",
+        "name": "Chapaguri",
+        "slug": "chapaguri",
+        "image": "https://image.nongshim.com/non/pro/1621302115738.png",
+        "weight": "140",
+        "released": "2021.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "619"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10105"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=chapaguri",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10108",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10107",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10106",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10105"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Angry Chapaguri",
+    "relatedRecipes": [
+      "117"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "ansung",
+    "slug": "ansung-noodle-soup",
+    "name": "Ansung Noodle Soup",
+    "tagline": "Perfect for my taste",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620955415309.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621301147359.png",
+    "weight": "125g",
+    "released": "1983.09.13",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "\"Extracted broth soup by boiling, pioneer of the age of noodle soup!!",
+      "'The soup tastes great, just the thing for my taste'. Famous as this phrase in Korea, Ansungtangmyun was developed with the proposal to realize the flavor of cabbage leaf soup enjoyed at old country markets.",
+      "The deep flavor extracted from beef bone and meat brings the original flavor of cabbage leaves together with soybean paste and chili powder. The thick broth soup and chewy thin noodles are beloved by Koreans. 'Ansung', the long-standing breadbasket, was also famous for its beef market so as named as 'Ansungmatsum' which means Ansung is fit for all.Nongshim paid attention to the high recognition of Ansung by consumers and emphasized the local name and broth taste by using 'Ansung' in the product name.",
+      "The first soup concept ramyun of deep broth soup set a new record of sales totaling KRW 4.1 billion in just three months from its release. In the next year 1984, its annual sales recorded over KRW 20 billion. As Ansungtangmyun became popular, 'Youngnam-tang', 'Honam-tang', 'Seoul-tang' and other imitation products were introduced disproving its popularity at that time.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10101",
+        "name": "Ansung Noodle Soup(Seafood)",
+        "slug": "ansung-noodle-soup-seafood",
+        "image": "https://image.nongshim.com/non/pro/1621301147359.png",
+        "weight": "112",
+        "released": "2019.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "484"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10101"
+      },
+      {
+        "prodCode": "10000",
+        "name": "Ansung Noodle Soup",
+        "slug": "ansung-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/Ansungtangmyun_en.png",
+        "weight": "125g",
+        "released": "1983.09.13",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10000"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=ansung",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10101",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10000"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Ansung Noodle Soup",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "chapagetti"
+    ]
+  },
+  {
+    "id": "baeksansoo",
+    "slug": "baeksan-artesian-water-2l",
+    "name": "Baeksan Artesian Water(2L)",
+    "tagline": "Volcanic Bedrock Spring Water",
+    "category": "beverages",
+    "categoryName": "Beverages",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621256503942.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621261360956.png",
+    "weight": "2L",
+    "released": "2012.12.02",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Baeksan Artesian Water",
+      "Baeksan Artesian Water is taken from the water source at 2,744m, the highest point of the active volcano Mt. Baekdu.",
+      "The volcanic bedrock of Mt. Baekdu filters the water, which is soared up by the power of nature. Baeksan Artesian Water is named after the old name of Mt. Baekdu, 'Baeksan'('DAEDONGSUGYUNG', a geography book wrote by Dasan Jeong Yak-yong), implying the symbolic meaning of Mt. Baekdu."
+    ],
+    "variants": [
+      {
+        "prodCode": "10002",
+        "name": "Baeksan Artesian Water(2L)",
+        "slug": "baeksan-artesian-water-2l",
+        "image": "https://image.nongshim.com/non/pro/1621261360956.png",
+        "weight": "2L",
+        "released": "2012.12.02",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10002"
+      },
+      {
+        "prodCode": "10003",
+        "name": "Baeksan Artesian Water(500ml)",
+        "slug": "baeksan-artesian-water-500ml",
+        "image": "https://image.nongshim.com/non/pro/1621261543730.png",
+        "weight": "500ml",
+        "released": "2012.12.02",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10003"
+      },
+      {
+        "prodCode": "10001",
+        "name": "Baeksan Artesian Water(330ml)",
+        "slug": "baeksan-artesian-water-330ml",
+        "image": "https://image.nongshim.com/non/pro/1621261559316.png",
+        "weight": "330ml",
+        "released": "2017.10.31",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10001"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=baeksansoo",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10002",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10003",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10001"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Baeksan Artesian Water(2L)",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "Welch’s",
+      "capri-sun"
+    ]
+  },
+  {
+    "id": "ojingeo-dari",
+    "slug": "baked-cuttlefish-snack",
+    "name": "Baked Cuttlefish Snack",
+    "tagline": "Cuddly Cuttlefish Cuddling Sweetness",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733940501.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Baked_Cuttlefish_Snack_en.png",
+    "weight": "75g",
+    "released": "2018.05.15",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Cuttlefish Snacks are now complete with legs!",
+      "Cuttlefish Snack, the body, PLUS Baked Cuttlefish Snack, the leg!",
+      "Cuttlefish leg shaped snack is baked with butter! Enjoy two styles of textures in one snack!",
+      "One-bite size finger snack with interesting shape!",
+      "It has enhanced butter flavor with coated syrup.",
+      "Just like you enjoyed in movie theaters!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10048",
+        "name": "Baked Cuttlefish Snack",
+        "slug": "baked-cuttlefish-snack",
+        "image": "https://image.nongshim.com/non/pro/Baked_Cuttlefish_Snack_en.png",
+        "weight": "75g",
+        "released": "2018.05.15",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10048"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=ojingeo-dari",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10048"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Baked Cuttlefish Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "bakedshrimpchips",
+    "slug": "baked-shrimp-chips",
+    "name": "Baked Shrimp Chips",
+    "tagline": "Deep shrimp flavor!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621487436123.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621487680873.png",
+    "weight": "50",
+    "released": "2019.06.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "140"
+    },
+    "description": [
+      "Upgraded premium shrimp flavored chips using differentiated ingredients and method.",
+      "Deep shrimp flavor! Made of rice!! Light and crispy texture! 1mm-thick dough baked in an oven!",
+      "1. Better as it is made of rice: Grilled shrimp taste that everyone of all ages love",
+      "2. Baked 1mm-thick chip: Light and crispy texture\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10120",
+        "name": "Baked Shrimp Chips",
+        "slug": "baked-shrimp-chips",
+        "image": "https://image.nongshim.com/non/pro/1621487680873.png",
+        "weight": "50",
+        "released": "2019.06.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "140"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10120"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=bakedshrimpchips",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10120"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Baked Shrimp Chips",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "bananakicksnack",
+    "slug": "banana-kick",
+    "name": "Banana Kick",
+    "tagline": "Original banana flavor",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620737200777.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Banana_Kick_en.png",
+    "weight": "75g",
+    "released": "1978.05.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "In 1978, it was developed for anyone to enjoy the imported fruit, banana.",
+      "It was named as such as its shape resembles the movement pattern of a front ball kick of soccer, the nation's favorite sport.",
+      "- Tender and sweet banana flavor",
+      "- Brings the feature of sweet banana softly melting in the mouth.",
+      "Melts in the mouth and preserves the flavor of banana.",
+      "The main ingredient of the corn snack Banana Kick is corn it has a sweet taste and scent of banana. With a sweet and tender texture, it melts in the mouth."
+    ],
+    "variants": [
+      {
+        "prodCode": "10004",
+        "name": "Banana Kick",
+        "slug": "banana-kick",
+        "image": "https://image.nongshim.com/non/pro/Banana_Kick_en.png",
+        "weight": "75g",
+        "released": "1978.05.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10004"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=bananakicksnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10004"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Banana Kick",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "wyuktang",
+    "slug": "beef-flavor-noodles",
+    "name": "Beef Flavor Noodles",
+    "tagline": "Hot pot, Now with noodles!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733435203.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Beef_Flavor_Noodles_en.png",
+    "weight": "115g",
+    "released": "1989.09.28",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "BIG BOWL NOODLE (BEEF FLAVOR) uses beef, garlic and onion to make broth flavor. This big bowl noodles provide the pleasure of eating big and chewy meat flakes."
+    ],
+    "variants": [
+      {
+        "prodCode": "10093",
+        "name": "Beef Flavor Noodles",
+        "slug": "beef-flavor-noodles",
+        "image": "https://image.nongshim.com/non/pro/Beef_Flavor_Noodles_en.png",
+        "weight": "115g",
+        "released": "1989.09.28",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10093"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=wyuktang",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10093"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Beef Flavor Noodles",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "icedoongji",
+    "slug": "bibim-cold-noodles",
+    "name": "Bibim Cold Noodles",
+    "tagline": "The taste made for summer",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956017916.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Bibim_Cold_Noodles_en.png",
+    "weight": "162g",
+    "released": "2008.05.05",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "For cold noodles, Choose Doongji Cold Noodles.",
+      "Cold noodles are a popular meal among Koreans.",
+      "However, products in the market lack quality and convenience to easily cook at home. Thus, Nongshim devoted itself to develop a product that has the taste of cold noodles yet can be easily prepared.",
+      "At last in 2008, a new type of cold noodles different from existing products (refregirated) was launched and the brand was 'Doongji cold noodles'. These noodles are easy to cook and the shape is reminiscent of a birds nest.",
+      "To develop Doongji cold noodles, Nongshim's know-how to make ramyun was grafted with the Italian technology of manufacturing dried pasta, which is the only such technology in the world. During the two years of research, about 144t wheat and 5 tons of buckwheat were used as raw ingredients to produce the nest shape, which produced a total of 1.2 million packs of Doongji cold noodles.",
+      "In the first year of releasing the product, Singer LEE SUNG GI was casted as the model for TV and print advertisements. Due to his popularity, Doongji cold noodles became a hit known as 'Sung gi cold noodles'.",
+      "Features of Doongji Cold Noodles",
+      "Anytimen any place, Doongji Cold Noodles",
+      "Do we need to eat cold noodles only at restaurants? Should cold noodles be refrigerated?",
+      "Doongji cold noodles may be enjoyed just like ramyun and are no longer burdensome.",
+      "Doongji cold noodles are dried by wind in a nest shape to be distributed at room temperature.",
+      "Doongji cold noodles are packaged for single person use and to be conveniently kept at room temperature.",
+      "Also, the recipe of Doongji cold noodles, for the first time in the world, does not involve boiling, and allows many customers to use outside.",
+      "Tastier than the cold noodles of specialist restaurants, enjoy cold noodles anytime in any place.",
+      "Try Doongji cold noodles now anywhere in any place whenever you feel like having cold noodles.",
+      "Doongil cold noodles are convenient and tasty.",
+      "Doongji Cold Noodles are tasty and affordable.",
+      "The price for cold noodles at restaurants continues to rise!",
+      "Do you feel burdened to go out for cold noodles?",
+      "Enjoy Doongji cold noodles for the whole family (four persons) at an affordable price below that of one bowl of cold noodles in the market.",
+      "Dongchimi broth and sauce made in the traditional manner provide the taste of traditional cold noodles.",
+      "Trustworthy Doongji Cold Noodles.",
+      "The noodles are not fried and Dongchimi broth and sauce made in the traditional manner are made with clean and healthy ingredients with care.",
+      "This is more trustworthy in the Noksan plant making Doongji cold noodles as it is certified with HACCP.",
+      "■ Anytime & any place, Doongji Cold Noodles",
+      "Doongji Cold Noodles may be enjoyed just like ramyun and are no longer burdensome.",
+      "The noodles are dried by wind in a nest shape to be distributed at room temperature.",
+      "Doongji Cold Noodles arepackaged for single person use and to be conveniently kept at room temperature.",
+      "Also, the recipe of Doongji Cold Noodles, for the first time in the world, does not involve boiling, and allows many customers to use outside. Tastier than the cold noodles of specialist restaurants, enjoy cold noodles anytime in any place. Try Doongji Cold Noodles now anywhere in any place whenever you feel like having cold noodles.",
+      "Doongji Cold Noodlesare convenient and tasty.",
+      "■ Doongji cold noodles are tasty and affordable",
+      "Enjoy Doongji Cold Noodles for the whole family (four persons) at an affordable price below that of one bowl of cold noodles in the market.Dongchimi broth and sauce made in the traditional manner provide the taste of traditional cold noodles.",
+      "■ Trustworthy Doongji Cold Noodles",
+      "This is more trustworthy in the Noksan plant making Doongji Cold Noodles as it is certified with HACCP."
+    ],
+    "variants": [
+      {
+        "prodCode": "10030",
+        "name": "Bibim Cold Noodles",
+        "slug": "bibim-cold-noodles",
+        "image": "https://image.nongshim.com/non/pro/Bibim_Cold_Noodles_en.png",
+        "weight": "162g",
+        "released": "2008.05.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10030"
+      },
+      {
+        "prodCode": "10029",
+        "name": "Dongchimi Cold Noodles",
+        "slug": "dongchimi-cold-noodles",
+        "image": "https://image.nongshim.com/non/pro/Dongchimi_Cold_Noodles_en.png",
+        "weight": "161g",
+        "released": "2008.05.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10029"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=icedoongji",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10030",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10029"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Bibim Cold Noodles",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "bg",
+    "slug": "budae-jjigae",
+    "name": "Budae Jjigae",
+    "tagline": "Rich Budae Jjigae taste!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733069474.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Budae_Jjigae_en.png",
+    "weight": "127g",
+    "released": "2016.07.30",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "\"Budae Jjigae has spicy yet genuine flavor with rich ingredients of the original Budae Jjigae",
+      "Nongshim Budae Jjigae tastes deep and rich!",
+      "Various ingredients, such as ham, fish cake, kimchi, and green onions enrich the Budae Jjigae soup.",
+      "We upgraded the standard of Budae Jjigae noodle with smoother and more chewy noodles.\"",
+      "\"Nongshim presents all-new Budae Jjigae Noodle Soup,",
+      "featuring a traditional flavor enjoyed by noodle lovers all over the world.",
+      "It has all the ingredients and flavors of genuine Budae Jjigae.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10005",
+        "name": "Budae Jjigae",
+        "slug": "budae-jjigae",
+        "image": "https://image.nongshim.com/non/pro/Budae_Jjigae_en.png",
+        "weight": "127g",
+        "released": "2016.07.30",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10005"
+      },
+      {
+        "prodCode": "10007",
+        "name": "Big Bowl(Budae Jjigae)",
+        "slug": "big-bowl-budae-jjigae",
+        "image": "https://image.nongshim.com/non/pro/Big_Bowl_Budae_Jjigae_en.png",
+        "weight": "109g",
+        "released": "2016.08.30",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10007"
+      },
+      {
+        "prodCode": "10006",
+        "name": "Budae Jjigae Cup Noodle",
+        "slug": "budae-jjigae-cup-noodle",
+        "image": "https://image.nongshim.com/non/pro/1621257649133.png",
+        "weight": "65g",
+        "released": "2016.12.12",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10006"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=bg",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10005",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10007",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10006"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Budae Jjigae",
+    "relatedRecipes": [
+      "130",
+      "137",
+      "136"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "capri-sun",
+    "slug": "capri-sun-orange",
+    "name": "Capri-Sun (Orange)",
+    "tagline": "Capri-Sun refers to the sun on the island of Capri, a fantastic island located in Italy.",
+    "category": "beverages",
+    "categoryName": "Beverages",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621488531361.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621488747747.png",
+    "weight": "200",
+    "released": "1998.01.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "60"
+    },
+    "description": [
+      "Capri-Sun refers to the sun on the island of Capri, a fantastic island located in Italy.",
+      "It was launched first in Germany in 1969 and is being sold in 140 countries.",
+      "After launching the first product in 1998, it has been selling 7 flavors including Orange, Orange Mango, Safari, Alaska Ice Tea.",
+      "A variety of flavors containing natural fruits are offered in the soft and funny package, satisfying various kinds of preference of consumers. It has clean taste without adding artificial flavor and good for quenching thirst. If you freeze it for a short time, you can enjoy it as a slush or sherbet that children love.",
+      "3-layer special packaging removes the concerns of spilling or damaging even with a relatively strong impact.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10125",
+        "name": "Capri-Sun (Orange)",
+        "slug": "capri-sun-orange",
+        "image": "https://image.nongshim.com/non/pro/1621488747747.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10125"
+      },
+      {
+        "prodCode": "10124",
+        "name": "Capri-Sun (Orange Mango Flavor)",
+        "slug": "capri-sun-orange-mango-flavor",
+        "image": "https://image.nongshim.com/non/pro/1621488655394.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10124"
+      },
+      {
+        "prodCode": "10126",
+        "name": "Capri-Sun Safari",
+        "slug": "capri-sun-safari",
+        "image": "https://image.nongshim.com/non/pro/1621488810155.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10126"
+      },
+      {
+        "prodCode": "10127",
+        "name": "Capri-Sun Apple",
+        "slug": "capri-sun-apple",
+        "image": "https://image.nongshim.com/non/pro/1621488858971.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10127"
+      },
+      {
+        "prodCode": "10129",
+        "name": "Capri-Sun Multi Vitamin",
+        "slug": "capri-sun-multi-vitamin",
+        "image": "https://image.nongshim.com/non/pro/1621489105488.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10129"
+      },
+      {
+        "prodCode": "10128",
+        "name": "Capri-Sun Alaska Ice Tea",
+        "slug": "capri-sun-alaska-ice-tea",
+        "image": "https://image.nongshim.com/non/pro/1621488997211.png",
+        "weight": "200",
+        "released": "1998.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "60"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10128"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=capri-sun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10125",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10124",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10126",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10127",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10129",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10128"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Capri-Sun (Orange)",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "Welch’s",
+      "baeksansoo"
+    ]
+  },
+  {
+    "id": "chalbibimmyun",
+    "slug": "chal-bibimmyun",
+    "name": "Chal Bibimmyun",
+    "tagline": "Experience Newly upgraded mouth-watering",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733732783.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Chal_Bibimmyun_en.png",
+    "weight": "130g",
+    "released": "2005.03.07",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "550"
+    },
+    "description": [
+      "Nongshim Chal Bibimmyun is spicy and appetizing as it has added chili powder and sesame oil to sour bibim sauce."
+    ],
+    "variants": [
+      {
+        "prodCode": "10011",
+        "name": "Chal Bibimmyun",
+        "slug": "chal-bibimmyun",
+        "image": "https://image.nongshim.com/non/pro/Chal_Bibimmyun_en.png",
+        "weight": "130g",
+        "released": "2005.03.07",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "550"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10011"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=chalbibimmyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10011"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Chal Bibimmyun",
+    "relatedRecipes": [
+      "74"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "matjjamppong",
+    "slug": "champong-noodle-soup-2015",
+    "name": "Champong Noodle Soup",
+    "tagline": "Unforgettable taste! Champong Noodle Soup",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733903045.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Champong_Noodle_Soup_en.png",
+    "weight": "130g",
+    "released": "2015.11.16",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Champong Noodle Soup' brings the taste and texture of traditional Chinese premium champong.",
+      "- Flavor : Spicy Seafood Flavor",
+      "[Champong Noodle Soup(Matchampong)]",
+      "■ For the first time in Korea, experience a clean and refreshing soup with noodles.",
+      "- The 3mm-thick curly noodles provide a refreshing taste and enrich the flavor of champong.",
+      "■ The powerful firey taste of Chinese premium champong!!",
+      "- As various kinds of seafood and vegetables are fried in hot fire, the taste of the fire is preserved."
+    ],
+    "variants": [
+      {
+        "prodCode": "10038",
+        "name": "Champong Noodle Soup",
+        "slug": "champong-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/Champong_Noodle_Soup_en.png",
+        "weight": "130g",
+        "released": "2015.11.16",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10038"
+      },
+      {
+        "prodCode": "10039",
+        "name": "Jjamppong Big Bowl Noodle",
+        "slug": "jjamppong-big-bowl-noodle",
+        "image": "https://image.nongshim.com/non/pro/1621258308870.png",
+        "weight": "105g",
+        "released": "2015.12.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10039"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=matjjamppong",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10038",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10039"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "slugCollision": "champong-noodle-soup",
+    "displayTitle": "Champong Noodle Soup (2015)",
+    "relatedRecipes": [
+      "48",
+      "32",
+      "12",
+      "10",
+      "11"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "champongnoodle",
+    "slug": "champong-noodle-soup-1992",
+    "name": "Champong Noodle Soup",
+    "tagline": "Cuttlefish makes champong delicious!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620955852550.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621254992586.png",
+    "weight": "124g",
+    "released": "1992.07.31",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Conveniently enjoy the original Chinese champong flavor with 'Champong Ramyun'.",
+      "With cuttlefish, the broth soup is more refreshing and spicy. Cuttlefish flakes are chewy and are a pleasure to bite.",
+      "Soup is boiled with cuttlefish, various seafood and vegetable. 'Champong Noodle Soup' with spicy and refreshing soup was developed into a big bowl product for convenience and great enjoyment."
+    ],
+    "variants": [
+      {
+        "prodCode": "10012",
+        "name": "Champong Noodle Soup",
+        "slug": "champong-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/1621254992586.png",
+        "weight": "124g",
+        "released": "1992.07.31",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10012"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=champongnoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10012"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "slugCollision": "champong-noodle-soup",
+    "displayTitle": "Champong Noodle Soup (1992)",
+    "relatedRecipes": [
+      "48",
+      "32",
+      "12",
+      "10",
+      "11"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "chapagetti",
+    "slug": "chapaghetti",
+    "name": "Chapaghetti",
+    "tagline": "Today, I am the chef!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": true,
+    "listImage": "https://image.nongshim.com/brand/info/1621251640440.jpg",
+    "heroImage": "https://image.nongshim.com/non/pro/Chapaghetti_en.png",
+    "weight": "140g",
+    "released": "1984.03.19",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "The first chajang noodles enjoyed conveniently at home. National special dish!!",
+      "No.1 Chajang ramyun accounting for more than 90% of the market for chajang ramyun in Korea, Chapaghetti.",
+      "Enjoy delicious Chajang noodles in just 5 minutes. Traditional menu for eating out in Korea, Chajangmyun is developed into more convenient Chapaghetti available anywhere and anytime. The advertisement catchphrase 'On Sunday, I am the chef for Chapaghetti' made Chapaghetti the Sunday lunch menu. Similar instant chajang noodles came and disappeared again and again.",
+      "However, Chapaghetti has been popular for 30 years from its release ranking in the Top 10 in the market for ramyun.",
+      "[History of Nongshim Chajang Ramyun]",
+      "In February 1970, Nongshim made the first instant Chajang noodles in Korea and continued to develop new Chajang noodles, followed by 'Samsun Chajang Noodles' in 1978, 'Nongshim Chajang Noodles' in 1983 and 'Chapaghetti' in 1984 and 'Sausage Chajang noodles (1990)', 'YeonChajang(1991)' ,'Sichaun Chapaghetti(2004)' and other Chajang noodles.",
+      "[History ofChapaghetti]",
+      "03/1984 Chapaghettiwas released.",
+      "04/1988 Chajangbumbuk was released (Present Chapaghetti Bumbuk)",
+      "04/1992 Chajang Big Bowl was released (present Chapaghetti Big Bowl)",
+      "09/2004Sichaun Chapaghetti(PresentSichaunChapaghetti)",
+      "11/2012Sichaun ChapaghettiBIG BOWL was released\"",
+      "Chapaghettiwas released in 1984 as ramyun-style chajang noodles. The TV advertisement and CM song 'On Sunday, I am the chef for Chapaghetti became a great hit loved by the nation.",
+      "The noodles are thick, smooth and chewy. Chajang soup made of chunjang and onion is delicious and offers the thick flavor of the original Chajang. Plentiful flakes of carrot, onion and meat and premium olive oil arouse the appetite.",
+      "The product is great for eating when you dont feel like eating!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10013",
+        "name": "Chapaghetti",
+        "slug": "chapaghetti",
+        "image": "https://image.nongshim.com/non/pro/Chapaghetti_en.png",
+        "weight": "140g",
+        "released": "1984.03.19",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10013"
+      },
+      {
+        "prodCode": "10017",
+        "name": "Chapaghetti Big Bowl",
+        "slug": "chapaghetti-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Chapaghetti_Big_Bowl_en.png",
+        "weight": "123g",
+        "released": "1992.04.10",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10017"
+      },
+      {
+        "prodCode": "10016",
+        "name": "ChapaghettiI Bumbuk",
+        "slug": "chapaghettii-bumbuk",
+        "image": "https://image.nongshim.com/non/pro/ChapaghettiI_Bumbuk_en.png",
+        "weight": "70g",
+        "released": "1988.04.20",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10016"
+      },
+      {
+        "prodCode": "10015",
+        "name": "Sichuan Chapaghetti Big Bowl",
+        "slug": "sichuan-chapaghetti-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Sichuan_Chapaghetti_Big_Bowl_en.png",
+        "weight": "115g",
+        "released": "2012.11.08",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10015"
+      },
+      {
+        "prodCode": "10014",
+        "name": "Chapagetti Spicy",
+        "slug": "chapagetti-spicy",
+        "image": "https://image.nongshim.com/non/pro/Sichuan_Chapaghetti_en.png",
+        "weight": "137g",
+        "released": "2004.09.06",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10014"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=chapagetti",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10013",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10017",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10016",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10015",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10014"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Chapaghetti",
+    "relatedRecipes": [
+      "20",
+      "73",
+      "41",
+      "40",
+      "39",
+      "32"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "chickenchips",
+    "slug": "chicken-nuggets",
+    "name": "Chicken Nuggets",
+    "tagline": "Real Drumstick shape and taste!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621253024305.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Drumstix_Fried_Chicken_Flavor_en.png",
+    "weight": "130g",
+    "released": "2016.03.23",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Funny snack resembling drum sticks.",
+      "Popular snack for every picnic. Try fried chicken flavor and spicy hot barbeque flavor.",
+      "We made to taste like fried chicken Nuggets!!! It is crunchier and with rich flavor thanks to the bread crumbs!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10022",
+        "name": "Drumstix Fried Chicken Flavor",
+        "slug": "drumstix-fried-chicken-flavor",
+        "image": "https://image.nongshim.com/non/pro/Drumstix_Fried_Chicken_Flavor_en.png",
+        "weight": null,
+        "released": "1988.04.10",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10022"
+      },
+      {
+        "prodCode": "10021",
+        "name": "Drumstix hot barbeque flavor",
+        "slug": "drumstix-hot-barbeque-flavor",
+        "image": "https://image.nongshim.com/non/pro/Drumstix_hot_barbeque_flavor_en.png",
+        "weight": null,
+        "released": "2005.09.22",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10021"
+      },
+      {
+        "prodCode": "10020",
+        "name": "Chicken Nuggets",
+        "slug": "chicken-nuggets",
+        "image": "https://image.nongshim.com/non/pro/Chicken_Nuggets_en.png",
+        "weight": "130g",
+        "released": "2016.03.23",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10020"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=chickenchips",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10022",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10021",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10020"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Chicken Nuggets",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "chochungugua",
+    "slug": "chochung-u-gua",
+    "name": "Chochung U-Gua",
+    "tagline": "Korean traditional snack Coated with a sweet pancake syrup",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620955907876.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Chochung_U-Gua_en.png",
+    "weight": null,
+    "released": "1998.09.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Spicy rice chochung used in Chochung U-Gua was enjoyed by a prince in the Chosun dynasty before going to school as it would improve memory with about two spoonfuls.",
+      "Realizing this, chewy ugua has now been made into a crispy snack with this product.",
+      "Chochung U-Gua is the premium rice snack with sweet chochung sprinkled.",
+      "Chochung was enjoyed by a prince in the Chosun dynasty as it was known to improve memory.",
+      "Enjoy Chochung U-Gua and its crispy and chewy harmony of 100% Korean rice and sweet chochung."
+    ],
+    "variants": [
+      {
+        "prodCode": "10018",
+        "name": "Chochung U-Gua",
+        "slug": "chochung-u-gua",
+        "image": "https://image.nongshim.com/non/pro/Chochung_U-Gua_en.png",
+        "weight": null,
+        "released": "1998.09.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10018"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=chochungugua",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10018"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Chochung U-Gua",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "cooktamsoup",
+    "slug": "cook-tam-beef-soup",
+    "name": "Cook Tam Beef Soup",
+    "tagline": "It is a delicious dish easy to enjoy and make",
+    "category": "home-meal-replacement",
+    "categoryName": "Home Meal Replacement",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621489301718.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621490190639.png",
+    "weight": "450",
+    "released": "2020.12.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Beef soup made of boiling rib, cow’s head meat and brisket",
+      "● You can enjoy the various textures of beef as it contains chewy ribs, soft head meat and light brisket meat.",
+      "● It has a rich and deep taste as it is mad by boiling beef bone broth, beef and vegetables.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10131",
+        "name": "Cook Tam Beef Soup",
+        "slug": "cook-tam-beef-soup",
+        "image": "https://image.nongshim.com/non/pro/1621490190639.png",
+        "weight": "450",
+        "released": "2020.12.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10131"
+      },
+      {
+        "prodCode": "10140",
+        "name": "Cook Tam Cow’s Head Meat Soup",
+        "slug": "cook-tam-cows-head-meat-soup",
+        "image": "https://image.nongshim.com/non/pro/1621493476497.png",
+        "weight": "500",
+        "released": "2019.03.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "375"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10140"
+      },
+      {
+        "prodCode": "10132",
+        "name": "Cook Tam Gamjatang",
+        "slug": "cook-tam-gamjatang",
+        "image": "https://image.nongshim.com/non/pro/1621490326480.png",
+        "weight": "450",
+        "released": "2020.06.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10132"
+      },
+      {
+        "prodCode": "10130",
+        "name": "Cook Tam Spicy Pork Soup",
+        "slug": "cook-tam-spicy-pork-soup",
+        "image": "https://image.nongshim.com/non/pro/1621490098718.png",
+        "weight": "450",
+        "released": "2020.07.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10130"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=cooktamsoup",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10131",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10140",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10132",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10130"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Cook Tam Beef Soup",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "cooktamrabokki",
+      "cooktaminstantpot"
+    ]
+  },
+  {
+    "id": "cooktaminstantpot",
+    "slug": "cook-tam-pork-kimchi-hot-pot",
+    "name": "Cook Tam Pork Kimchi Hot Pot",
+    "tagline": "It is a delicious dish easy to enjoy and make",
+    "category": "home-meal-replacement",
+    "categoryName": "Home Meal Replacement",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621490504953.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621490617994.png",
+    "weight": "560",
+    "released": "2019.07.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "830"
+    },
+    "description": [
+      "It is a delicious dish easy to enjoy and make. It is made of carefully selected ingredients and unique know-how of Nongshim.",
+      "Cook Tam Pork Kimchi Hot Po seasoned with ripe kimchi. Sliced big ingredients and spicy soup added with Sarimyun noodle.",
+      "1. It is hot pot that contains sliced large ingredients and various kinds of vegetables.",
+      "2. You can make hot pot dish with simple ramyun making recipe.",
+      "3. Satisfactory serving amount as it contains Nongshim Sarimyun noodle.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10133",
+        "name": "Cook Tam Pork Kimchi Hot Pot",
+        "slug": "cook-tam-pork-kimchi-hot-pot",
+        "image": "https://image.nongshim.com/non/pro/1621490617994.png",
+        "weight": "560",
+        "released": "2019.07.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "830"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10133"
+      },
+      {
+        "prodCode": "10134",
+        "name": "Cook Tam Beef Stew Hot Pot",
+        "slug": "cook-tam-beef-stew-hot-pot",
+        "image": "https://image.nongshim.com/non/pro/1621490768400.png",
+        "weight": "525",
+        "released": "2019.07.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "725"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10134"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=cooktaminstantpot",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10133",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10134"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Cook Tam Pork Kimchi Hot Pot",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "cooktamrabokki",
+      "cooktamsoup"
+    ]
+  },
+  {
+    "id": "cooktamrabokki",
+    "slug": "cook-tam-spicy-sweet-soup-rabokki",
+    "name": "Cook Tam Spicy Sweet Soup Rabokki",
+    "tagline": "It is a delicious and enjoyable dish that can be made conveniently",
+    "category": "home-meal-replacement",
+    "categoryName": "Home Meal Replacement",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621490931799.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621491151913.png",
+    "weight": "390",
+    "released": "2018.09.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "It is a delicious and enjoyable dish that can be made conveniently. It contains the unique know-how unique of Nongshim with carefully selected good ingredients.",
+      "Delicious collaboration of Ramen x Tteokbokki! It is Rabokki where soup Tteokbokki is added with sauce and Sarimyun noodle. It contains plenty Rabokki with chewy rice cake, Sarimyun noodle that goes well with every dish, and sauce. You don’t need to add any other ingredients. Store it at a room temperature like ramyun products. , so you can enjoy plenty without the need for additional ingredients. Simply store at room temperature just like ramen. Put rice cake and sliced fish cake and when the water boils, add Sarimyun noodle and sauce and boil it for 3 minutes and 30 seconds or 4 minutes.",
+      "Rich broth of sweet and spicy Rabokki added with fermented red pepper paste. The first taste is sweet and spicy taste comes later.",
+      "1. Tasty soup of Rabokki! This is Rabokki, which has a delicious taste of soup.",
+      "2. Adding fermented red pepper paste to the deep broth.",
+      "The first taste is sweet and spicy taste comes later.",
+      "3. The chewy rice cake and Nongshim Sarimyun noodle are included, so you can enjoy it more abundantly.",
+      "4. Large sliced fish cake is included, making you enjoy chewy taste."
+    ],
+    "variants": [
+      {
+        "prodCode": "10135",
+        "name": "Cook Tam Spicy Sweet Soup Rabokki",
+        "slug": "cook-tam-spicy-sweet-soup-rabokki",
+        "image": "https://image.nongshim.com/non/pro/1621491151913.png",
+        "weight": "390",
+        "released": "2018.09.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10135"
+      },
+      {
+        "prodCode": "10137",
+        "name": "Cook Tam Chapaghetti Flavor Rabokki",
+        "slug": "cook-tam-chapaghetti-flavor-rabokki",
+        "image": "https://image.nongshim.com/non/pro/1621491478350.png",
+        "weight": "380",
+        "released": "2018.09.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10137"
+      },
+      {
+        "prodCode": "10136",
+        "name": "Cook Tam Shrimp Snack Rabokki",
+        "slug": "cook-tam-shrimp-snack-rabokki",
+        "image": "https://image.nongshim.com/non/pro/1621491234625.png",
+        "weight": "305",
+        "released": "2020.03.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10136"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=cooktamrabokki",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10135",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10137",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10136"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Cook Tam Spicy Sweet Soup Rabokki",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "cooktaminstantpot",
+      "cooktamsoup"
+    ]
+  },
+  {
+    "id": "cornsnack",
+    "slug": "corn-snack",
+    "name": "Corn Snack",
+    "tagline": "Savory taste of baked corn that can be loved by everyone.",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621487829469.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621488093385.png",
+    "weight": "70",
+    "released": "2020.10.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "370"
+    },
+    "description": [
+      "Launching the 5th product that will keep the popularity of ‘Snack’ series",
+      "Shrimp Crackers in 1971> Potato Snack in 1972> Onion Snack in 1973> Sweet Potato Snack in 1973> Corn Snack in 2020.",
+      "A snack that embodies the interesting shape of the whole corn.",
+      "Savory taste of baked corn that can be loved by everyone.",
+      "Unique texture as if each grain of a corn pops in the mouth."
+    ],
+    "variants": [
+      {
+        "prodCode": "10121",
+        "name": "Corn Snack",
+        "slug": "corn-snack",
+        "image": "https://image.nongshim.com/non/pro/1621488093385.png",
+        "weight": "70",
+        "released": "2020.10.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "370"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10121"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=cornsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10121"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Corn Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "cuttlefishsnack",
+    "slug": "cuttlefish-snack",
+    "name": "Cuttlefish Snack",
+    "tagline": "Savory, grilled with butter",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621230173440.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Cuttlefish_Snack_en.png",
+    "weight": null,
+    "released": "1992.03.02",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "CUTTLEFISH SNACK has nutritive cuttlefish as its ingredient.",
+      "The plain and savory flavor of grilled cuttlefish is preserved.",
+      "The snack is a delight to see as its contents are shaped like cuttlefish and a pleasure to eat as well.",
+      "Made of nutritive cuttlefish, <CUTTLEFISH SNACK>",
+      "<CUTTLEFISH SNACK> preserves the plain and savory flavor of grilled cuttlefish with butter.",
+      "The cuttlefish form is a delight see and a pleasure to eat.",
+      "Taurine, which is richly contained in octopus and cuttlefish, is added."
+    ],
+    "variants": [
+      {
+        "prodCode": "10019",
+        "name": "Cuttlefish Snack",
+        "slug": "cuttlefish-snack",
+        "image": "https://image.nongshim.com/non/pro/Cuttlefish_Snack_en.png",
+        "weight": null,
+        "released": "1992.03.02",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10019"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=cuttlefishsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10019"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Cuttlefish Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "driedchampongramyun",
+    "slug": "dried-champong-ramyun",
+    "name": "Dried Champong Ramyun",
+    "tagline": "Perfect harmony of spicy garlic flavor and Champong broth",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621483882351.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621484127255.png",
+    "weight": "103",
+    "released": "2021.01.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "375"
+    },
+    "description": [
+      "* Perfect harmony of spicy garlic flavor and Champong broth",
+      "* Non-fried-3-layer noodle which is similar to Champong noodle served in Chinese restaurants",
+      "* Dried mix which goes well with Champong: Mussel ball+ squid fish cake+ bok choy + carrot+ tree ear mushroom"
+    ],
+    "variants": [
+      {
+        "prodCode": "10111",
+        "name": "Dried Champong Ramyun",
+        "slug": "dried-champong-ramyun",
+        "image": "https://image.nongshim.com/non/pro/1621484127255.png",
+        "weight": "103",
+        "released": "2021.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "375"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10111"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=driedchampongramyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10111"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Dried Champong Ramyun",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "honeytwistsnack",
+    "slug": "honey-twist-snack",
+    "name": "Honey Twist Snack",
+    "tagline": "Sweet & Delicious",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956168226.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Honey_Twist_Snack_en.png",
+    "weight": null,
+    "released": "1972.09.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Sweeter with Korean acacia honey, more pleasant with funny shape."
+    ],
+    "variants": [
+      {
+        "prodCode": "10026",
+        "name": "Honey Twist Snack",
+        "slug": "honey-twist-snack",
+        "image": "https://image.nongshim.com/non/pro/Honey_Twist_Snack_en.png",
+        "weight": null,
+        "released": "1972.09.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10026"
+      },
+      {
+        "prodCode": "10027",
+        "name": "Honey Twist Snack (Peanuts)",
+        "slug": "honey-twist-snack-peanuts",
+        "image": "https://image.nongshim.com/non/pro/Peanuts_Honey_Twist_Snack_en.png",
+        "weight": "84g",
+        "released": "2006.04",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10027"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=honeytwistsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10026",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10027"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Honey Twist Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "potatosnack",
+      "onionringchip",
+      "sweetpotatosnack"
+    ]
+  },
+  {
+    "id": "hooroorook",
+    "slug": "hooroorook",
+    "name": "Hooroorook",
+    "tagline": "Slurp your bowl! Relish your noodle!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620738853753.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Hooroorook_en.png",
+    "weight": "92g",
+    "released": "2008.12",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Korean noodle culture is based on longstanding tradition. Each region has its own noodle culture, which developed in each period. However, busy modern people struggle to find the time to enjoy traditional noodles since it requires much preparation.",
+      "In order to conveniently enjoy traditional noodle culture, the Hooroorook brand was developed. The product allows one to enjoy healthy and delicious traditional noodles in a convenient manner. Hooroorook is the convenient version of feast noodles which were served frequently to guests at feasts.",
+      "Hooroorook Kalguksoo is the convenient version of 'Kalguksoo' which is made by slicing flour paste into thin noodles with a knife.",
+      "Hooroorookis the convenient version of feast noodles which were served frequently to guests at feasts.",
+      "■ Long noodles signify long-standing relationships and longevity.",
+      "■Clean flavor of feast noodles with anchovy broth",
+      "■Five color toppings and flakes based on the traditional five cardinal colors.",
+      "(Five cardinal colors refer to blue, white, yellow, black and red which bring fortune based on the five elements theory.)",
+      "■Add the sauce made of soybean sauce and sesame oil according to preference."
+    ],
+    "variants": [
+      {
+        "prodCode": "10028",
+        "name": "Hooroorook",
+        "slug": "hooroorook",
+        "image": "https://image.nongshim.com/non/pro/Hooroorook_en.png",
+        "weight": "92g",
+        "released": "2008.12",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10028"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=hooroorook",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10028"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Hooroorook",
+    "relatedRecipes": [
+      "78",
+      "77",
+      "76",
+      "75",
+      "61",
+      "47",
+      "46",
+      "45"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "indianbobsnack",
+    "slug": "indian-corn-snack",
+    "name": "Indian Corn Snack",
+    "tagline": "Savory corn chip",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621232244982.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Indian_Corn_Snack_en.png",
+    "weight": null,
+    "released": "1976.03.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Made of corn, the staple for Indians, it was named INDIAN CORN SNACK. The advertisement 'AH-AH-AH-INDIAN CORN SNACK' became a hit and the game using it was once popularized.",
+      "- Mouth-filling savory corn",
+      "- Contains 70% corn, savory corn snack",
+      "- Enjoy a different taste with milk.",
+      "AHAHAH~~ INDIAN~SNACK!!'",
+      "INDIAN CORN SNACK is the premium corn snack made of pure corn fried with palm vegetable oil.",
+      "The nutritive snack offers a savory corn flavor and rich butter scent.",
+      "The pioneer of Nongshim corn snack, INDIAN CORN SNACK becomes is a convenient meal replacement and goes well with milk or juice."
+    ],
+    "variants": [
+      {
+        "prodCode": "10031",
+        "name": "Indian Corn Snack",
+        "slug": "indian-corn-snack",
+        "image": "https://image.nongshim.com/non/pro/Indian_Corn_Snack_en.png",
+        "weight": null,
+        "released": "1976.03.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10031"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=indianbobsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10031"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Indian Corn Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "kalguksoo",
+    "slug": "kal-guk-soo",
+    "name": "Kal Guk Soo",
+    "tagline": "Thick seafood broth",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621253062306.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Kal_Guk_Soo_en.png",
+    "weight": "98g",
+    "released": "1997.08.23",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Kal Guk Soo is developed to bring the clean and refreshing taste of traditional kalguksoo noodles.",
+      "Kal Guk Soo is made to be conveniently enjoyed at home. A unique refreshing dish, Kal Guk Soo is a suitable dish for middle-aged males, housewives or adolescents as it can be conveniently enjoyed at home.",
+      "Refreshing and clean soup broth unique with anchovies is combined with vegetables such as zucchini and toppings to provide the original flavor of clean and refreshingKal Guk Soo.Noodles not fried in oil are refreshing."
+    ],
+    "variants": [
+      {
+        "prodCode": "10033",
+        "name": "Kal Guk Soo",
+        "slug": "kal-guk-soo",
+        "image": "https://image.nongshim.com/non/pro/Kal_Guk_Soo_en.png",
+        "weight": "98g",
+        "released": "1997.08.23",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10033"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=kalguksoo",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10033"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Kal Guk Soo",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "jangkal",
+    "slug": "kal-guk-su",
+    "name": "Kal Guk Su",
+    "tagline": "Specialty restaurant flavor",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956344720.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Kal_Guk_Su_en.png",
+    "weight": "103g",
+    "released": "2017.02.24",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "The harmonious mix of the original rice noodle and the spicy soup creates the \"Kal Guk Su (Spicy Seafood Flavor)\" that all Koreans can enjoy",
+      "1. Nongshim has found the delicious Kal Guk Su flavor!",
+      "- On top of the seafood broth made from clams, mussels, and anchovies, we've added our special hot pepper paste to bring out the rich spicy flavor.",
+      "2. Nongshim has developed the special noodle for just Kal Guk Su!",
+      "- Nongshim's 50 years of experience and techonology are used!",
+      "- A diamond shape noodle!",
+      "With its thick middle and thin ends, you may feel two different txtures at the same time.",
+      "- It's only 365kcl! Enjoy light with our non-fried noodles.",
+      "3. Same as the authentic Kal Guk Su!",
+      "- The large and fresh leek upgrade its flavor.",
+      "- We have improved its aromatic flavor with our garnishes such as zucchini, squid, seaweed, sesame seed, and so on.",
+      "● The delicious Kal Guk Su flavor that Nongshim found!",
+      "A rich spicy noodle that comes from the aged hot pepper paste sauce added into the seafood broth made from clam, mussels, and anchovies.",
+      "● Special Kal Guk Su noodle that Nongshim developed!",
+      "Double texture noodle that chewiness and softness can be felt simultaneously.",
+      "● The same feel as the authentic Kal Guk Su with the non-fried noodles and rich large leek garnish!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10032",
+        "name": "Kal Guk Su",
+        "slug": "kal-guk-su",
+        "image": "https://image.nongshim.com/non/pro/Kal_Guk_Su_en.png",
+        "weight": "103g",
+        "released": "2017.02.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10032"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=jangkal",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10032"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Kal Guk Su",
+    "relatedRecipes": [
+      "140",
+      "139",
+      "138"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "kimchiramyun",
+    "slug": "kimchi-ramyun",
+    "name": "Kimchi Ramyun",
+    "tagline": "The taste of Korea The taste of Kimchi",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956378887.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Kimchi_Ramyun_en.png",
+    "weight": "120g",
+    "released": null,
+    "certification": "HALAL",
+    "otherSpecs": {},
+    "description": [
+      "KIMCHI RAMYUN is pack noodles specifically for overseas consumers.",
+      "It is a pack of noodles that has the taste of Kimchi bowl noodle soup.",
+      "KIMCHI BOWL NOODLE SOUP allows consumers to experience the traditional taste of kimchi conveniently in the form of ramyun and boasts the longest history among products based on the taste of kimchi.",
+      "Kimchi is the favorite food of many Koreans.",
+      "Kimchi ramyun led the globalization of Korean ramyun starting at the 86 Asian Games and '88 Olymics, and is still a beloved kimchi bowl noodle soup."
+    ],
+    "variants": [
+      {
+        "prodCode": "10034",
+        "name": "Kimchi Ramyun",
+        "slug": "kimchi-ramyun",
+        "image": "https://image.nongshim.com/non/pro/Kimchi_Ramyun_en.png",
+        "weight": "120g",
+        "released": null,
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10034"
+      },
+      {
+        "prodCode": "10035",
+        "name": "Kimchi Cup",
+        "slug": "kimchi-cup",
+        "image": "https://image.nongshim.com/non/pro/Kimchi_Cup_en.png",
+        "weight": "75g",
+        "released": null,
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10035"
+      },
+      {
+        "prodCode": "10036",
+        "name": "Kimchi Big Bowl",
+        "slug": "kimchi-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621256006889.png",
+        "weight": "112g",
+        "released": "1990.07.29",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10036"
+      },
+      {
+        "prodCode": "10037",
+        "name": "Bowl Noodles Kimchi",
+        "slug": "bowl-noodles-kimchi",
+        "image": "https://image.nongshim.com/non/pro/1621256836472.png",
+        "weight": "86g",
+        "released": "1986.04.04",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10037"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=kimchiramyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10034",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10035",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10036",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10037"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Kimchi Ramyun",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "neogubonara",
+      "oolongmen",
+      "ansung",
+      "chapagetti"
+    ]
+  },
+  {
+    "id": "mrbibim",
+    "slug": "mr-bibim-korean-spicy-chicken",
+    "name": "Mr.BIBIM Korean Spicy Chicken",
+    "tagline": "Unique, Decadent, and Spicy!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621257620903.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Mr.BIBIM_Korean_Spicy_Chicken_en.png",
+    "weight": "126g",
+    "released": "2017.06.05",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "A Korean word \"\"Bibim\"\" means \"\"Stir\"\" in English.",
+      "Mr.BIBIM was born to get closer to non-Korean consumers who are more used to soupless noodle dishes such as spaghetti or pad thai.",
+      "Two flavors are carefully selected to provide the taste of Korea:",
+      "- Korean spicy chicken, the trendy one",
+      "- Stir fried kimchi, the traditional one",
+      "Now, enjoy the taste of Korea with Mr.BIBIM~",
+      "If you want to be on the Korean trend, try our Mr.BIBIM Spicy Chicken Flavour!",
+      "Koreans of these days celebrate their special days with Chicken and Beer (Chimac)."
+    ],
+    "variants": [
+      {
+        "prodCode": "10040",
+        "name": "Mr.BIBIM Korean Spicy Chicken",
+        "slug": "mr-bibim-korean-spicy-chicken",
+        "image": "https://image.nongshim.com/non/pro/Mr.BIBIM_Korean_Spicy_Chicken_en.png",
+        "weight": "126g",
+        "released": "2017.06.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10040"
+      },
+      {
+        "prodCode": "10041",
+        "name": "Mr.BIBIM Stir-Fried Kimchi",
+        "slug": "mr-bibim-stir-fried-kimchi",
+        "image": "https://image.nongshim.com/non/pro/Mr.BIBIM_Stir-Fried_Kimchi_en.png",
+        "weight": "118g",
+        "released": "2017.06.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10041"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=mrbibim",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10040",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10041"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Mr.BIBIM Korean Spicy Chicken",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "mupama",
+    "slug": "mupamatangmyun",
+    "name": "Mupamatangmyun",
+    "tagline": "Mu = White Radish Pa = Scallion Ma = Garlic",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956552059.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Mupamatangmyun_en.png",
+    "weight": "122g",
+    "released": "2001.03.24",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Mupamatangmyun features refreshing soup broth as made with natural ingredients such as radish, green onion, and garlic.",
+      "Made from radish, green onion and garlic which were traditionally used to make broth in Korea, these noodles feature rich vegetable flakes and a refreshing flavor.",
+      "- Refreshing broth made by boiling natural ingredients such as radish, green onion and garlic",
+      "- Rich vegetable flakes such as radish, green onion, garlic and chili.",
+      "- Chewy and particularly plump noodles."
+    ],
+    "variants": [
+      {
+        "prodCode": "10042",
+        "name": "Mupamatangmyun",
+        "slug": "mupamatangmyun",
+        "image": "https://image.nongshim.com/non/pro/Mupamatangmyun_en.png",
+        "weight": "122g",
+        "released": "2001.03.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10042"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=mupama",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10042"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Mupamatangmyun",
+    "relatedRecipes": [
+      "18",
+      "17"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "neogubonara",
+    "slug": "neogubonara",
+    "name": "Neogubonara",
+    "tagline": "Harmony of Creamy and Spicy",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621261910431.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621261770915.png",
+    "weight": null,
+    "released": null,
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Perfect harmony from spicy Neoguri Ramyun and creamy carbonara sauce!",
+      "Upgrade your Neoguri experience with cute little Neoguri character fish cake!",
+      "It's different from any other Ramyun kinds. It has Neoguri's original seafood flavor and creamy carbonara flavor. Bountiful amount of flakes, including character fish cakes and kelp."
+    ],
+    "variants": [
+      {
+        "prodCode": "10098",
+        "name": "Neogubonara",
+        "slug": "neogubonara",
+        "image": "https://image.nongshim.com/non/pro/1621261770915.png",
+        "weight": null,
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10098"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=neogubonara",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10098"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Neogubonara",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "oolongmen",
+      "ansung",
+      "chapagetti"
+    ]
+  },
+  {
+    "id": "NongshimRamyun",
+    "slug": "nongshim-ramyun",
+    "name": "Nongshim Ramyun",
+    "tagline": "The first Nongshim brand noodle Since 1975",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620733984808.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Nongshim_Ramyun_en.png",
+    "weight": "85g",
+    "released": "2013.09.01",
+    "certification": "HALAL",
+    "otherSpecs": {},
+    "description": [
+      "\"Nongshim Ramyun is the export product of Nongshim Ramyun Yukgaejang revitalized with customer support at the Nongshim 40th anniversary 'Old Ramyun Festival'.",
+      "Introduced in 1975, Nongshim Ramyun was advertized using the motif of the Korean traditional fairy tale 'Good brothers' - 'You eat first, older brother Nongshim Ramyun. You eat first younger brother Nongshim Ramyun, and included the theme of brothers carrying rice-sheaf.\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10047",
+        "name": "Nongshim Ramyun",
+        "slug": "nongshim-ramyun",
+        "image": "https://image.nongshim.com/non/pro/Nongshim_Ramyun_en.png",
+        "weight": "85g",
+        "released": "2013.09.01",
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10047"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=NongshimRamyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10047"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Nongshim Ramyun",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "nongshimricenoodle",
+    "slug": "nongshim-rice-noodle",
+    "name": "Nongshim Rice Noodle",
+    "tagline": "Nongshim Rice Noodle for a light meal",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621485475085.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621493151400.png",
+    "weight": "73",
+    "released": "2019.08.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "255"
+    },
+    "description": [
+      "Nongshim Rice Noodle for a light meal",
+      "- Chewy and soft rice noodles",
+      "- A light and rich chicken broth flavor",
+      "- Ingredients such as chicken flavored soy protein, egg garnish flakes, green onion, red pepper\""
+    ],
+    "variants": [
+      {
+        "prodCode": "10138",
+        "name": "Nongshim Rice Noodle Beef Soup Flavor",
+        "slug": "nongshim-rice-noodle-beef-soup-flavor",
+        "image": "https://image.nongshim.com/non/pro/1621493151400.png",
+        "weight": "75",
+        "released": "2021.05.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "275"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10138"
+      },
+      {
+        "prodCode": "10113",
+        "name": "Nongshim Rice Noodle",
+        "slug": "nongshim-rice-noodle",
+        "image": "https://image.nongshim.com/non/pro/1621485694930.png",
+        "weight": "73",
+        "released": "2019.08.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "255"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10113"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=nongshimricenoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10138",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10113"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Nongshim Rice Noodle",
+    "relatedRecipes": [
+      "64",
+      "62"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "Sarimyunnoodle",
+    "slug": "nongshim-sarimyun-noodle",
+    "name": "Nongshim Sarimyun Noodle",
+    "tagline": "Good for Jjigae and Jeongol",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621486299617.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621487002247.png",
+    "weight": "110",
+    "released": "2016.08.16",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "490"
+    },
+    "description": [
+      "▶ Good for Jjigae and Jeongol",
+      "▶ More chewy texture"
+    ],
+    "variants": [
+      {
+        "prodCode": "10117",
+        "name": "Nongshim Sarimyun Noodle",
+        "slug": "nongshim-sarimyun-noodle",
+        "image": "https://image.nongshim.com/non/pro/1621487002247.png",
+        "weight": "110",
+        "released": "2016.08.16",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "490"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10117"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=Sarimyunnoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10117"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Nongshim Sarimyun Noodle",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "onionrings",
+    "slug": "onion-rings",
+    "name": "Onion Rings",
+    "tagline": "Appetizing crisp Rich in fiber",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620739158374.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621300002208.png",
+    "weight": null,
+    "released": "1983.10.28",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "A symbol of love and friendship, ONION RINGS use healthy onion and has a fun ring shape. With fiber added to the healthy onion, the snack is popular among young women and is continuously being loved as representative snack in Korea.",
+      "ONION RINGS contains 24% of onion per bag and provides the savory flavor of onion. ONION RINGS contains healthy onion and fiber and the ring type snack harmonizes onion, potato and bacon. The clean onion flavor and plain potato flavor is a great combo!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10099",
+        "name": "Onion Rings",
+        "slug": "onion-rings-10099",
+        "image": "https://image.nongshim.com/non/pro/1621300002208.png",
+        "weight": "50",
+        "released": "2007.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "273"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10099",
+        "slugCollision": "onion-rings"
+      },
+      {
+        "prodCode": "10050",
+        "name": "Onion Rings",
+        "slug": "onion-rings-10050",
+        "image": "https://image.nongshim.com/non/pro/Onion_Rings_en.png",
+        "weight": null,
+        "released": "1983.10.28",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10050",
+        "slugCollision": "onion-rings"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=onionrings",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10099",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10050"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Onion Rings",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "onionringchip",
+    "slug": "onion-snack",
+    "name": "Onion Snack",
+    "tagline": "Crisped the onion!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620956983575.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Onion_Snack_en.png",
+    "weight": null,
+    "released": "1973.08.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "After SHRIMP CRACKERS became popular, the third of the series is ONION SNACK which is in leaf form.",
+      "Made of healthy onion, this snack is loved as one of the three snacks together with SWEET POTATO SNACK and POTATO SNACK."
+    ],
+    "variants": [
+      {
+        "prodCode": "10049",
+        "name": "Onion Snack",
+        "slug": "onion-snack",
+        "image": "https://image.nongshim.com/non/pro/Onion_Snack_en.png",
+        "weight": null,
+        "released": "1973.08.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10049"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=onionringchip",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10049"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Onion Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "sweetpotatosnack"
+    ]
+  },
+  {
+    "id": "oolongmen",
+    "slug": "oolongmen-1",
+    "name": "Oolongmen 1",
+    "tagline": "3 different ways to enjoy delicious Nongshim Oolongmen",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621257709168.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Oolongmen_1_en.png",
+    "weight": "75g",
+    "released": null,
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Cup noodles taste is based on seafood, Chicken, and Beef with which global customers are accustomed to."
+    ],
+    "variants": [
+      {
+        "prodCode": "10051",
+        "name": "Oolongmen 1",
+        "slug": "oolongmen-1",
+        "image": "https://image.nongshim.com/non/pro/Oolongmen_1_en.png",
+        "weight": "75g",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10051"
+      },
+      {
+        "prodCode": "10052",
+        "name": "Oolongmen 2",
+        "slug": "oolongmen-2",
+        "image": "https://image.nongshim.com/non/pro/Oolongmen_2_en.png",
+        "weight": "75g",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10052"
+      },
+      {
+        "prodCode": "10053",
+        "name": "Oolongmen 3",
+        "slug": "oolongmen-3",
+        "image": "https://image.nongshim.com/non/pro/Oolongmen_3_en.png",
+        "weight": "75g",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10053"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=oolongmen",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10051",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10052",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10053"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Oolongmen 1",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "ansung",
+      "chapagetti"
+    ]
+  },
+  {
+    "id": "pawnsnack",
+    "slug": "pawn-snack-ansungtangmyun",
+    "name": "Pawn Snack (Ansungtangmyun)",
+    "tagline": "Small bite ramyun snack",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957071922.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Pawn_Snack_Ansungtangmyun_en.png",
+    "weight": "85g",
+    "released": "2018.01.18",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Friend of children! Pawn Snack",
+      "PAWN SNACK is a ramyun snack crumbled into a bite-size ball. The shape of the pawn of Korean chess is a delight to see and a pleasure to eat.",
+      "Cute little Pawn Snack with the famous Ansungtangmyun flavor!"
+    ],
+    "variants": [
+      {
+        "prodCode": "10056",
+        "name": "Pawn Snack (Ansungtangmyun)",
+        "slug": "pawn-snack-ansungtangmyun",
+        "image": "https://image.nongshim.com/non/pro/Pawn_Snack_Ansungtangmyun_en.png",
+        "weight": "85g",
+        "released": "2018.01.18",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10056"
+      },
+      {
+        "prodCode": "10055",
+        "name": "Pawn Snack(Barbeque)",
+        "slug": "pawn-snack-barbeque",
+        "image": "https://image.nongshim.com/non/pro/Pawn_Snack_Barbeque_en.png",
+        "weight": null,
+        "released": "2007.04.18",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10055"
+      },
+      {
+        "prodCode": "10054",
+        "name": "Pawn Snack(spicy)",
+        "slug": "pawn-snack-spicy",
+        "image": "https://image.nongshim.com/non/pro/Pawn_Snack_spicy_en.png",
+        "weight": null,
+        "released": "2001.04.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10054"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=pawnsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10056",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10055",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10054"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Pawn Snack (Ansungtangmyun)",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "pizzasnack",
+    "slug": "pizza-snack",
+    "name": "Pizza Snack",
+    "tagline": "One bite pizza",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620741396754.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Pizza_Snack_en.png",
+    "weight": null,
+    "released": "1984.04.22",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "[PIZZA SNACK]",
+      "PIZZA SNACK harmonizes Italian pizza flavor with American barbeque flavor. With a pizza scent in every grain, PIZZA SNACK with its soft texture is a pleasure to eat. Enjoy the fun honeycomb shape and the rich pizza flavor; enjoy the great PIZZA SNACK."
+    ],
+    "variants": [
+      {
+        "prodCode": "10057",
+        "name": "Pizza Snack",
+        "slug": "pizza-snack",
+        "image": "https://image.nongshim.com/non/pro/Pizza_Snack_en.png",
+        "weight": null,
+        "released": "1984.04.22",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10057"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=pizzasnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10057"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Pizza Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "potatochip",
+    "slug": "potato-chips",
+    "name": "Potato Chips",
+    "tagline": "Literally, Potato Chip",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957167378.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Potato_Chip_Original_en.png",
+    "weight": null,
+    "released": "1980.01.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "In 1980, Nongshim launched the first real potato chip in Korea. Fresh potatoes are cut to bite-size and fried in the pure vegetable oil.",
+      "The snack offers the original taste of potato and a pleasant crispy texture.",
+      "Everyone likes its taste regardless of gender or age.",
+      "For adults, it also goes well with alcoholic beverages."
+    ],
+    "variants": [
+      {
+        "prodCode": "10059",
+        "name": "Potato Chips",
+        "slug": "potato-chips",
+        "image": "https://image.nongshim.com/non/pro/Potato_Chip_Original_en.png",
+        "weight": null,
+        "released": "1980.01.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10059"
+      },
+      {
+        "prodCode": "10058",
+        "name": "Potato Chips(Sourcream Onion)",
+        "slug": "potato-chips-sourcream-onion",
+        "image": "https://image.nongshim.com/non/pro/Potato_Chip_Sourcream_Onion_en.png",
+        "weight": null,
+        "released": "2015.07.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10058"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=potatochip",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10059",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10058"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Potato Chips",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "potatofrenchfries",
+    "slug": "potato-french-fries-red-chili-flavor",
+    "name": "Potato French Fries Red Chili Flavor",
+    "tagline": "A crispy snack made with seasoned potatoes, a popular franchise menu",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621488217217.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621488370501.png",
+    "weight": "60",
+    "released": "2020.12.31",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "320"
+    },
+    "description": [
+      "A crispy snack made with seasoned potatoes, a popular franchise menu.",
+      "An addictive chili flavor that goes well with potatoes! Both the inside and outside of the snack are crispy!",
+      "It is a product that resembles the appearance of seasoned potatoes in the form of a square stick that is less fragile and easy to eat.",
+      "This product features a crispy texture and an addictive chili flavor with crispy inside and outside."
+    ],
+    "variants": [
+      {
+        "prodCode": "10123",
+        "name": "Potato French Fries Red Chili Flavor",
+        "slug": "potato-french-fries-red-chili-flavor",
+        "image": "https://image.nongshim.com/non/pro/1621488370501.png",
+        "weight": "60",
+        "released": "2020.12.31",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "320"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10123"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=potatofrenchfries",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10123"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Potato French Fries Red Chili Flavor",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "potatonoodle",
+    "slug": "potato-noodle-soup",
+    "name": "Potato Noodle Soup",
+    "tagline": "Noodle made from real potatoes!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957231070.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Potato_Noodle_Soup_en.png",
+    "weight": "100g",
+    "released": "2003.09.24",
+    "certification": "HALAL",
+    "otherSpecs": {},
+    "description": [
+      "Potato Noodle Soup contains real potato which accounts for more than half of the noodle content ratio. This is why its noodles are so smooth and chewy. The soup is clear and pepper, instead of chili, brings out its attractive light spice.",
+      "The chewy noodles of Potato noodle soup comes from the potato content in the noodles. The broth tastes spicy and light. Big chunks of various dried vegetables such as potato and mushroom add flavor and a rich texture to the product."
+    ],
+    "variants": [
+      {
+        "prodCode": "10060",
+        "name": "Potato Noodle Soup",
+        "slug": "potato-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/Potato_Noodle_Soup_en.png",
+        "weight": "100g",
+        "released": "2003.09.24",
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10060"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=potatonoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10060"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Potato Noodle Soup",
+    "relatedRecipes": [
+      "2",
+      "1"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "potatosnack",
+    "slug": "potato-snack",
+    "name": "Potato Snack",
+    "tagline": "Enjoy the simple taste of potatoes!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957261589.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Potato_Snack_en.png",
+    "weight": null,
+    "released": "1972.12.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "After SHRIMP CRACKERS became popular, it is loved as one of three Snacks together with SWEET POTATO SNACKS and ONION SNACKS."
+    ],
+    "variants": [
+      {
+        "prodCode": "10061",
+        "name": "Potato Snack",
+        "slug": "potato-snack",
+        "image": "https://image.nongshim.com/non/pro/Potato_Snack_en.png",
+        "weight": null,
+        "released": "1972.12.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10061"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=potatosnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10061"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Potato Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "onionringchip",
+      "sweetpotatosnack"
+    ]
+  },
+  {
+    "id": "potatostick",
+    "slug": "potato-stick",
+    "name": "Potato Stick",
+    "tagline": "Crunchy french fries!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957304310.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Potato_Stick_en.png",
+    "weight": null,
+    "released": "1989.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Savory and salty French fries are transformed into Potato Stick.",
+      "The texture is thick and very crispy.",
+      "Enjoy the flavor of thick and long potato stick.",
+      "The thick and very crispy texture is a delight to the palate."
+    ],
+    "variants": [
+      {
+        "prodCode": "10062",
+        "name": "Potato Stick",
+        "slug": "potato-stick",
+        "image": "https://image.nongshim.com/non/pro/Potato_Stick_en.png",
+        "weight": null,
+        "released": "1989.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10062"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=potatostick",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10062"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Potato Stick",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "specialyukejang",
+    "slug": "premium-beef-bowl-noodle-soup",
+    "name": "Premium Beef Bowl Noodle Soup",
+    "tagline": "Just like the original beef stew",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957346214.png",
+    "heroImage": "https://image.nongshim.com/non/pro/specialyukejang_en.png",
+    "weight": "103g",
+    "released": "2017.12.11",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Just like Korean traditional beef stew with bountiful flakes!",
+      "▶ Aromatic and decadent beef broth, just like original beef stew",
+      "▶ Perfectly al-dente noodle that harmonizes well with broth",
+      "▶ Abundant number of flakes"
+    ],
+    "variants": [
+      {
+        "prodCode": "10076",
+        "name": "Premium Beef Bowl Noodle Soup",
+        "slug": "premium-beef-bowl-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/specialyukejang_en.png",
+        "weight": "103g",
+        "released": "2017.12.11",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10076"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=specialyukejang",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10076"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Premium Beef Bowl Noodle Soup",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "pretzel",
+    "slug": "pretzel-salted-caramel-flavor",
+    "name": "Pretzel Salted Caramel Flavor",
+    "tagline": "Heart pounding sweet snack",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957393931.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Pretzel_Salted_Caramel_Flavor_en.png",
+    "weight": "80g/160g",
+    "released": "2017.09.28",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "A heart shaped pretzel snack made with corn. It's cute and addictive",
+      "Sweet and Salty. It's so addictive."
+    ],
+    "variants": [
+      {
+        "prodCode": "10063",
+        "name": "Pretzel Salted Caramel Flavor",
+        "slug": "pretzel-salted-caramel-flavor",
+        "image": "https://image.nongshim.com/non/pro/Pretzel_Salted_Caramel_Flavor_en.png",
+        "weight": "80g/160g",
+        "released": "2017.09.28",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10063"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=pretzel",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10063"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Pretzel Salted Caramel Flavor",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "udon",
+    "slug": "saeng-saeng-udon",
+    "name": "Saeng Saeng Udon",
+    "tagline": "Exqiosite broth!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620738143023.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Udon_Noodle_Bowl_en.png",
+    "weight": "276g",
+    "released": "1995.12.02",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "The catchphrase which made today's Udon Noodle Soup, 'Broth is cool~`",
+      "The TV advertisement saying 'broth is cool' is the highlight for Udon Noodle Soup which popularized them across the nation.",
+      "Due to this ad, an unknown actress at that time, KIM HYUN JOO, became a celebrity and the phrase was parodied in various TV shows.",
+      "[Udon Noodle Soup (bag)]",
+      "Udon Noodle Soup isnot made with fried uncooked noodles. It is made by traditional udon noodles(non-fried) and katsuobushi, so the flavor is clean and refreshing.",
+      "[Japanese Style Udon (yaki udon flavor)]",
+      "These are Japanese style Yaki Udon Noodles where teriyaki sauce is mixed with non-fried noodles. Katsuobushi enriches the deep flavor.",
+      "[Japanese Style Udon (spicy flavor)]",
+      "Non-fried noodles and spicy chili oil are mixed with various seafood in the seafood Yaki Udon. Katsuobushi enriches the deep flavor."
+    ],
+    "variants": [
+      {
+        "prodCode": "10089",
+        "name": "Saeng Saeng Udon",
+        "slug": "saeng-saeng-udon",
+        "image": "https://image.nongshim.com/non/pro/Udon_Noodle_Bowl_en.png",
+        "weight": "276g",
+        "released": "1995.12.02",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10089"
+      },
+      {
+        "prodCode": "10088",
+        "name": "Udon Noodle Bag",
+        "slug": "udon-noodle-bag",
+        "image": "https://image.nongshim.com/non/pro/Udon_Noodle_Bag_en.png",
+        "weight": "276g",
+        "released": "1996.05.16",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10088"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=udon",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10089",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10088"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Saeng Saeng Udon",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "gomtang",
+    "slug": "sarigomtangmyun",
+    "name": "Sarigomtangmyun",
+    "tagline": "Taste and Feel the rich broth!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621253284086.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Sarigomtangmyun_en.png",
+    "weight": "110g",
+    "released": "1988.02.23",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "This ramyun brings the flavor of the traditional premium dish, beef bone soup , which was once a meal fit for the king.",
+      "It is recommended for those who cannot eat spicy ramyun or those who like the smooth and delicious taste of broth soup as it has a rich and delicious broth soup taste through boiling beef bone and meat amidst the mainstream spicy flavor in the market for ramyun.",
+      "Add kimchi or radish kimchi according to personal taste to enjoy the true taste of traditional beef bone soup."
+    ],
+    "variants": [
+      {
+        "prodCode": "10023",
+        "name": "Sarigomtangmyun",
+        "slug": "sarigomtangmyun",
+        "image": "https://image.nongshim.com/non/pro/Sarigomtangmyun_en.png",
+        "weight": "110g",
+        "released": "1988.02.23",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10023"
+      },
+      {
+        "prodCode": "10025",
+        "name": "Sarigomtangmyun Big Bowl",
+        "slug": "sarigomtangmyun-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Sarigomtangmyun_Big_Bowl_en.png",
+        "weight": "111g",
+        "released": "2001.09.25",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10025"
+      },
+      {
+        "prodCode": "10024",
+        "name": "Sarigomtangmyun Cup",
+        "slug": "sarigomtangmyun-cup",
+        "image": "https://image.nongshim.com/non/pro/Sarigomtangmyun_Cup_en.png",
+        "weight": "61g",
+        "released": "2002.08.26",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10024"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=gomtang",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10023",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10025",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10024"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Sarigomtangmyun",
+    "relatedRecipes": [
+      "20"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "seafoodnoodle",
+    "slug": "seafood-ramyun",
+    "name": "Seafood Ramyun",
+    "tagline": "Seafood, All in One!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957562409.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Seafood_Ramyun_en.png",
+    "weight": "125g",
+    "released": "1992.02.19",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Delicate and enriched flavor of seafood ramyun with an assortment of various seafood such as shrimp, cuttlefish, mussel and seaweed, making a refreshing and spicy soup broth.",
+      "Rich seafood content provides a deep refreshing seafood flavor.",
+      "Clean and spicy soup broth brings the flavor of traditional assorted seafood soup."
+    ],
+    "variants": [
+      {
+        "prodCode": "10064",
+        "name": "Seafood Ramyun",
+        "slug": "seafood-ramyun",
+        "image": "https://image.nongshim.com/non/pro/Seafood_Ramyun_en.png",
+        "weight": "125g",
+        "released": "1992.02.19",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10064"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=seafoodnoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10064"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Seafood Ramyun",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "shinramyun",
+    "slug": "shin-ramyun",
+    "name": "Shin Ramyun",
+    "tagline": "If you prefer bold and spicy flavors, try our trademark flavor",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": true,
+    "listImage": "https://image.nongshim.com/brand/info/1621251669495.jpg",
+    "heroImage": "https://image.nongshim.com/non/pro/Shin_Ramyun_en.png",
+    "weight": "120g",
+    "released": "1986.10",
+    "certification": "HALAL",
+    "otherSpecs": {},
+    "description": [
+      "Spicy flavor loved by Koreans, representative ramyun of Korea!!!",
+      "Since its development in October 1986, Shin Ramyun has been steadily loved until now.",
+      "At present, there is an average 3 million sales of Shin Ramyun each day, translating to about 25% of the total market for ramyun in Korea.",
+      "It is recognized as having unprecedented great success in the market for ramyun. Not only in Korea, the unique spicy flavor of Shin Ramyun loved in 80 overseas countries, such as Japan, Hong Kong, Taiwan, and China."
+    ],
+    "variants": [
+      {
+        "prodCode": "10065",
+        "name": "Shin Ramyun",
+        "slug": "shin-ramyun",
+        "image": "https://image.nongshim.com/non/pro/Shin_Ramyun_en.png",
+        "weight": "120g",
+        "released": "1986.10",
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10065"
+      },
+      {
+        "prodCode": "10069",
+        "name": "Shin Ramyun Big Bowl",
+        "slug": "shin-ramyun-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Shin_Big_Bowl_Noodle_Soup_en.png",
+        "weight": "114g",
+        "released": "1998.01",
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10069"
+      },
+      {
+        "prodCode": "10068",
+        "name": "Shin Ramyun Cup",
+        "slug": "shin-ramyun-cup",
+        "image": "https://image.nongshim.com/non/pro/Shin_Cup_Noodle_Soup_en.png",
+        "weight": "68g",
+        "released": "1997.12",
+        "certification": "HALAL",
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10068"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=shinramyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10065",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10069",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10068"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shin Ramyun",
+    "relatedRecipes": [
+      "59",
+      "54",
+      "53",
+      "52"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "black",
+    "slug": "shin-ramyun-black-bowl",
+    "name": "Shin Ramyun Black Bowl",
+    "tagline": "Experience the difference! Much better with MICROWAVE!!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": true,
+    "listImage": "https://image.nongshim.com/brand/info/1621251680675.jpg",
+    "heroImage": "https://image.nongshim.com/non/pro/Shin_Ramyun_Black_Bowl_en.png",
+    "weight": "101g",
+    "released": "2017.11",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "NEW Shin Ramyun Black! Experience the difference! Much better with MICROWAVE!!",
+      "Shin Ramyun Black is a premium version of the famous Shin Ramyun. Our renewed version is deeper and thicker! Perfect thickness of noodle that can be cooked with both microwave and boiling water! Extra bountiful flakes that are double the amount of previous Shin Ramyun Black!",
+      "Three secrets of Shin Ramyun Black Bowl",
+      "▶ Microwavable Cup : It only takes 2 minutes to upgrade your Shin Ramyun Black experience!",
+      "▶ More bountiful amount of flakes : NEW Shin Ramyun Black contains double the amount of flakes from the original Shin Ramyun Black",
+      "▶ More decadent soup with pork broth"
+    ],
+    "variants": [
+      {
+        "prodCode": "10067",
+        "name": "Shin Ramyun Black Bowl",
+        "slug": "shin-ramyun-black-bowl",
+        "image": "https://image.nongshim.com/non/pro/Shin_Ramyun_Black_Bowl_en.png",
+        "weight": "101g",
+        "released": "2017.11",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10067"
+      },
+      {
+        "prodCode": "10109",
+        "name": "Shin Ramyun Black(Bowl, Tofu K",
+        "slug": "shin-ramyun-black-bowl-tofu-k",
+        "image": "https://image.nongshim.com/non/pro/1621305331248.png",
+        "weight": "137",
+        "released": "2018.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "623"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10109"
+      },
+      {
+        "prodCode": "10066",
+        "name": "Shin Ramyun Black",
+        "slug": "shin-ramyun-black",
+        "image": "https://image.nongshim.com/non/pro/Shin_Ramyun_Black_en.png",
+        "weight": "130g",
+        "released": "2011.04",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10066"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=black",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10067",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10109",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10066"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shin Ramyun Black Bowl",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "shinramyunlight",
+    "slug": "shin-ramyun-light",
+    "name": "Shin Ramyun Light",
+    "tagline": "",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/",
+    "heroImage": "https://image.nongshim.com/non/pro/1621493297341.png",
+    "weight": "97",
+    "released": "2019.06.01",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "357"
+    },
+    "description": [
+      "Delicious and clean taste! Shin Ramyun Light uses non-fried dried noodles, so you can enjoy more delicious and clean taste of Shin Ramyun."
+    ],
+    "variants": [
+      {
+        "prodCode": "10139",
+        "name": "Shin Ramyun Light Bowl",
+        "slug": "shin-ramyun-light-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621493297341.png",
+        "weight": "77",
+        "released": "2021.05.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "285"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10139"
+      },
+      {
+        "prodCode": "10100",
+        "name": "Shin Ramyun Light",
+        "slug": "shin-ramyun-light",
+        "image": "https://image.nongshim.com/non/pro/1621300765143.png",
+        "weight": "97",
+        "released": "2019.06.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "357"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10100"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=shinramyunlight",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10139",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10100"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shin Ramyun Light",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "shrimpnoodle",
+    "slug": "shrimp-big-bowl",
+    "name": "Shrimp Big Bowl",
+    "tagline": "Full of ocean flavor!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957728351.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Shrimp_Big_Bowl_en.png",
+    "weight": "115g",
+    "released": "1989.08.07",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Shrimp' brand used fresh and tasty shrimp as an ingredient to add the refreshing taste of broth soup.",
+      "1. Refreshing broth soup made from fresh shrimp",
+      "2. Chewy and supple noodles",
+      "3. Rich seafood flakes such as shrimp taste like fish jerky and crab meat"
+    ],
+    "variants": [
+      {
+        "prodCode": "10072",
+        "name": "Shrimp Big Bowl",
+        "slug": "shrimp-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Shrimp_Big_Bowl_en.png",
+        "weight": "115g",
+        "released": "1989.08.07",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10072"
+      },
+      {
+        "prodCode": "10071",
+        "name": "Shrimp Cup",
+        "slug": "shrimp-cup",
+        "image": "https://image.nongshim.com/non/pro/Shrimp_Cup_en.png",
+        "weight": "67g",
+        "released": "2007.07.18",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10071"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=shrimpnoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10072",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10071"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shrimp Big Bowl",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "shrimpchips",
+    "slug": "shrimp-chips",
+    "name": "Shrimp Chips",
+    "tagline": "Crunchy and savory",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621253368541.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Shrimp_Chips_en.png",
+    "weight": null,
+    "released": "1992.02.03",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "SHRIMP CHIPS is chip-style snack with a mild and savory shrimp flavor. The crispy texture of the finest shrimp flavor goes well with \"Keyonnaise\"? a mix of ketchup and mayonnaise in the proportion of 1:2.",
+      "Made of shrimp, <SHRIMP CHIPS>",
+      "<SHRIMP CHIPS> Features a mild and savory shrimp flavor, bringing the feeling of shrimp tempura - crispy but melts in the mouth. Enjoy with Keyonnaise made by mixing ketchup and mayonnaise."
+    ],
+    "variants": [
+      {
+        "prodCode": "10070",
+        "name": "Shrimp Chips",
+        "slug": "shrimp-chips",
+        "image": "https://image.nongshim.com/non/pro/Shrimp_Chips_en.png",
+        "weight": null,
+        "released": "1992.02.03",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10070"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=shrimpchips",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10070"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shrimp Chips",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "saewookkang",
+    "slug": "shrimp-crackers",
+    "name": "Shrimp Crackers",
+    "tagline": "Beloved by all ages, You can never stop!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621311288836.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Shrimp_Crackers_en.png",
+    "weight": null,
+    "released": "1971.12.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Shrimp Crackers' is Nongshims representative snack. In order to develop the product, dozens of raw ingredient trucks were used. The best shrimp flavor was finally born at the end of countless trials and errors. From its release, the snack was loved by customers and became the No. 1 snack brand for more than 30 years, loved all over the country generation after generation.",
+      "[RiceShrimp Crackers]",
+      "'Shrimp Crackers'made of healthy rice. Mild rice harmonizes with aromatic shrimp and sour mayonnaise wasabi. It is a non-fried healthy snack baked with salt."
+    ],
+    "variants": [
+      {
+        "prodCode": "10078",
+        "name": "Shrimp Crackers",
+        "slug": "shrimp-crackers",
+        "image": "https://image.nongshim.com/non/pro/Shrimp_Crackers_en.png",
+        "weight": null,
+        "released": "1971.12.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10078"
+      },
+      {
+        "prodCode": "10079",
+        "name": "Rice Shrimp Crackers",
+        "slug": "rice-shrimp-crackers",
+        "image": "https://image.nongshim.com/non/pro/Rice_Shrimp_Crackers_en.png",
+        "weight": null,
+        "released": "2004.06.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10079"
+      },
+      {
+        "prodCode": "10077",
+        "name": "Spicy Shrimp Crackers",
+        "slug": "spicy-shrimp-crackers",
+        "image": "https://image.nongshim.com/non/pro/Spicy_Shrimp_Crackers_en.png",
+        "weight": null,
+        "released": "2000.04.03",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10077"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=saewookkang",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10078",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10079",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10077"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Shrimp Crackers",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip",
+      "sweetpotatosnack"
+    ]
+  },
+  {
+    "id": "soba",
+    "slug": "soba-noodle",
+    "name": "Soba Noodle",
+    "tagline": "The refreshing taste of soba noodles, Right at home!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620957832702.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Soba_Noodle_en.png",
+    "weight": "127g",
+    "released": "2004.04.13",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Dip to eat! Tangy summer specials, NongshimSoba Noodle.",
+      "Nongshim Soba Noodle bring the traditional Japanese dish soba together with chewy noodles and a clean soy sauce flavor. Unlike other noodle products, the healthy buckwheat noodles are dipped into soy sauce. Enjoy cool and clean Soba Noodle.",
+      "Tab! Dip to eat! Tangy summer specials, Nongshim soba noodle",
+      "Nongshim soba noodles brings the traditional Japanese dish soba together with chewy noodles and a clean soy sauce flavor. Unlike other noodle products, the healthy buckwheat noodles are dipped into soy sauce. Enjoy cool and clean soba noodles."
+    ],
+    "variants": [
+      {
+        "prodCode": "10073",
+        "name": "Soba Noodle",
+        "slug": "soba-noodle",
+        "image": "https://image.nongshim.com/non/pro/Soba_Noodle_en.png",
+        "weight": "127g",
+        "released": "2004.04.13",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10073"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=soba",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10073"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Soba Noodle",
+    "relatedRecipes": [
+      "50",
+      "14"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "soonveggieramyun",
+    "slug": "soon-veggie-ramyun",
+    "name": "Soon Veggie Ramyun",
+    "tagline": "Made with vegetables only,",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621231091706.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Soon_Veggie_Ramyun_Cup_en.png",
+    "weight": "112g",
+    "released": "2013.05",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Soon Veggie Ramyun uses no meat ingredients so that vegetarians may consume without burden and the flavor is smooth and clean.Soon Veggie Ramyun uses no meat ingredients so that vegetarians may consume without burden and the flavor is smooth and clean.",
+      "1) Clean and refreshing flavor 100% made of vegetable",
+      "- No meat ingredients.",
+      "- As the taste is made with vegetables, the flavor is cleaner and more refreshing than that of other ramyun varieties.",
+      "- With Vegan certification, it is trustworthy.",
+      "2) Tenderly delicious.",
+      "- Consumers not accustomed to spicy flavor can enjoy.",
+      "3) Enjoy bag noodles at home and cup noodles outside!",
+      "- With the introduction of bowl noodles, enjoy SOON VEGGIE RAMYUN anywhere in a convenient way."
+    ],
+    "variants": [
+      {
+        "prodCode": "10075",
+        "name": "Soon Veggie Ramyun Cup",
+        "slug": "soon-veggie-ramyun-cup",
+        "image": "https://image.nongshim.com/non/pro/Soon_Veggie_Ramyun_Cup_en.png",
+        "weight": "67g",
+        "released": "2014.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10075"
+      },
+      {
+        "prodCode": "10074",
+        "name": "Soon Veggie Ramyun",
+        "slug": "soon-veggie-ramyun",
+        "image": "https://image.nongshim.com/non/pro/Soon_Veggie_Ramyun_en.png",
+        "weight": "112g",
+        "released": "2013.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10074"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=soonveggieramyun",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10075",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10074"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Soon Veggie Ramyun",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "starsnack",
+    "slug": "star-snack",
+    "name": "Star Snack",
+    "tagline": "Star from the Rice",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620958066236.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Star_Snack_en.png",
+    "weight": null,
+    "released": "2006.08.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Enjoy cute star-shaped crispy rice snacks!",
+      "Korea Rice Processing Association: Selected among the Top 10 Excellent Rice Products in 2008, cute star-shaped 'Star Snack' was developed to be a healthy rice snack for children and to eliminate the bias that rice snacks are only for adults.",
+      "Features",
+      "- Cute star-shaped rice snack",
+      "- individual package"
+    ],
+    "variants": [
+      {
+        "prodCode": "10080",
+        "name": "Star Snack",
+        "slug": "star-snack",
+        "image": "https://image.nongshim.com/non/pro/Star_Snack_en.png",
+        "weight": null,
+        "released": "2006.08.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10080"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=starsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10080"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Star Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "neoguri",
+    "slug": "stir-fried-neoguri-big-bowl",
+    "name": "Stir-fried Neoguri Big Bowl",
+    "tagline": "Chase your Neoguri! Chase your Ramyun!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": true,
+    "listImage": "https://image.nongshim.com/brand/info/1621251656113.jpg",
+    "heroImage": "https://image.nongshim.com/non/pro/1621485130931.png",
+    "weight": "110",
+    "released": "2017.02.28",
+    "certification": null,
+    "otherSpecs": {
+      "calories": "515"
+    },
+    "description": [
+      "Enjoy the al dente noodle with stir-fried Neoguri! Features of product",
+      "1. Chewy and al dente noodle",
+      "2. Spicy fried seafood taste",
+      "3. Bountiful ingredients with chewy texture",
+      "▶The taste of deep-fried seafood stir-fried in spicy red pepper oil",
+      "▶ Perfect for stir-fry! Al dente and chewy noodles",
+      "▶ 6 kinds of rich ingredients with a chewy texture",
+      "- Large in quantity (mussel balls, raccoon-shaped fish cakes, kelp seaweed, carrots, soy protein)"
+    ],
+    "variants": [
+      {
+        "prodCode": "10112",
+        "name": "Stir-fried Neoguri Big Bowl",
+        "slug": "stir-fried-neoguri-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621485130931.png",
+        "weight": "110",
+        "released": "2017.02.28",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "515"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10112"
+      },
+      {
+        "prodCode": "10102",
+        "name": "Neoguri(Stir-fried)",
+        "slug": "neoguri-stir-fried",
+        "image": "https://image.nongshim.com/non/pro/1621301251277.png",
+        "weight": "137",
+        "released": "2018.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "623"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10102"
+      },
+      {
+        "prodCode": "10103",
+        "name": "Angry RtA",
+        "slug": "angry-rta",
+        "image": "https://image.nongshim.com/non/pro/1621301467083.png",
+        "weight": "121",
+        "released": "2020.01.01",
+        "certification": null,
+        "otherSpecs": {
+          "calories": "506"
+        },
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10103"
+      },
+      {
+        "prodCode": "10104",
+        "name": "Angry RtA(Cup)",
+        "slug": "angry-rta-cup",
+        "image": "https://image.nongshim.com/non/pro/1621301557688.png",
+        "weight": null,
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10104"
+      },
+      {
+        "prodCode": "10045",
+        "name": "Neoguri Cup",
+        "slug": "neoguri-cup",
+        "image": "https://image.nongshim.com/non/pro/Neoguri_Cup_en.png",
+        "weight": "62g",
+        "released": "2009.07.28",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10045"
+      },
+      {
+        "prodCode": "10046",
+        "name": "Neoguri Ramyun Spicy Big Bowl",
+        "slug": "neoguri-ramyun-spicy-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Neoguri_Big_Bowl_en.png",
+        "weight": "111g",
+        "released": "2012.04.10",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10046"
+      },
+      {
+        "prodCode": "10044",
+        "name": "Neoguri Ramyun Mild",
+        "slug": "neoguri-ramyun-mild",
+        "image": "https://image.nongshim.com/non/pro/Neoguri_Mild_en.png",
+        "weight": "120g",
+        "released": "1982.11.04",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10044"
+      },
+      {
+        "prodCode": "10043",
+        "name": "Neoguri Spicy",
+        "slug": "neoguri-spicy",
+        "image": "https://image.nongshim.com/non/pro/Neoguri_Spice_en.png",
+        "weight": "120g",
+        "released": "1983.02.19",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10043"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=neoguri",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10112",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10102",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10103",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10104",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10045",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10046",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10044",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10043"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Stir-fried Neoguri Big Bowl",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "sumipotatochip",
+    "slug": "sumi-potato-chip-original",
+    "name": "Sumi Potato Chip(Original)",
+    "tagline": "Sumi Potato, Only can be found in Korea!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620738561623.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Sumi_Potato_Chip_Original_en.png",
+    "weight": null,
+    "released": "2010.06.25",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "SUMI Profile",
+      "My name is SUMI!",
+      "SU means excellent and MI means beautiful.",
+      "It is easy to say and easy to remember.",
+      "It is familiar and attractive and has a beautiful meaning. Made with the finest handpicked Sumi potatoes, the taste is also excellent.",
+      "I tried it once and was immediately hooked.^^*",
+      "SUMI POTATO is delicious.",
+      "SUMI POTATO has 11 times more sugar content than other potatoes for processing, giving it a rich and sweet potato taste. It is more delicious than other potato chips and very crispy too. It is the best suited",
+      "Potato to our taste.",
+      "SUMI potato was hard to make into potato chips. However, the low temperature vacuum method of NONGSHIM gave birth to the SUMI POTATO CHIP.",
+      "It is fundamentally",
+      "Different from regular potato chips.",
+      "This potato chip is fundamentally different from regular potato chips created using the basic method which uses potatoes prepared for processing. A fundamentally different potato chip using a better variety of potato, SUMI POTATO CHIP is delicious.",
+      "11 times the amount of reducing sugar",
+      "A reducing sugar is any sugar that is capable of acting as a reducing agent because it has a free aldehyde group or a free ketone group. This includes glucose, fructose, maltose, glyceraldehyde or arabinose."
+    ],
+    "variants": [
+      {
+        "prodCode": "10083",
+        "name": "Sumi Potato Chip(Original)",
+        "slug": "sumi-potato-chip-original",
+        "image": "https://image.nongshim.com/non/pro/Sumi_Potato_Chip_Original_en.png",
+        "weight": null,
+        "released": "2010.06.25",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10083"
+      },
+      {
+        "prodCode": "10082",
+        "name": "Sumi Potato Chip(Onion)",
+        "slug": "sumi-potato-chip-onion",
+        "image": "https://image.nongshim.com/non/pro/Sumi_Potato_Chip_Onion_en.png",
+        "weight": null,
+        "released": "2010.06.25",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10082"
+      },
+      {
+        "prodCode": "10081",
+        "name": "Sumi Potato Chip (Basil Pesto)",
+        "slug": "sumi-potato-chip-basil-pesto",
+        "image": "https://image.nongshim.com/non/pro/Sumi_Potato_Chip_BasilPesto_en.png",
+        "weight": "70g",
+        "released": "2018.01.30",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10081"
+      },
+      {
+        "prodCode": "10084",
+        "name": "Sumi Potato Chip",
+        "slug": "sumi-potato-chip",
+        "image": "https://image.nongshim.com/non/pro/Sumi_Potato_Chip_en.png",
+        "weight": null,
+        "released": "2014.12.17",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10084"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=sumipotatochip",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10083",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10082",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10081",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10084"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Sumi Potato Chip(Original)",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "sweetpotatosnack",
+    "slug": "sweet-potato-snack",
+    "name": "Sweet Potato Snack",
+    "tagline": "The perfect combination of Sweet potatoes and maple syrup!",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620958432387.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Sweet_Potato_Snack_en.png",
+    "weight": null,
+    "released": "1973.12.01",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "After SHRIMP CRACKERS became popular, the fourth of the 'SNACK' series is loved for long as one of three Snacks together with POTATO SNACK and ONION SNACK."
+    ],
+    "variants": [
+      {
+        "prodCode": "10085",
+        "name": "Sweet Potato Snack",
+        "slug": "sweet-potato-snack",
+        "image": "https://image.nongshim.com/non/pro/Sweet_Potato_Snack_en.png",
+        "weight": null,
+        "released": "1973.12.01",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10085"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=sweetpotatosnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10085"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Sweet Potato Snack",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "takochipsnack",
+    "slug": "tako-chips",
+    "name": "Tako Chips",
+    "tagline": "Why don’t we tako 'bout",
+    "category": "snacks",
+    "categoryName": "Snacks",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620958478569.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Tako_Chips_en.png",
+    "weight": null,
+    "released": "1983.08.05",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Born in the wide blue ocean, TAKO CHIPS are a delight to look at as they are round and cute octopus shapes and their savory and salty flavor arouses the appetite.",
+      "Let's go on an exciting ocean journey with family by experiencing the unique octopus flavor and aroma of TAKO CHIPS.",
+      "Tako Chipsare a cute octopus-shaped snack. Their savory and salty flavor arouses the appetite.",
+      "The round and cute octopus shape is a delight to see and a pleasure to eat.",
+      "Let's go on an exciting ocean journey with long-lovedTako Chips."
+    ],
+    "variants": [
+      {
+        "prodCode": "10086",
+        "name": "Tako Chips",
+        "slug": "tako-chips",
+        "image": "https://image.nongshim.com/non/pro/Tako_Chips_en.png",
+        "weight": null,
+        "released": "1983.08.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10086"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=takochipsnack",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10086"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Tako Chips",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "saewookkang",
+      "honeytwistsnack",
+      "potatosnack",
+      "onionringchip"
+    ]
+  },
+  {
+    "id": "udonbowl",
+    "slug": "tempura-udon-big-bowl",
+    "name": "Tempura Udon Big Bowl",
+    "tagline": "Harmony of Broth and tempura flakes!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620958519511.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Tempura_Udon_Big_Bowl_en.png",
+    "weight": "111g",
+    "released": "1990.10.08",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Tempura Udon is an udon ramyun with deep and refreshing udon soup whose taste is made with katsuobushi, seaweed and tempura flakes floating on the soup.",
+      "- Katsuobushi makes udon soup refreshing and delicious.",
+      "- Noodles are thick and chewy.",
+      "- Plentiful flakes such as tempura, crab meat, seaweed, and green onion."
+    ],
+    "variants": [
+      {
+        "prodCode": "10091",
+        "name": "Tempura Udon Big Bowl",
+        "slug": "tempura-udon-big-bowl",
+        "image": "https://image.nongshim.com/non/pro/Tempura_Udon_Big_Bowl_en.png",
+        "weight": "111g",
+        "released": "1990.10.08",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10091"
+      },
+      {
+        "prodCode": "10090",
+        "name": "Tempura Udon Cup",
+        "slug": "tempura-udon-cup",
+        "image": "https://image.nongshim.com/non/pro/Tempura_Udon_Cup_en.png",
+        "weight": "62g",
+        "released": "2008.11.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10090"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=udonbowl",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10091",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10090"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Tempura Udon Big Bowl",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "tunamayo",
+    "slug": "tuna-mayo-big-cup",
+    "name": "Tuna Mayo Big Cup",
+    "tagline": "Stir and enjoy The armoatic flavor!",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620958600314.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Tuna_Mayo_Big_Cup_en.png",
+    "weight": "119g",
+    "released": "2017.06.05",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Tuna mayo big cup is a stir type cup noodle with rich and decadent tuna mayo sauce that young people like.",
+      "You can now enjoy the taste of tuna mayo combination with ramyun!",
+      "A hint of black pepper and wasabi intensified the rich tuna mayo flavor!",
+      "Flakes include tuna balls, eggs, parsley, and so on."
+    ],
+    "variants": [
+      {
+        "prodCode": "10087",
+        "name": "Tuna Mayo Big Cup",
+        "slug": "tuna-mayo-big-cup",
+        "image": "https://image.nongshim.com/non/pro/Tuna_Mayo_Big_Cup_en.png",
+        "weight": "119g",
+        "released": "2017.06.05",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10087"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=tunamayo",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10087"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Tuna Mayo Big Cup",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "vegetablenoodle",
+    "slug": "vegetable-noodle-soup",
+    "name": "Vegetable Noodle Soup",
+    "tagline": "Non-fried noodles, Made with vegetables only",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620741619459.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Vegetable_Noodle_Soup_en.png",
+    "weight": "100g",
+    "released": "2013.03.20",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Delicious premium ramyun with fresh and chewy noodles not fried in oil and seven vegetables adding taste to the soup. Having no meat at all, Vegetable Noodle Soup is good news for those who want to enjoy ramyun without meat. As the soup is made purely with vegetables, the refreshing clean taste is great."
+    ],
+    "variants": [
+      {
+        "prodCode": "10092",
+        "name": "Vegetable Noodle Soup",
+        "slug": "vegetable-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/Vegetable_Noodle_Soup_en.png",
+        "weight": "100g",
+        "released": "2013.03.20",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10092"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=vegetablenoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10092"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Vegetable Noodle Soup",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "Welch’s",
+    "slug": "welchs-strawberry-soda",
+    "name": "Welch’s Strawberry Soda",
+    "tagline": "Juice with 140 years of tradition widely known in the world.",
+    "category": "beverages",
+    "categoryName": "Beverages",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621499477984.png",
+    "heroImage": "https://image.nongshim.com/non/pro/1621932940802.png",
+    "weight": "355ml",
+    "released": null,
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Soft drink with guaranteed production quality by Welch’s, synonymous with authentic grape juice",
+      "Welch's Strawberry Flavor is a strawberry-flavored, low-carbonated soft drink that young women love.",
+      "-Soft drink that is good for quenching thirst-Caffeine-free soft drink"
+    ],
+    "variants": [
+      {
+        "prodCode": "10116",
+        "name": "Welch’s Strawberry Soda",
+        "slug": "welchs-strawberry-soda",
+        "image": "https://image.nongshim.com/non/pro/1621932940802.png",
+        "weight": "355ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10116"
+      },
+      {
+        "prodCode": "10122",
+        "name": "Welch’s Apple Juice",
+        "slug": "welchs-apple-juice",
+        "image": "https://image.nongshim.com/non/pro/1621932908369.png",
+        "weight": "1000ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10122"
+      },
+      {
+        "prodCode": "10118",
+        "name": "Welch’s Grape Juice",
+        "slug": "welchs-grape-juice",
+        "image": "https://image.nongshim.com/non/pro/1621932927560.png",
+        "weight": "1000ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10118"
+      },
+      {
+        "prodCode": "10119",
+        "name": "Welch’s Green Grape Juice",
+        "slug": "welchs-green-grape-juice",
+        "image": "https://image.nongshim.com/non/pro/1621932918077.png",
+        "weight": "1000ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10119"
+      },
+      {
+        "prodCode": "10114",
+        "name": "Welch’s Grape Soda",
+        "slug": "welchs-grape-soda",
+        "image": "https://image.nongshim.com/non/pro/1621932968438.png",
+        "weight": "355ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10114"
+      },
+      {
+        "prodCode": "10115",
+        "name": "Welch’s White Grape Soda",
+        "slug": "welchs-white-grape-soda",
+        "image": "https://image.nongshim.com/non/pro/1621932954386.png",
+        "weight": "355ml",
+        "released": null,
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10115"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=Welch’s",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10116",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10122",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10118",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10119",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10114",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10115"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Welch’s Strawberry Soda",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "capri-sun",
+      "baeksansoo"
+    ]
+  },
+  {
+    "id": "bowlnoodle",
+    "slug": "yukejang",
+    "name": "Yukejang",
+    "tagline": "Spicy and Hot Korean traditional beef stew",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1620735553959.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Yukejang_en.png",
+    "weight": "116g",
+    "released": "2014.04.17",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "Best-seller since 1982, enjoy Yukejang(Beef Bowl Noodle Soup) now as bag ramyun.",
+      "Resilient thin noodles and spicy Yukejang soup are featured.",
+      "Plentiful flakes of large volcano crab meat make the taste of Yukejang. Quickly and conveniently enjoy in 2 minutes."
+    ],
+    "variants": [
+      {
+        "prodCode": "10008",
+        "name": "Yukejang",
+        "slug": "yukejang",
+        "image": "https://image.nongshim.com/non/pro/Yukejang_en.png",
+        "weight": "116g",
+        "released": "2014.04.17",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10008"
+      },
+      {
+        "prodCode": "10010",
+        "name": "Yukejang Big Bowl Noodle Soup",
+        "slug": "yukejang-big-bowl-noodle-soup",
+        "image": "https://image.nongshim.com/non/pro/Yukejang_Big_Bowl_Noodle_Soup.en.png",
+        "weight": "110g",
+        "released": "1995.12.07",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10010"
+      },
+      {
+        "prodCode": "10009",
+        "name": "Bowl Noodles Hot & Spicy",
+        "slug": "bowl-noodles-hot-and-spicy",
+        "image": "https://image.nongshim.com/non/pro/Yukejang_Bowl_Noodle_Soup_en.png",
+        "weight": "86g",
+        "released": "1982.11.27",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10009"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=bowlnoodle",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10008",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10010",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10009"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Yukejang",
+    "relatedRecipes": [],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  },
+  {
+    "id": "zzawang",
+    "slug": "zha-wang",
+    "name": "Zha Wang",
+    "tagline": "The king of taste and the king of noodles",
+    "category": "instant-noodles",
+    "categoryName": "Instant Noodles",
+    "featured": false,
+    "listImage": "https://image.nongshim.com/brand/info/1621253435502.png",
+    "heroImage": "https://image.nongshim.com/non/pro/Zha_Wang_en.png",
+    "weight": "134g",
+    "released": "2015.04.20",
+    "certification": null,
+    "otherSpecs": {},
+    "description": [
+      "The best taste and the best noodles Zha Wang.",
+      "Nongshim Zha Wangis fried at high temperature in a short time and has the smooth and thick flavor of premium chajang.",
+      "Tender and thick flavor of Chajang!",
+      "By frying at high temperature for a short time, the tender and thick flavor of chajang is well preserved.",
+      "Thick noodles of a new dimension.",
+      "Nongshim's 50-year-long noodles manufacturing technology makes 3mm-thick noodles which go well with Chajang sauce. The noodles with added kelp powder are chewy and resilient.Large flakes are a pleasure to bite and appetizing."
+    ],
+    "variants": [
+      {
+        "prodCode": "10094",
+        "name": "Zha Wang",
+        "slug": "zha-wang",
+        "image": "https://image.nongshim.com/non/pro/Zha_Wang_en.png",
+        "weight": "134g",
+        "released": "2015.04.20",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10094"
+      },
+      {
+        "prodCode": "10095",
+        "name": "Zha Wang (Spicy Flavor)",
+        "slug": "zha-wang-spicy-flavor",
+        "image": "https://image.nongshim.com/non/pro/Zha_Wang_Spicy_Flavor_en.png",
+        "weight": "140g",
+        "released": "2017.04.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10095"
+      },
+      {
+        "prodCode": "10097",
+        "name": "Zha Wang (Bowl)",
+        "slug": "zha-wang-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621257881399.png",
+        "weight": "105g",
+        "released": "2015.04.20",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10097"
+      },
+      {
+        "prodCode": "10096",
+        "name": "Zha Wang (Spicy Flavor) (Bowl)",
+        "slug": "zha-wang-spicy-flavor-bowl",
+        "image": "https://image.nongshim.com/non/pro/1621258444079.png",
+        "weight": "104g",
+        "released": "2017.04.24",
+        "certification": null,
+        "otherSpecs": {},
+        "sourceUrl": "https://eng.nongshim.com/brand/main/detail?prodCode=10096"
+      }
+    ],
+    "provenance": {
+      "sourceUrls": [
+        "https://eng.nongshim.com/brand/main/index",
+        "https://eng.nongshim.com/brand/main/container?brandId=zzawang",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10094",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10095",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10097",
+        "https://eng.nongshim.com/brand/main/detail?prodCode=10096"
+      ],
+      "sourceChecked": "2026-08-30",
+      "transformation": "structure-only: AJAX fragments normalised to JSON; asset URLs https-normalised; no copy rewritten"
+    },
+    "displayTitle": "Zha Wang",
+    "relatedRecipes": [
+      "38",
+      "37",
+      "36"
+    ],
+    "relatedProducts": [
+      "kimchiramyun",
+      "neogubonara",
+      "oolongmen",
+      "ansung"
+    ]
+  }
+]

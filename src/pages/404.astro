@@ -1,0 +1,78 @@
+---
+/**
+ * Custom 404.
+ *
+ * `noindex, follow` and a real set of routes out, so a visitor (or a crawler
+ * that landed on a stale link) can reach the catalogue in one click. Static
+ * hosts serve this for unmatched paths with a genuine 404 status — see
+ * docs/deployment.md; the page never masquerades as a successful response.
+ */
+import Base from '../layouts/Base.astro';
+import { products, recipes, categories } from '../lib/content';
+---
+
+<Base
+  title="Page not found"
+  description="That page does not exist on nongshim.com. Browse the product catalogue, the recipe index or the company sections instead."
+  path="/404/"
+  noindex
+>
+  <div class="container section notfound">
+    <span class="eyebrow">Error 404</span>
+    <h1>That page does not exist</h1>
+    <p class="lede">
+      The address you followed is not a page on this site. It may have been moved, or the link may be
+      mistyped.
+    </p>
+
+    <h2>Try one of these</h2>
+    <ul class="notfound__links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/products/">All {products.length} products</a></li>
+      {categories.map((c) => <li><a href={c.path}>{c.name}</a></li>)}
+      <li><a href="/recipes/">All {recipes.length} recipes</a></li>
+      <li><a href="/shin/">SHIN, the Shin Ramyun character</a></li>
+      <li><a href="/about/overview/">About Nongshim</a></li>
+      <li><a href="/search/">Search the site</a></li>
+    </ul>
+  </div>
+</Base>
+
+<style>
+  .notfound {
+    max-width: var(--container-narrow);
+  }
+
+  .notfound h2 {
+    margin-top: var(--space-8);
+    font-size: var(--text-lg);
+  }
+
+  .notfound__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .notfound__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .notfound__links a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+</style>

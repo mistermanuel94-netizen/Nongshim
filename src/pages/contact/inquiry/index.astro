@@ -1,0 +1,188 @@
+---
+/**
+ * Customer enquiry page.
+ *
+ * The source posted this form to a Java backend that the rebuild does not
+ * reproduce. Rather than ship a form that silently does nothing — or fake a
+ * success page, which would be worse — the form posts to an endpoint supplied
+ * at build time via `PUBLIC_CONTACT_ENDPOINT`. When that is not configured the
+ * page says so plainly and gives the published phone number and postal address
+ * instead. See docs/deployment.md.
+ */
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/ui/PageHero.astro';
+import { getSectionPage } from '../../../lib/content';
+import { ORGANIZATION } from '../../../config/site';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../../../lib/seo';
+
+const path = '/contact/inquiry/';
+const page = getSectionPage('/contact/inquiry');
+const endpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT as string | undefined;
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Contact', path: '/contact/overview/' },
+  { name: 'Enquiries', path },
+];
+
+const description =
+  'Contact Nongshim with a customer enquiry, or use the published head-office phone number and postal address.';
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'ContactPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: 'Contact Nongshim',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title="Enquiries"
+  description={description}
+  path={path}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+>
+  <PageHero heading="Enquiries" eyebrow="Contact" description={page?.description ?? 'Get in touch with Nongshim.'} />
+
+  <div class="container section contact">
+    <section aria-labelledby="direct-heading">
+      <h2 id="direct-heading">Contact details</h2>
+      <dl class="contact__details">
+        <dt>Telephone</dt>
+        <dd><a href={`tel:${ORGANIZATION.telephone.replace(/[^\d+]/g, '')}`}>{ORGANIZATION.telephone}</a></dd>
+        <dt>Head office</dt>
+        <dd>
+          {ORGANIZATION.legalName}<br />
+          {ORGANIZATION.address.streetAddress}<br />
+          {ORGANIZATION.address.addressLocality}, Republic of Korea
+        </dd>
+      </dl>
+      <p>
+        For office addresses outside Korea, see <a href="/contact/location/">Nongshim locations</a>.
+      </p>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Send an enquiry</h2>
+      {
+        endpoint ? (
+          <form class="contact__form" method="post" action={endpoint}>
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+              <p class="field__hint" id="email-hint">
+                We use this only to reply to your enquiry.
+              </p>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required />
+            </div>
+            <button type="submit" class="button button--primary">Send enquiry</button>
+          </form>
+        ) : (
+          <p class="contact__unavailable">
+            The online enquiry form is not connected on this deployment. Please use the telephone number
+            above, or write to the head office address.
+          </p>
+        )
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .contact {
+    display: grid;
+    gap: var(--space-8);
+    max-width: var(--container-max);
+  }
+
+  @media (min-width: 62rem) {
+    .contact {
+      grid-template-columns: 22rem 1fr;
+      align-items: start;
+    }
+  }
+
+  .contact__details {
+    display: grid;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-4);
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact__details dt {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .contact__details dt:not(:first-child) {
+    margin-top: var(--space-4);
+  }
+
+  .contact__details dd {
+    margin: 0;
+  }
+
+  .contact__form {
+    display: grid;
+    gap: var(--space-5);
+    max-width: 34rem;
+  }
+
+  .field {
+    display: grid;
+    gap: var(--space-2);
+  }
+
+  .field label {
+    font-weight: 700;
+  }
+
+  .field input,
+  .field textarea {
+    min-height: 48px;
+    padding: var(--space-3);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-md);
+    background: #fff;
+  }
+
+  .field textarea {
+    resize: vertical;
+  }
+
+  .field__hint {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .contact__unavailable {
+    padding: var(--space-5);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    color: var(--color-text-muted);
+  }
+</style>

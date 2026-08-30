@@ -1,0 +1,959 @@
+{
+  "generatedAt": "2026-08-30T18:14:51.033Z",
+  "results": [
+    {
+      "label": "Homepage",
+      "route": "/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1027.9683444295329,
+        "lcp": 1959.9366888590657,
+        "cls": 0,
+        "tbt": 11,
+        "si": 1027.9683444295329,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 260458,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.8 s",
+          "seen": 3
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.83,
+          "display": "150 ms",
+          "seen": 3
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 48 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 29 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 2
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.0 s",
+          "seen": 2
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Homepage",
+      "route": "/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 278.1269073469766,
+        "lcp": 450.25381469395325,
+        "cls": 0,
+        "tbt": 0,
+        "si": 278.1269073469766,
+        "ttfb": 2
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 390165,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 48 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 63 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product listing",
+      "route": "/products/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1763.6629304838139,
+        "lcp": 2413.780254768556,
+        "cls": 0,
+        "tbt": 36,
+        "si": 2548.267878667274,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 361068,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.83,
+          "display": "2.0 s",
+          "seen": 3
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.91,
+          "display": "2.4 s",
+          "seen": 3
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.78,
+          "display": "4.2 s",
+          "seen": 2
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.06,
+          "display": "550 ms",
+          "seen": 3
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.98,
+          "display": "2.5 s",
+          "seen": 3
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 94 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 48 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 2
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product listing",
+      "route": "/products/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 367.5523499031475,
+        "lcp": 493.104699806295,
+        "cls": 0,
+        "tbt": 0,
+        "si": 367.5523499031475,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 945474,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 94 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 274 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product category",
+      "route": "/products/instant-noodles/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1188.0596189940252,
+        "lcp": 2112.1192379880504,
+        "cls": 0,
+        "tbt": 81,
+        "si": 1188.0596189940252,
+        "ttfb": 6
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 320280,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s",
+          "seen": 3
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.96,
+          "display": "2.1 s",
+          "seen": 3
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.98,
+          "display": "110 ms",
+          "seen": 2
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.86,
+          "display": "140 ms",
+          "seen": 3
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.1 s",
+          "seen": 3
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 67 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 39 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product category",
+      "route": "/products/instant-noodles/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 324.36312916478465,
+        "lcp": 472.1851357123537,
+        "cls": 0,
+        "tbt": 0,
+        "si": 324.36312916478465,
+        "ttfb": 6
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 914991,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 67 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 261 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product detail",
+      "route": "/products/shin-ramyun/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1053.6182914503595,
+        "lcp": 1811.236582900719,
+        "cls": 0,
+        "tbt": 15,
+        "si": 1053.6182914503595,
+        "ttfb": 4
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 205380,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s",
+          "seen": 3
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.99,
+          "display": "80 ms",
+          "seen": 2
+        },
+        {
+          "id": "image-size-responsive",
+          "title": "Serves images with low resolution",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 44 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 42 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Product detail",
+      "route": "/products/shin-ramyun/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 274.03384076999606,
+        "lcp": 431.3348026122271,
+        "cls": 0,
+        "tbt": 0,
+        "si": 274.03384076999606,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 297653,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 44 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 79 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Recipe listing",
+      "route": "/recipes/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1187.5417524138184,
+        "lcp": 2107.0835048276367,
+        "cls": 0,
+        "tbt": 82,
+        "si": 1187.5417524138184,
+        "ttfb": 5
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 550198,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s",
+          "seen": 3
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.96,
+          "display": "2.1 s",
+          "seen": 3
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.99,
+          "display": "80 ms",
+          "seen": 2
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.88,
+          "display": "140 ms",
+          "seen": 3
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99,
+          "display": "2.1 s",
+          "seen": 2
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 56 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 45 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 2
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Recipe listing",
+      "route": "/recipes/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 286.076237244343,
+        "lcp": 431.405,
+        "cls": 0,
+        "tbt": 0,
+        "si": 305.2897616451801,
+        "ttfb": 4
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 547804,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 56 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 79 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Recipe detail",
+      "route": "/recipes/chapaguri/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1041.7743699119142,
+        "lcp": 1807.9171,
+        "cls": 0,
+        "tbt": 15.999999999999886,
+        "si": 1041.7743699119142,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 157776,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.7 s",
+          "seen": 3
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.9,
+          "display": "130 ms",
+          "seen": 2
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 38 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "display": "Est savings of 10 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Recipe detail",
+      "route": "/recipes/chapaguri/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 269.96425885674637,
+        "lcp": 447.3180732844777,
+        "cls": 0,
+        "tbt": 0,
+        "si": 269.96425885674637,
+        "ttfb": 3
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 162663,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 38 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 10 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Company page",
+      "route": "/about/overview/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1182.4486535927365,
+        "lcp": 1580.001972664091,
+        "cls": 0,
+        "tbt": 122,
+        "si": 1184.8204,
+        "ttfb": 4
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 97161,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s",
+          "seen": 2
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99,
+          "display": "1.6 s",
+          "seen": 2
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.97,
+          "display": "120 ms",
+          "seen": 2
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.74,
+          "display": "180 ms",
+          "seen": 2
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 37 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Company page",
+      "route": "/about/overview/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 275.5093034224904,
+        "lcp": 389.0186068449808,
+        "cls": 0,
+        "tbt": 0,
+        "si": 275.5093034224904,
+        "ttfb": 5
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 102048,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 37 KiB",
+          "seen": 3
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Character page",
+      "route": "/shin/",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 1187.2558,
+        "lcp": 1882.108625415723,
+        "cls": 0,
+        "tbt": 18,
+        "si": 1187.2558,
+        "ttfb": 2
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 261257,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.99,
+          "display": "1.2 s",
+          "seen": 3
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.98,
+          "display": "1.9 s",
+          "seen": 3
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.96,
+          "display": "100 ms",
+          "seen": 2
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 49 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 21 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 2
+        }
+      ],
+      "runs": 3
+    },
+    {
+      "label": "Character page",
+      "route": "/shin/",
+      "formFactor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100,
+        "agentic-browsing": 100
+      },
+      "metrics": {
+        "fcp": 301.25375101377506,
+        "lcp": 409.49109999999996,
+        "cls": 0,
+        "tbt": 0,
+        "si": 339.4680269984277,
+        "ttfb": 4
+      },
+      "diagnostics": {
+        "domSize": null,
+        "transferBytes": 345103,
+        "unusedCss": 0,
+        "unusedJs": 0
+      },
+      "failed": [
+        {
+          "id": "image-size-responsive",
+          "title": "Serves images with low resolution",
+          "score": 0,
+          "display": null,
+          "seen": 3
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5,
+          "display": "Est savings of 49 KiB",
+          "seen": 3
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "display": "Est savings of 4 KiB",
+          "seen": 3
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "display": null,
+          "seen": 2
+        }
+      ],
+      "runs": 3
+    }
+  ]
+}

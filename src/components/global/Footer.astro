@@ -1,0 +1,259 @@
+---
+/**
+ * Site footer.
+ *
+ * Carries the full section link graph (so no page is more than two clicks from
+ * any other), the verified public social profiles, and the group/affiliate
+ * links the source publishes. Anchor text is descriptive throughout — the
+ * source's "Family Link" panel used bare brand names with no context.
+ */
+import { Image } from 'astro:assets';
+import symbol from '../../assets/brand/symbol.png';
+import { NAV } from '../navigation/navigation';
+import { ORGANIZATION } from '../../config/site';
+
+const SOCIALS = [
+  { label: 'Nongshim on Facebook', short: 'Facebook', href: 'https://www.facebook.com/nongshim', icon: '/brand/facebook.svg' },
+  { label: 'Nongshim on Instagram', short: 'Instagram', href: 'https://www.instagram.com/nongshim/', icon: '/brand/instagram.svg' },
+  { label: 'Nongshim on YouTube', short: 'YouTube', href: 'https://www.youtube.com/user/nongshimPR', icon: '/brand/youtube.svg' },
+];
+
+/**
+ * Group companies and brand sites linked from the source's footer panel.
+ * Twenty-one of the source's links were malformed (`http:/host`, a single slash,
+ * which browsers resolve as a same-origin path and 404). Those are corrected
+ * here — a technical fix, not a change of destination.
+ */
+const GROUP_SITES = [
+  { label: 'Nongshim Holdings', href: 'https://nongshimholdings.com' },
+  { label: 'Nongshim America', href: 'https://www.nongshimusa.com' },
+  { label: 'Nongshim Japan', href: 'https://www.nongshim.co.jp/' },
+  { label: 'Nongshim China', href: 'https://cn.nongshim.com' },
+  { label: 'Nongshim Engineering', href: 'https://www.nongshimeng.com/_ENG/html/' },
+  { label: 'Nongshim Data System', href: 'https://nds.nongshim.co.kr/eng/main.do' },
+  { label: 'Nongshim Communications', href: 'https://www.nscom.co.kr' },
+  { label: 'Youlchon Chemical', href: 'https://www.youlchon.com/en/main.do' },
+  { label: 'Youlchon Foundation', href: 'https://www.youlchon.org' },
+  { label: 'Taekyung Nongsan', href: 'https://www.itaekyung.com/eng/main.do' },
+  { label: 'Hotel Nongshim', href: 'https://www.hotelnongshim.com/eng/' },
+  { label: 'Mega Mart', href: 'https://www.megamart.com' },
+];
+
+const BRAND_SITES = [
+  { label: 'Shin Ramyun brand site', href: 'https://www.shinramyun.com' },
+  { label: 'Saewookkang brand site', href: 'https://www.saewookkang.com' },
+  { label: 'Baeksansoo brand site', href: 'https://www.baeksansoo.com' },
+];
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <nav class="site-footer__nav" aria-label="Footer">
+      {
+        NAV.map((section) => (
+          <div class="site-footer__col">
+            <h2 class="site-footer__heading">
+              <a href={section.path}>{section.label}</a>
+            </h2>
+            <ul>
+              {section.children.map((child) => (
+                <li>
+                  <a href={child.path}>{child.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </nav>
+
+    <div class="site-footer__related">
+      <div class="site-footer__col">
+        <h2 class="site-footer__heading">Group companies</h2>
+        <ul class="site-footer__inline">
+          {
+            GROUP_SITES.map((s) => (
+              <li>
+                <a href={s.href} rel="noopener">
+                  {s.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2 class="site-footer__heading">Brand sites</h2>
+        <ul class="site-footer__inline">
+          {
+            BRAND_SITES.map((s) => (
+              <li>
+                <a href={s.href} rel="noopener">
+                  {s.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__base">
+      <div class="site-footer__identity">
+        <Image src={symbol} alt="" width={40} height={34} loading="lazy" class="site-footer__symbol" />
+        <div>
+          <p class="site-footer__legal">
+            {ORGANIZATION.legalName}<br />
+            {ORGANIZATION.address.streetAddress}, {ORGANIZATION.address.addressLocality}, Republic of Korea
+          </p>
+          <p class="site-footer__copyright">© {year} Nongshim Co., Ltd. All rights reserved.</p>
+        </div>
+      </div>
+
+      <ul class="site-footer__socials">
+        {
+          SOCIALS.map((s) => (
+            <li>
+              <a href={s.href} rel="noopener me" aria-label={s.label}>
+                <img src={s.icon} alt="" width="20" height="20" loading="lazy" decoding="async" />
+                <span class="visually-hidden">{s.short}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: var(--space-section);
+    padding-block: var(--space-8) var(--space-6);
+    background: var(--color-surface);
+    border-top: 4px solid var(--color-brand-primary);
+    font-size: var(--text-sm);
+  }
+
+  .site-footer__nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+    gap: var(--space-6) var(--space-5);
+  }
+
+  .site-footer__heading {
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-sm);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-text-strong);
+  }
+
+  .site-footer__heading a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .site-footer__heading a:hover {
+    color: var(--color-brand-primary-text);
+  }
+
+  .site-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-footer li + li {
+    margin-top: var(--space-2);
+  }
+
+  .site-footer a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    color: var(--color-brand-primary-text);
+    text-decoration: underline;
+  }
+
+  .site-footer__related {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .site-footer__inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-4);
+  }
+
+  .site-footer__inline li + li {
+    margin-top: 0;
+  }
+
+  .site-footer__base {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    margin-top: var(--space-7);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .site-footer__identity {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+
+  .site-footer__symbol {
+    flex: none;
+    width: 40px;
+    height: auto;
+  }
+
+  .site-footer__legal,
+  .site-footer__copyright {
+    margin: 0;
+    color: var(--color-text-muted);
+    line-height: var(--leading-snug);
+  }
+
+  .site-footer__copyright {
+    margin-top: var(--space-2);
+    font-size: var(--text-xs);
+  }
+
+  .site-footer__socials {
+    display: flex;
+    gap: var(--space-2);
+  }
+
+  .site-footer__socials li + li {
+    margin-top: 0;
+  }
+
+  .site-footer__socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-pill);
+    background: #fff;
+    border: 1px solid var(--color-border);
+  }
+
+  .site-footer__socials a:hover {
+    border-color: var(--color-brand-primary-text);
+  }
+</style>

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-08-30T07:20:57.235Z",
+  "pages": 223,
+  "violations": [],
+  "notes": [
+    "body text on page: #222222 on #ffffff = 15.91:1 (needs 4.5:1)",
+    "body text on surface: #222222 on #f6f6f6 = 14.72:1 (needs 4.5:1)",
+    "muted text on page: #5f5f5f on #ffffff = 6.39:1 (needs 4.5:1)",
+    "muted text on surface: #5f5f5f on #f6f6f6 = 5.91:1 (needs 4.5:1)",
+    "headings on page: #111111 on #ffffff = 18.88:1 (needs 4.5:1)",
+    "link text on page: #2c5f00 on #ffffff = 7.65:1 (needs 4.5:1)",
+    "link hover on page: #1f4300 on #ffffff = 11.28:1 (needs 4.5:1)",
+    "eyebrow / accent text on page: #3f7500 on #ffffff = 5.59:1 (needs 4.5:1)",
+    "eyebrow / accent text on surface: #3f7500 on #f6f6f6 = 5.17:1 (needs 4.5:1)",
+    "primary button label: #ffffff on #3f7500 = 5.59:1 (needs 4.5:1)",
+    "primary button hover label: #ffffff on #2f5800 = 8.34:1 (needs 4.5:1)",
+    "source green as a rule / border (non-text): #539a00 on #ffffff = 3.51:1 (needs 3:1)",
+    "hero eyebrow on the darkest scrim: #96c11f on #3c3c3c = 5.22:1 (needs 4.5:1)",
+    "hero heading on the darkest scrim: #ffffff on #3c3c3c = 11.03:1 (needs 4.5:1)",
+    "SHIN heading (large text): #df0029 on #ffffff = 5.04:1 (needs 3:1)",
+    "focus ring against page: #0a3398 on #ffffff = 10.83:1 (needs 3:1)",
+    "focus ring against surface: #0a3398 on #f6f6f6 = 10.02:1 (needs 3:1)",
+    "border against page (non-text): #cccccc on #ffffff = 1.61:1 (needs 1:1)",
+    "/investors/ir/: <table> has no caption",
+    "/press/baduk/: <table> has no caption",
+    "/press/baduk/: <table> has no caption",
+    "/press/baduk/: <table> has no caption"
+  ]
+}

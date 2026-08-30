@@ -1,0 +1,186 @@
+---
+/**
+ * Product catalogue.
+ *
+ * All 68 products are in the initial HTML — the source loaded 24 at a time over
+ * AJAX with no product URLs at all. Filtering is a progressive enhancement over
+ * that complete, crawlable list: with JavaScript off, every product is still
+ * present and the category links still work.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/ui/PageHero.astro';
+import ProductCard from '../../components/products/ProductCard.astro';
+import ProductFilter from '../../components/products/ProductFilter.astro';
+import { products, categories, productsInCategory } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, itemListSchema, canonical } from '../../lib/seo';
+import { resolveImage } from '../../lib/images';
+import { prepareLcpImage } from '../../lib/lcp';
+
+const sorted = [...products].sort((a, b) => Number(b.featured) - Number(a.featured) || a.name.localeCompare(b.name));
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Products', path: '/products/' },
+];
+
+const description = `Every Nongshim product: ${products.length} items across instant noodles, snacks, beverages and home meal replacement, with pack sizes, net weights and release dates.`;
+
+const lead = resolveImage(sorted[0]?.cardImage);
+const leadLcp = await prepareLcpImage(lead, {
+  widths: [320, 480, 720, 960],
+  sizes: '(min-width: 64rem) 32rem, (min-width: 40rem) 50vw, 100vw',
+});
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${canonical('/products/')}#webpage`,
+    url: canonical('/products/'),
+    name: 'Nongshim products',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  itemListSchema(
+    sorted.map((p) => ({ name: p.name, path: p.path })),
+    'Nongshim products'
+  ),
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title="Products"
+  description={description}
+  path="/products/"
+  image={lead?.src.src}
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={leadLcp?.preload}
+>
+  <PageHero
+    heading="Products"
+    eyebrow="Catalogue"
+    description={`Nongshim makes ${products.length} products across four categories. Every product page lists its pack sizes, net weight and release date.`}
+  />
+
+  <div class="container section">
+    <nav class="category-nav" aria-label="Product categories">
+      <ul>
+        <li><a href="/products/" aria-current="page">All products ({products.length})</a></li>
+        {
+          categories.map((c) => (
+            <li>
+              <a href={c.path}>
+                {c.name} ({productsInCategory(c.id).length})
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <ProductFilter categories={categories} total={products.length} />
+
+    <ul class="grid grid--cards product-grid" id="product-grid">
+      {
+        sorted.map((product, i) => (
+          <li
+            data-category={product.category}
+            data-name={product.name.toLowerCase()}
+            class={product.featured && i === 0 ? 'product-grid__item product-grid__item--wide' : 'product-grid__item'}
+          >
+            <ProductCard
+              product={product}
+              featured={product.featured && i === 0}
+              headingLevel={2}
+              lcp={i === 0 ? leadLcp : null}
+            />
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="product-grid__empty" id="product-empty" hidden role="status">
+      No products match that search. <button type="button" class="link-button" data-clear>Clear the filter</button> to see
+      all {products.length} products.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .category-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .category-nav a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+
+  .category-nav a[aria-current='page'] {
+    background: var(--color-brand-primary-text);
+    border-color: var(--color-brand-primary-text);
+    color: #fff;
+  }
+
+  .product-grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* The list item is the grid cell, so list semantics survive for screen
+     readers (display:contents on an <li> drops it from the a11y tree). */
+  .product-grid__item {
+    display: flex;
+  }
+
+  .product-grid__item > :global(*) {
+    flex: 1;
+  }
+
+  @media (min-width: 40rem) {
+    .product-grid__item--wide {
+      grid-column: span 2;
+    }
+  }
+
+  .product-grid__empty {
+    margin-top: var(--space-6);
+    padding: var(--space-6);
+    border: 1px dashed var(--color-border-strong);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    color: var(--color-text-muted);
+  }
+
+  .link-button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--color-link);
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>

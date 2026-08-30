@@ -1,0 +1,45 @@
+{
+  "name": "nongshim-eng",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate-content && astro build && npm run redirects",
+    "preview": "astro preview",
+    "typecheck": "astro check",
+    "lint": "node tools/lint.mjs",
+    "test": "vitest run",
+    "crawl": "node tools/crawl.mjs",
+    "extract": "node tools/extract.mjs && node tools/extract-company.mjs",
+    "assets": "node tools/assets.mjs",
+    "content": "node tools/ia.mjs && node tools/build-content.mjs",
+    "validate-content": "node tools/validate-content.mjs",
+    "redirects": "node tools/generate-redirects.mjs",
+    "seo-audit": "node tools/audit-seo.mjs",
+    "a11y-audit": "node tools/audit-a11y.mjs",
+    "perf": "node tools/perf.mjs",
+    "audit": "npm run validate-content && npm run seo-audit && npm run a11y-audit && npm run perf && npm run browser-test",
+    "report": "node tools/report.mjs",
+    "refresh": "npm run crawl && npm run extract && npm run assets && npm run content",
+    "lighthouse": "node tools/lighthouse.mjs",
+    "browser-test": "node tools/browser-test.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.9",
+    "sharp": "^0.35.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/node": "^26.4.0",
+    "cheerio": "^1.2.0",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.11"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  }
+}

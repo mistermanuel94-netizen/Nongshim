@@ -1,0 +1,412 @@
+---
+/**
+ * Product detail page.
+ *
+ * The source had no product page at all — the identical information arrived as
+ * an AJAX HTML fragment injected into the catalogue grid. Here every product is
+ * a document with its own URL, heading, description, specification table,
+ * variant list, related recipes and Product structured data.
+ *
+ * The product name and the answer to "what is this?" are the first two things
+ * in the page body, which is what an answer engine needs to extract confidently.
+ */
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import LcpImage from '../ui/LcpImage.astro';
+import { prepareLcpImage } from '../../lib/lcp';
+import ProductCard from './ProductCard.astro';
+import { resolveImage } from '../../lib/images';
+import { recipesForProduct, getProductById, type Product } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, productSchema, absolute } from '../../lib/seo';
+import { composeDescription, sentence } from '../../lib/text';
+
+interface Props {
+  product: Product;
+}
+const { product } = Astro.props;
+
+const hero = resolveImage(product.heroImage);
+const heroLcp = await prepareLcpImage(hero, {
+  widths: [320, 480, 720, 960],
+  sizes: '(min-width: 62rem) 30rem, 90vw',
+});
+const variantImages = product.variants.map((v) => ({ variant: v, image: resolveImage(v.image) }));
+const galleryImages = variantImages.filter((v) => v.image);
+
+const relatedRecipes = recipesForProduct(product.id).slice(0, 6);
+const relatedProducts = product.relatedProducts
+  .map((r) => getProductById(r.id))
+  .filter((p): p is Product => Boolean(p))
+  .slice(0, 4);
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Products', path: '/products/' },
+  ...(product.categoryPath && product.categoryName
+    ? [{ name: product.categoryName, path: product.categoryPath }]
+    : []),
+  { name: product.name, path: product.path },
+];
+
+/**
+ * Description: the product's own first published sentence, which is the most
+ * accurate summary available. Falls back to the tagline, then to a factual
+ * sentence assembled only from fields the source publishes.
+ */
+const specBits = [
+  product.categoryName ? `a Nongshim ${product.categoryName.toLowerCase().replace(/s$/, '')}` : 'a Nongshim product',
+  product.weight ? `${product.weight} per pack` : null,
+  product.released ? `released ${product.released}` : null,
+].filter(Boolean);
+
+const description = composeDescription([
+  `${product.name} is ${specBits.join(', ')}.`,
+  product.description[0] ? sentence(product.description[0]) : product.tagline ? sentence(product.tagline) : null,
+]);
+
+const imageUrls = [hero, ...galleryImages.map((g) => g.image)]
+  .filter((i): i is NonNullable<typeof i> => Boolean(i))
+  .map((i) => absolute(i.src.src))
+  .filter((u): u is string => Boolean(u));
+
+const schema = graph([
+  organizationSchema(),
+  productSchema(product, imageUrls),
+  breadcrumbSchema(crumbs),
+]);
+
+const specs = [
+  product.weight ? { label: 'Net weight', value: product.weight } : null,
+  product.released ? { label: 'Released', value: product.released } : null,
+  product.certification ? { label: 'Certification', value: product.certification } : null,
+  ...Object.entries(product.otherSpecs).map(([label, value]) => ({
+    label: label.charAt(0).toUpperCase() + label.slice(1),
+    value,
+  })),
+].filter((s): s is { label: string; value: string } => Boolean(s));
+---
+
+<Base
+  title={product.displayTitle}
+  description={description}
+  path={product.path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <article class="product">
+    <div class="container product__top">
+      <div class="product__media">
+        {
+          heroLcp ? (
+            <LcpImage image={heroLcp} class="product__image" />
+          ) : (
+            <p class="product__no-image">No product photograph is published for this item.</p>
+          )
+        }
+      </div>
+
+      <div class="product__intro">
+        {
+          product.categoryName && product.categoryPath && (
+            <a class="product__category" href={product.categoryPath}>
+              {product.categoryName}
+            </a>
+          )
+        }
+        <h1>{product.name}</h1>
+        {product.tagline && <p class="lede">{product.tagline}</p>}
+
+        {
+          specs.length > 0 && (
+            <dl class="product__specs">
+              {specs.map((spec) => (
+                <div>
+                  <dt>{spec.label}</dt>
+                  <dd>{spec.value}</dd>
+                </div>
+              ))}
+            </dl>
+          )
+        }
+      </div>
+    </div>
+
+    {
+      product.description.length > 0 && (
+        <section class="container section product__about" aria-labelledby="about-heading">
+          <h2 id="about-heading">About {product.name}</h2>
+          <div class="prose">
+            {product.description.map((para) => (
+              <p>{para}</p>
+            ))}
+          </div>
+        </section>
+      )
+    }
+
+    {
+      product.variants.length > 0 && (
+        <section class="container section product__variants" aria-labelledby="variants-heading">
+          <h2 id="variants-heading">
+            Pack {product.variants.length === 1 ? 'format' : 'formats'}
+          </h2>
+          <p class="lede">
+            {product.variants.length === 1
+              ? `${product.name} is published in one pack format.`
+              : `${product.name} is published in ${product.variants.length} pack formats.`}
+          </p>
+          <ul class="variant-grid">
+            {variantImages.map(({ variant, image }) => (
+              <li id={variant.slug}>
+                <div class="variant">
+                  <div class="variant__media">
+                    {image ? (
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        widths={[200, 320, 480]}
+                        sizes="(min-width: 48rem) 15rem, 45vw"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <span class="variant__no-image" aria-hidden="true" />
+                    )}
+                  </div>
+                  <h3>{variant.name}</h3>
+                  <dl>
+                    {variant.weight && (
+                      <>
+                        <dt>Net weight</dt>
+                        <dd>{variant.weight}</dd>
+                      </>
+                    )}
+                    {variant.released && (
+                      <>
+                        <dt>Released</dt>
+                        <dd>{variant.released}</dd>
+                      </>
+                    )}
+                    {variant.certification && (
+                      <>
+                        <dt>Certification</dt>
+                        <dd>{variant.certification}</dd>
+                      </>
+                    )}
+                  </dl>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      relatedRecipes.length > 0 && (
+        <section class="container section" aria-labelledby="recipes-heading">
+          <h2 id="recipes-heading">Recipes using {product.name}</h2>
+          <ul class="related-list">
+            {relatedRecipes.map((recipe) => (
+              <li>
+                <a href={recipe.path}>
+                  <strong>{recipe.name}</strong>
+                  {recipe.summary && <span>{recipe.summary}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      relatedProducts.length > 0 && (
+        <section class="container section" aria-labelledby="related-heading">
+          <h2 id="related-heading">Other {product.categoryName?.toLowerCase() ?? 'products'}</h2>
+          <div class="grid grid--cards">
+            {relatedProducts.map((p) => (
+              <ProductCard product={p} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Base>
+
+<style>
+  .product__top {
+    display: grid;
+    gap: var(--space-7);
+    padding-block: var(--space-8);
+    align-items: center;
+  }
+
+  @media (min-width: 62rem) {
+    .product__top {
+      grid-template-columns: minmax(0, 30rem) 1fr;
+    }
+  }
+
+  .product__media {
+    display: grid;
+    place-items: center;
+    padding: var(--space-6);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+  }
+
+  .product__image {
+    width: 100%;
+    height: auto;
+    max-height: 26rem;
+    object-fit: contain;
+  }
+
+  .product__no-image {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+
+  .product__category {
+    display: inline-block;
+    margin-bottom: var(--space-3);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-brand-primary-text);
+  }
+
+  .product h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .product__specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .product__specs dt {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .product__specs dd {
+    margin: var(--space-1) 0 0;
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .product__about,
+  .product__variants {
+    padding-top: 0;
+  }
+
+  .variant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+    gap: var(--space-5);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .variant {
+    height: 100%;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+  }
+
+  .variant__media {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    margin-bottom: var(--space-3);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .variant__media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: var(--space-2);
+  }
+
+  .variant h3 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-md);
+  }
+
+  .variant dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-1) var(--space-3);
+    margin: 0;
+    font-size: var(--text-sm);
+  }
+
+  .variant dt {
+    color: var(--color-text-muted);
+  }
+
+  .variant dd {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .related-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: var(--space-4);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .related-list a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    height: 100%;
+    padding: var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .related-list a:hover {
+    border-color: var(--color-brand-primary);
+  }
+
+  .related-list strong {
+    font-family: var(--font-display);
+  }
+
+  .related-list span {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-snug);
+  }
+</style>

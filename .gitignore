@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.astro/
+
+# Crawl cache: large, regenerable with `npm run refresh`.
+audit/.cache/
+
+# Raw source HTML captured during reconnaissance; regenerable.
+audit/raw/
+
+# Scratch scripts used while building; not part of the pipeline.
+tools/scratch/
+
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log

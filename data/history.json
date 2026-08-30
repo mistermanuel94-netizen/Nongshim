@@ -1,0 +1,601 @@
+{
+  "heading": "History",
+  "description": "Thinking about customers and being with customers Footsteps of Nongshim",
+  "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_history_visual.png",
+  "eras": [
+    {
+      "id": "timeline_2010",
+      "label": "2020 - Present",
+      "entries": [
+        {
+          "era": "2020 - Present",
+          "year": "2020",
+          "month": "10",
+          "caption": "Nongshim and Nongshim Kellogg supported undernourished children on the occasion of the 'World Food Day'",
+          "image": "https://image.nongshim.com/non/musm/nskellog.jpg"
+        },
+        {
+          "era": "2020 - Present",
+          "year": "2020",
+          "month": "10",
+          "caption": "Harry Harris, the US Ambassador to South Korea visited Nongshim factory",
+          "image": null
+        },
+        {
+          "era": "2020 - Present",
+          "year": "2020",
+          "month": "07",
+          "caption": "Nongshim achieved US sales increase by 35% in the first half of 2020",
+          "image": null
+        },
+        {
+          "era": "2020 - Present",
+          "year": "2020",
+          "month": "07",
+          "caption": "‘Nongshim Shin Ramyun Black’ was selected as the world’s best ramyun by New York Times",
+          "image": null
+        },
+        {
+          "era": "2010 - 2019",
+          "year": "2019",
+          "month": "08",
+          "caption": "All domestic factories of Nongshim obtained the green company certification",
+          "image": "https://eng.nongshim.com/resources/nongshimCss/images/history-2019.png"
+        },
+        {
+          "era": "2010 - 2019",
+          "year": "2019",
+          "month": "03",
+          "caption": "Nongshim donated 3.1% of Ansungtangmyun sales to commemorate the 100th anniversary of the March 1st independence movement",
+          "image": null
+        },
+        {
+          "era": "2010 - 2019",
+          "year": "2019",
+          "month": "02",
+          "caption": "Launched Shin Ramyun Light.",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2018",
+          "month": "12",
+          "caption": "Nongshim achieves a record high overseas sales",
+          "image": "https://image.nongshim.com/non/musm/C_201812.png"
+        },
+        {
+          "era": null,
+          "year": "2018",
+          "month": "08",
+          "caption": "Nongshim Shin Ramyun Cup Go Competition marks its 20th anniversary",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2018",
+          "month": "04",
+          "caption": "Ansungtangmyun marks the 35th anniversary of its launch, recording accumulated sales of 15 billion packs",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2018",
+          "month": "02",
+          "caption": "Nongshim Shin Ramyun Cup Go Competition marks its 20th anniversary",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2017",
+          "month": "11",
+          "caption": "Nongshim launched Shin Ramyun Black Cup",
+          "image": "https://image.nongshim.com/non/musm/C_201711.png"
+        },
+        {
+          "era": null,
+          "year": "2017",
+          "month": "09",
+          "caption": "Shin Ramyun became the first Korean food to be sold across whole Wal-Mart stores in the US",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2017",
+          "month": "09",
+          "caption": "Nongshim made 6 kinds of limited edition character notes in cooperation with Morning Glory",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2017",
+          "month": "09",
+          "caption": "Nongshim Shrimp Crackers collaborated with 8Seconds, a fashion brand",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2016",
+          "month": "12",
+          "caption": "Nongshim ranked the 1st place in the instant noodle sector of the National Customer Satisfaction Index (NCSI) (Korea Productivity Center).",
+          "image": "https://eng.nongshim.com/resources/nongshimCss/images/history-2016.png"
+        },
+        {
+          "era": null,
+          "year": "2016",
+          "month": "10",
+          "caption": "Nongshim marked the 30th anniversary of the launch of Shin Ramyun",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2016",
+          "month": "09",
+          "caption": "Nongshim ranked the 1st place in the instant noodle sector of the National Customer Satisfaction Index (NCSI) (Korea Productivity Center).",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2015",
+          "month": "10",
+          "caption": "Baekdu Mountain's Baeksan Mountain Water New Plant was established.",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2015",
+          "month": "09",
+          "caption": "Nongshim ranked the 1st place in the instant noodle sector of NCSI (Korea Productivity Center).",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2015",
+          "month": "09",
+          "caption": "The 50th anniversary of Nongshim",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2014",
+          "month": "10",
+          "caption": "Nongshim was selected as the most outstanding company in the food and beverage industry by the DJSI for the six consecutive years",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2014",
+          "month": "09",
+          "caption": "Strategic partnership with PVM(Perfetti Van Melle)",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2014",
+          "month": "09",
+          "caption": "Nongshim ranked the 1st place in the instant noodle sector of NCSI (Korea Productivity Center)",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2014",
+          "month": "02",
+          "caption": "Convention of mutual cooperation and shared growth between agriculture and business was concluded.",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2013",
+          "month": "09",
+          "caption": "Nongshim Child-Care Center opening at workplace",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2013",
+          "month": "06",
+          "caption": "Nongshim, 'fair trade and mutual growth Convention' signed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2013",
+          "month": "05",
+          "caption": "Nongshim opened a corporate Facebook Fan page",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2013",
+          "month": "02",
+          "caption": "Korea Food industry's first direct transaction with Wal-Mart in US",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2013",
+          "month": "01",
+          "caption": "The launch of ‘Ganglio Coffee’",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2011",
+          "month": "12",
+          "caption": "All Nongshim products at all the plants are recognized to be in compliance with HACCP",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2011",
+          "month": "10",
+          "caption": "Nongshim is selected as the most outstanding company in the food and beverage industry by the Dow Jones Sustainability Index for the third consecutive year",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2011",
+          "month": "05",
+          "caption": "Nongshim is recognized as the Authorized Economic Operator (AEO) by Korea Customs Service",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2011",
+          "month": "03",
+          "caption": "Nongshim receives the presidential citation in the 12th Export Tower Award by the Ministry for Food, Agriculture, Forestry and Fisheries",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2010",
+          "month": "12",
+          "caption": "Nongshim instant noodle brands are selected as Globally Leading Products by the Ministry of Knowledge Economy",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2010",
+          "month": "10",
+          "caption": "Nongshim is selected as the food company with the best sustainability performance by the Dow Jones Sustainability Index Korea",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2010",
+          "month": "09",
+          "caption": "Nongshim ranks first in the instant noodle sector of NCSI",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2010",
+          "month": "04",
+          "caption": "Nongshim opens an office in Vladivostok, Russia",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2010",
+          "month": "02",
+          "caption": "Nongshim becomes the exclusive distributor of Itoen of Japan",
+          "image": null
+        },
+        {
+          "era": "2000 - 2009",
+          "year": "2009",
+          "month": "12",
+          "caption": "Nongshim becomes certified as a CCMS (Consumer Complaints Management System) company",
+          "image": null
+        },
+        {
+          "era": "2000 - 2009",
+          "year": "2009",
+          "month": "10",
+          "caption": "Nongshim is selected as the food company with the best sustainability performance by the Dow Jones Sustainability Index Korea",
+          "image": null
+        },
+        {
+          "era": "2000 - 2009",
+          "year": "2009",
+          "month": "04",
+          "caption": "The nation’s first Culinary Culture Library opens to the public",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2008",
+          "month": "09",
+          "caption": "The Jinshan Plant in Shanghai is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2007",
+          "month": "04",
+          "caption": "The Noksan Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2006",
+          "month": "04",
+          "caption": "Nongshim hosts the 5th International Ramen Manufacturers Association",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2005",
+          "month": "10",
+          "caption": "The LA Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2004",
+          "month": "10",
+          "caption": "Nongshim is given Korea’s Most Outstanding Company Award by KCEOA",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2001",
+          "month": "10",
+          "caption": "Nongshim is selected as a company that can deliver sustainable growth by Bain & Company",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2000",
+          "month": "12",
+          "caption": "Nongshim wins the Production Innovation Award for the Logistics Management Sector given by the Korea Management Association Nongshim’s five plants win ISO14001",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2000",
+          "month": "11",
+          "caption": "The Shenyang Plant in China is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "2000",
+          "month": "01",
+          "caption": "Nongshim wins IQ-NET for the first time in the local food industry",
+          "image": null
+        },
+        {
+          "era": "1990 - 1999",
+          "year": "1999",
+          "month": "12",
+          "caption": "Nongshim is selected to Korea’s 100 outstanding manufacturing plants by the Korea Management Association",
+          "image": null
+        },
+        {
+          "era": "1990 - 1999",
+          "year": "1999",
+          "month": "09",
+          "caption": "The Gumi Plant, a state-of-the-art production facility for the 21st century, is activated",
+          "image": null
+        },
+        {
+          "era": "1990 - 1999",
+          "year": "1999",
+          "month": "07",
+          "caption": "The Nongshim Shinramyun Cup World Baduk Championship takes off",
+          "image": null
+        },
+        {
+          "era": "1990 - 1999",
+          "year": "1999",
+          "month": "07",
+          "caption": "The enterprise-wide BPR is introduced / The advanced information system is launched",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1998",
+          "month": "07",
+          "caption": "The plant for Capri Sun is completed / The Qingdao Plant in China is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1998",
+          "month": "03",
+          "caption": "The GPS system is constructed / Nongshim advances into the bottled water market",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1997",
+          "month": "11",
+          "caption": "Nongshim is selected as the official instant noodle licensee of the 1998 FIFA World Cup France",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1997",
+          "month": "03",
+          "caption": "Nongshim joins the World Instant Noodle Association",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1997",
+          "month": "01",
+          "caption": "Nongshim is accredited by the Korea Laboratory Accreditation Scheme (KOLAS)",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1996",
+          "month": "09",
+          "caption": "The Nongshim Intelligent Building is completed / The Shanghai Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1992",
+          "month": "05",
+          "caption": "The Asan Plant dedicated to snacks is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1991",
+          "month": "09",
+          "caption": "The Gumi Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1991",
+          "month": "01",
+          "caption": "The Nongshim CI is introduced",
+          "image": null
+        },
+        {
+          "era": "1980 - 1989",
+          "year": "1988",
+          "month": "09",
+          "caption": "Nongshim is selected as the official supplier",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1986",
+          "month": "10",
+          "caption": "Shinramyun is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1985",
+          "month": "03",
+          "caption": "Nongshim occupies the biggest share of the local instant noodle market Nongshim is selected as the official instant noodle supplier for the 1986 Asian Games and the 1988 Summer Olympics held in Seoul",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1984",
+          "month": "03",
+          "caption": "Chapagetti is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1983",
+          "month": "09",
+          "caption": "Ansungtangmyun is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1982",
+          "month": "12",
+          "caption": "Neoguri and Bowl Noodle Soup (Hot & Spicy) are developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1982",
+          "month": "04",
+          "caption": "The instant noodle powder plant in Anseong is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1981",
+          "month": "11",
+          "caption": "Bowl Noodle Soup is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1981",
+          "month": "01",
+          "caption": "Kellogg’s is established in association with Kellogg’s of the US",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1980",
+          "month": "07",
+          "caption": "Potato Chip, the nation’s first potato snack brand containing real potatoes, is developed",
+          "image": null
+        },
+        {
+          "era": "1970 - 1979",
+          "year": "1978",
+          "month": "03",
+          "caption": "The company name is changed to Nongshim",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1976",
+          "month": "12",
+          "caption": "The Anyang Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1976",
+          "month": "06",
+          "caption": "The company goes public",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1976",
+          "month": "01",
+          "caption": "The Busan Plant is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1975",
+          "month": "10",
+          "caption": "Nongshim Ramyun is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1971",
+          "month": "12",
+          "caption": "Shrimp Crackers, the nation’s first snack brand, is developed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1970",
+          "month": "02",
+          "caption": "The nation’s first instant black bean sauce noodle product is developed",
+          "image": null
+        },
+        {
+          "era": "1960 - 1969",
+          "year": "1967",
+          "month": "09",
+          "caption": "The Dongnae Plant in Busan is completed",
+          "image": null
+        },
+        {
+          "era": null,
+          "year": "1965",
+          "month": "09",
+          "caption": "Lotte Industrial Company is founded",
+          "image": null
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "sourceUrls": [
+      "https://eng.nongshim.com/about/history"
+    ],
+    "sourceChecked": "2026-08-30",
+    "transformation": "structure-only: timeline DOM flattened to year/month/caption records; untranslated Korean entries omitted"
+  }
+}

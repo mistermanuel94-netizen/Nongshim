@@ -1,0 +1,233 @@
+{
+  "heading": "Global Nongshim",
+  "description": "People in many parts of the world can now enjoy the taste of Korea together with Nongshim",
+  "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/global/main_visual.png",
+  "subsidiaries": [
+    {
+      "id": "network_01",
+      "name": "Nongshim Shanghai",
+      "lead": "Shanghai Nongshim was established in 1996 to advance into the Chinese market.",
+      "body": [
+        "Centering Shanghai, it targets Guangzhou and Qingdao and recently the West inland regions like Wuhan, Chungdou, or Jinan under the slogan of 'Along the Sun to the West', promoting the taste of Nongshim into the new regions in China."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_01.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_01_02.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_01_03.jpg"
+      ],
+      "links": [
+        {
+          "href": "http://cn.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.weibo.com/nongshim",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_01",
+      "name": "Nongshim Shenyang",
+      "lead": "It was established in 2000 to improve the competitiveness in the Chinese market.",
+      "body": [
+        "It targets Shenyang, the three northeastern provinces and the Capital Beijing and is making effort to promote the taste of Nongshim in Beijing to expand to the whole China. Currently, Shenyang Plant produces a wide range of products including Shin Ramyun, Shrimp Crackers and Onion Rings based on its production capacity of 400 million units per year."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_03.jpg"
+      ],
+      "links": [
+        {
+          "href": "http://cn.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.weibo.com/nongshim",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_01",
+      "name": "Nongshim Qingdao",
+      "lead": "Nongshim Qingdao established in 1996 to secure fresh raw ingredients",
+      "body": [
+        "The Qingdao plant is trying to secure safety of agricultural ingredients, reduce cost and improve quality using the state-of-the-art facilities. In order to become a global food ingredients company for ingredients from China to other countries, it constantly develops promising ingredients. The newly constructed automated plant is equipped with the state-of-the-art facilities and smart factory system such as continuous vacuum dryer (CVD), low temperature thickener and extract lines to produce the world’s best quality food ingredients."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_02.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_02_03.jpg"
+      ],
+      "links": [
+        {
+          "href": "http://cn.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.weibo.com/nongshim",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_01",
+      "name": "Nongshim Yanbian",
+      "lead": "It was established in 2007 to produce the best bottled water brand recognized in the world as well as in Korea",
+      "body": [
+        "Based on the catchment area in Baekdusan mountain, one of the three major basins in the world together with the Alpes of Switzerland and the Caucasus of Russia, it produces a rare natural volcanic bedrock water maintaining a low temperature of 6.5-7 degrees Celsius throughout the year."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_04.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_04_02.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_04_03.jpg"
+      ],
+      "links": [
+        {
+          "href": "http://cn.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.weibo.com/nongshim",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_02",
+      "name": "Nongshim America",
+      "lead": "Shin Ramyun as a ‘Must Buy’ product",
+      "body": [
+        "Exporting ramyun into LA since 1971, Nongshim established Nongshim America as a foreign corporate in 1994. Its LA Plant started its operation in 2005, currently producing 500 million products per year. Recently, Nongshim successfully advanced into the mainstream markets including Wal-Mart and Costco. In order to promote Shin Brand to the youth, our future customers, Nongshim is actively promoting through social media, various events, tasting events, sports marketing, K-Culture marketing such as K-POP and K-FOOD, Hollywood movies, TV soap opera PPL, media PR and other marketing and promotion activities."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_06.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_06_02.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_06_03.jpg"
+      ],
+      "links": [
+        {
+          "href": "http://eng.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.instagram.com/nongshimusa/",
+          "label": null
+        },
+        {
+          "href": "https://www.facebook.com/nongshimusa",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_03",
+      "name": "Nongshim Canada",
+      "lead": "To become the first overseas subsidiary with No.1 market share in the local instant noodle market.",
+      "body": [
+        "As a result of making an effort to improve brand awareness and sales in the local market after the establishment of sales subsidiary in Toronto in 2002, it grew to have the second largest market share in the Canadian instant noodle market according to AC Nielson. By establishing Nongshim Canada in January 2020, it has been making continuous efforts to be the number 1 in terms of market share."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_09.jpg"
+      ],
+      "links": []
+    },
+    {
+      "id": "network_04",
+      "name": "Nongshim Japan",
+      "lead": "‘辛 Brand’ taking root in the homeland of instant noodles",
+      "body": [
+        "Nongshim's entry into the Japanese market was accelerated by the establishment of Nongshim Japan in 2002. It continues to promote Shin Brand to the whole Japan. Recently, it proceeded kitchen car tasting event, advertisements on websites, cart advertisement at Haneda airport and other various marketing activities. Furthermore, it carried forward sports marketing with Japanese professional baseball Softbank Hawks for consumer campaigns, events and actively utilized SNS targeting the youth. Consequently, Shin Ramyun is settling down as the strong spicy ramyun called ‘Umakarat(うまからっ)!’ which means 'it is hot and tasty at the same time' in Japan."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_05.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_05_02.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_05_03.jpg"
+      ],
+      "links": [
+        {
+          "href": " http://jp.nongshim.com/main/index",
+          "label": null
+        },
+        {
+          "href": "https://www.instagram.com/nongshimjapan/",
+          "label": null
+        },
+        {
+          "href": "https://www.facebook.com/nongshimjapan",
+          "label": null
+        }
+      ]
+    },
+    {
+      "id": "network_05",
+      "name": "Nongshim Australia",
+      "lead": "Sales with a goal of becoming No. 1 Noodle Brand in the Southern Hemisphere",
+      "body": [
+        "Currently, Shin Ramyun is distributed by the two largest retail businesses in Australia: Woolworths and Coles. Attracting the Australian consumers with the taste of Nongshim, it does its best for sales on site to become the No.1 Noodle Brand in the Southern Hemisphere beyond the Australian market."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_07.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_07_02.jpg"
+      ],
+      "links": []
+    },
+    {
+      "id": "network_06",
+      "name": "Nongshim Vietnam",
+      "lead": "It was established to lay the foundation for targeting emerging Southeast Asian markets.",
+      "body": [
+        "In January, 2019 Nongshim established sales subsidiary in Ho Chi Minh, the center of the Vietnamese economy, and has promoted various marketing activities with Nongshim products led by Shin Ramyun to establish itself as a brand familiar to local people."
+      ],
+      "images": [
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_08.jpg",
+        "https://eng.nongshim.com/resources/nongshimCss/images/global/network_08_02.jpg"
+      ],
+      "links": []
+    }
+  ],
+  "contacts": [
+    {
+      "address": "中国 上海市 金山工业开发区 揽工路840号(201506) 840HAO, Langong Road, Jinshangongyek Aifa District, Shanghai, China",
+      "tel": "86-21-6727-7711"
+    },
+    {
+      "address": "中国 辽宁省 沈阳市 沈阳经济技术开发区 四号街 3甲1号 邮政号码(110027)3jia 1hao, Shenyangjingjijishukaifaqu 4haojie, Shenyang, Lianing, China",
+      "tel": "86-24-2536-7480"
+    },
+    {
+      "address": "中国山东省青岛市胶州市胶州经济技术开发区黄河路101号101, HUANGHE ROAD, JIAOZHOU ECONOMIC AND TECHNOLOGICAL DEVELOPMENT ZONE, JIAOZHOU CITY, QINGDAO, CHINA",
+      "tel": "86-532-8822-9800"
+    },
+    {
+      "address": "吉林省安图县二道白河镇美人松东路1号 (133613)No.1, Meirensong east road,Erdaobaihe town, Antu, Jilin Province, China",
+      "tel": "86-0433-593-2626"
+    },
+    {
+      "address": "12155 6th Street, Rancho Cucamonga, CA91730, USA",
+      "tel": "1-909-484-1888"
+    },
+    {
+      "address": "6255 Cantay Road Unit 4, Mississauga, ON L5R 3Z4, Canada",
+      "tel": "1-905-501-7176"
+    },
+    {
+      "address": "農心ジャパン 日本東京都千代田区霞が関1丁目4番2号 大同生命霞が関ビル４階Daido Seimei Kasumigaseki, Bldg. 4F, 1-4-2, Kasumigaseki, Chiyoda-ku, Tokyo, Japan",
+      "tel": "81-3-3595-0882"
+    },
+    {
+      "address": "Suite 2.8, 56 Delhi Road North Ryde NSW 2113",
+      "tel": "61-02-9870-7178~9"
+    },
+    {
+      "address": "2nd floor, Pax sky building, 13-15-17 Truong Dinh, Ward 6, District 3, Ho Chi Minh City.",
+      "tel": "84-028-7307-4979"
+    }
+  ],
+  "provenance": {
+    "sourceUrls": [
+      "https://eng.nongshim.com/about/globalNongshim"
+    ],
+    "sourceChecked": "2026-08-30",
+    "transformation": "structure-only; untranslated Korean strings omitted"
+  }
+}

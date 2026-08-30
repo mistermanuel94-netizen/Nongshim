@@ -1,0 +1,247 @@
+---
+/**
+ * Company history.
+ *
+ * The source rendered this as a JavaScript-driven timeline widget; the content
+ * was in the HTML but its year/month structure was carried entirely by CSS
+ * classes. Here it is a semantic year-by-year list, newest first, with every
+ * caption as real text.
+ *
+ * The source page also contained untranslated Korean entries on the English
+ * site; those are omitted rather than shown to English readers.
+ */
+import { Image } from 'astro:assets';
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/ui/PageHero.astro';
+import { resolveImage } from '../../../lib/images';
+import { prepareLcpImage } from '../../../lib/lcp';
+import { history } from '../../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../../../lib/seo';
+
+const path = '/about/history/';
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about/overview/' },
+  { name: 'History', path },
+];
+
+const years = history.years;
+const earliest = years[years.length - 1]?.year;
+const latest = years[0]?.year;
+const total = years.reduce((n, y) => n + y.entries.length, 0);
+
+const description = `Nongshim company history: ${total} milestones from ${earliest} to ${latest}, including product launches, overseas expansion and corporate events.`;
+
+const hero = resolveImage(history.heroImage);
+const heroLcp = await prepareLcpImage(hero, { widths: [640, 960, 1280, 1920], sizes: '100vw' });
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: 'Nongshim history',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+    about: { '@id': `${canonical('/')}#organization` },
+  },
+  breadcrumbSchema(crumbs),
+]);
+
+/** Decade grouping gives the page a navigable second level. */
+const decades = [...new Set(years.map((y) => `${y.year.slice(0, 3)}0s`))];
+---
+
+<Base
+  title="History"
+  description={description}
+  path={path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <PageHero
+    heading="History"
+    eyebrow="About"
+    description={history.description ?? `Nongshim milestones from ${earliest} to ${latest}.`}
+    image={history.heroImage}
+    lcpImage={heroLcp}
+  />
+
+  <div class="container section">
+    <p class="lede">
+      Nongshim was founded in {earliest}. This page lists {total} publicly recorded milestones through {latest}.
+    </p>
+
+    <nav class="decade-nav" aria-label="Jump to a decade">
+      <ul>
+        {
+          decades.map((d) => (
+            <li>
+              <a href={`#decade-${d.replace(/\D/g, '')}`}>{d}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="timeline">
+      {
+        years.map((year, i) => {
+          const decade = `${year.year.slice(0, 3)}0`;
+          const startsDecade = i === 0 || years[i - 1].year.slice(0, 3) !== year.year.slice(0, 3);
+          return (
+            <section
+              class="timeline__year"
+              id={startsDecade ? `decade-${decade}` : undefined}
+              aria-labelledby={`year-${year.year}`}
+            >
+              <h2 class="timeline__heading" id={`year-${year.year}`}>
+                {year.year}
+              </h2>
+              <ol class="timeline__entries">
+                {year.entries.map((entry) => {
+                  const image = resolveImage(entry.image);
+                  return (
+                    <li class="timeline__entry">
+                      {entry.month && (
+                        <span class="timeline__month">
+                          <span class="visually-hidden">Month: </span>
+                          {entry.month}
+                        </span>
+                      )}
+                      <p class="timeline__caption">{entry.caption}</p>
+                      {image && (
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          widths={[160, 240, 320]}
+                          sizes="(min-width: 48rem) 10rem, 30vw"
+                          loading="lazy"
+                          decoding="async"
+                          class="timeline__image"
+                        />
+                      )}
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          );
+        })
+      }
+    </div>
+  </div>
+</Base>
+
+<style>
+  .decade-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: var(--space-6) 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .decade-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .decade-nav a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+
+  .timeline__year {
+    display: grid;
+    gap: var(--space-4);
+    padding-block: var(--space-6);
+    border-top: 1px solid var(--color-border);
+    scroll-margin-top: calc(var(--header-height) + var(--space-4));
+  }
+
+  @media (min-width: 48rem) {
+    .timeline__year {
+      grid-template-columns: 8rem 1fr;
+      gap: var(--space-6);
+    }
+  }
+
+  .timeline__heading {
+    margin: 0;
+    font-size: var(--text-xl);
+    color: var(--color-brand-primary-text);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timeline__entries {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .timeline__entry {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: var(--space-2) var(--space-4);
+    align-items: start;
+    padding-block: var(--space-3);
+  }
+
+  .timeline__entry + .timeline__entry {
+    border-top: 1px solid var(--color-border);
+  }
+
+  @media (min-width: 40rem) {
+    .timeline__entry {
+      grid-template-columns: 2.5rem 1fr 10rem;
+      align-items: center;
+    }
+  }
+
+  .timeline__month {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .timeline__caption {
+    grid-column: 2;
+    margin: 0;
+    max-width: none;
+  }
+
+  .timeline__image {
+    grid-column: 2;
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+    border-radius: var(--radius-md);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  @media (min-width: 40rem) {
+    .timeline__image {
+      grid-column: 3;
+      max-width: none;
+    }
+  }
+</style>

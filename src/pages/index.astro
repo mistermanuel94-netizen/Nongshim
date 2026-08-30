@@ -1,0 +1,330 @@
+---
+/**
+ * Homepage.
+ *
+ * States the primary entity in the first heading and the first paragraph, then
+ * links directly into every major branch of the site. Everything here is real
+ * content in the initial HTML — no carousel hides the categories from a crawler.
+ */
+import Base from '../layouts/Base.astro';
+import ProductCard from '../components/products/ProductCard.astro';
+import RecipeCard from '../components/recipes/RecipeCard.astro';
+import { Image } from 'astro:assets';
+import LcpImage from '../components/ui/LcpImage.astro';
+import { resolveImage } from '../lib/images';
+import { prepareLcpImage } from '../lib/lcp';
+import { products, recipes, categories, character, featuredProducts, productsInCategory } from '../lib/content';
+import { graph, organizationSchema, websiteSchema, canonical } from '../lib/seo';
+import { ORGANIZATION } from '../config/site';
+
+const lead = featuredProducts[0] ?? products[0];
+const leadImage = resolveImage(lead?.cardImage);
+const heroLcp = await prepareLcpImage(leadImage, {
+  widths: [320, 480, 720, 960],
+  sizes: '(min-width: 62rem) 32rem, 90vw',
+});
+
+// A short, deterministic selection: the featured products the source marks,
+// topped up with the best-known names so every category is represented.
+const spotlight = [
+  ...featuredProducts,
+  ...['shinramyun', 'chapagetti', 'neoguri', 'ansung', 'saewookkang', 'bananakicksnack', 'baeksansoo']
+    .map((id) => products.find((p) => p.id === id))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p)),
+]
+  .filter((p, i, all) => all.findIndex((o) => o.id === p.id) === i)
+  .slice(0, 7);
+
+const latestRecipes = recipes
+  .filter((r) => r.heroImage && r.relatedProducts.length)
+  .slice(0, 6);
+
+const characterImage = resolveImage(character.heroImage);
+
+const description = `Nongshim is a Korean food company founded in 1965. Browse ${products.length} products — instant noodles, snacks, beverages and home meal replacement — and ${recipes.length} recipes.`;
+
+const schema = graph([
+  organizationSchema(),
+  websiteSchema(),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${canonical('/')}#webpage`,
+    url: canonical('/'),
+    name: 'Nongshim',
+    description,
+    isPartOf: { '@id': `${canonical('/')}#website` },
+    about: { '@id': `${canonical('/')}#organization` },
+  },
+]);
+---
+
+<Base
+  title="Nongshim — Korean Instant Noodles, Snacks and Recipes"
+  description={description}
+  path="/"
+  image={leadImage ? leadImage.src.src : undefined}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow">Since 1965</span>
+        <h1>Nongshim</h1>
+        <p class="lede">
+          Nongshim is a Korean food company founded in 1965. It makes instant noodles, snacks, beverages
+          and home meal replacement products, and is best known for Shin Ramyun, Chapaghetti, Neoguri and
+          Shrimp Crackers. Nongshim products are sold in more than 100 countries.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="/products/">Browse all {products.length} products</a>
+          <a class="button button--outline" href="/recipes/">See {recipes.length} recipes</a>
+        </div>
+      </div>
+      {
+        heroLcp && (
+          <div class="hero__media">
+            <LcpImage image={heroLcp} class="hero__image" />
+          </div>
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="categories-heading">
+    <div class="container">
+      <h2 id="categories-heading">Product categories</h2>
+      <p class="lede">
+        The Nongshim range is organised into four categories. Every product page lists its pack sizes,
+        net weight, release date and the recipes that use it.
+      </p>
+      <ul class="category-grid">
+        {
+          categories.map((category) => {
+            const count = productsInCategory(category.id).length;
+            return (
+              <li>
+                <a class="category-card" href={category.path}>
+                  <h3>{category.name}</h3>
+                  <p>{category.description}</p>
+                  <span class="category-card__count">
+                    {count} {count === 1 ? 'product' : 'products'}
+                  </span>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--tinted" aria-labelledby="spotlight-heading">
+    <div class="container">
+      <h2 id="spotlight-heading">Signature products</h2>
+      <div class="grid grid--cards">
+        {/* The LCP here is the hero image above, so no card claims priority. */}
+        {spotlight.map((product) => <ProductCard product={product} />)}
+      </div>
+      <p class="section__more">
+        <a href="/products/">See the full product range</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="recipes-heading">
+    <div class="container">
+      <h2 id="recipes-heading">Recipes</h2>
+      <p class="lede">
+        {recipes.length} cooking recipes built on Nongshim noodles, each with its ingredient list and step-by-step
+        instructions.
+      </p>
+      <div class="grid grid--wide-cards">
+        {latestRecipes.map((recipe) => <RecipeCard recipe={recipe} />)}
+      </div>
+      <p class="section__more">
+        <a href="/recipes/">Browse all recipes</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--character" aria-labelledby="shin-heading">
+    <div class="container shin-promo">
+      <div>
+        <span class="eyebrow">Character</span>
+        <h2 id="shin-heading">Meet SHIN</h2>
+        <p class="lede">{character.intro}</p>
+        <p>
+          <a class="button button--primary" href="/shin/">Read SHIN’s story</a>
+        </p>
+      </div>
+      {
+        characterImage && (
+          <Image
+            src={characterImage.src}
+            alt={characterImage.alt}
+            widths={[240, 360, 480]}
+            sizes="(min-width: 48rem) 22rem, 60vw"
+            loading="lazy"
+            decoding="async"
+            class="shin-promo__image"
+          />
+        )
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="company-heading">
+    <div class="container">
+      <h2 id="company-heading">About the company</h2>
+      <ul class="link-grid">
+        <li>
+          <a href="/about/overview/"><strong>Company overview</strong><span>What Nongshim does and where it operates</span></a>
+        </li>
+        <li>
+          <a href="/about/history/"><strong>History</strong><span>The company timeline from its founding in {ORGANIZATION.foundingDate}</span></a>
+        </li>
+        <li>
+          <a href="/about/global/"><strong>Global network</strong><span>Production and sales subsidiaries worldwide</span></a>
+        </li>
+        <li>
+          <a href="/sustainability/overview/"><strong>Sustainability</strong><span>Governance, people, planet and prosperity</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: var(--space-8) var(--space-9);
+    background: linear-gradient(180deg, var(--color-surface), #fff);
+  }
+
+  .hero__inner {
+    display: grid;
+    gap: var(--space-7);
+    align-items: center;
+  }
+
+  @media (min-width: 62rem) {
+    .hero__inner {
+      grid-template-columns: 1fr minmax(0, 32rem);
+    }
+  }
+
+  .hero h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+  }
+
+  .hero__media {
+    display: grid;
+    place-items: center;
+  }
+
+  .hero__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+  }
+
+  .section--tinted {
+    background: var(--color-surface);
+  }
+
+  .section__more {
+    margin-top: var(--space-6);
+    font-weight: 700;
+  }
+
+  .category-grid,
+  .link-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    gap: var(--space-4);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-card,
+  .link-grid a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    height: 100%;
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color var(--duration-base) var(--ease-out),
+      box-shadow var(--duration-base) var(--ease-out);
+  }
+
+  .category-card:hover,
+  .link-grid a:hover {
+    border-color: var(--color-brand-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .category-card h3 {
+    margin: 0;
+    font-size: var(--text-lg);
+  }
+
+  .category-card p,
+  .link-grid span {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
+    color: var(--color-text-muted);
+  }
+
+  .category-card__count {
+    margin-top: auto;
+    padding-top: var(--space-2);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-brand-primary-text);
+  }
+
+  .link-grid strong {
+    font-family: var(--font-display);
+    font-size: var(--text-md);
+  }
+
+  .section--character {
+    background: var(--color-surface);
+  }
+
+  .shin-promo {
+    display: grid;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  @media (min-width: 48rem) {
+    .shin-promo {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  .shin-promo__image {
+    width: min(22rem, 60vw);
+    height: auto;
+    justify-self: center;
+  }
+</style>

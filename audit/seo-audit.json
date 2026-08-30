@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-30T07:20:51.406Z",
+  "stats": {
+    "pages": 223,
+    "indexable": 221,
+    "sitemapUrls": 221,
+    "orphans": 0,
+    "brokenLinks": 0,
+    "duplicateGroups": 0,
+    "withSchema": 222,
+    "totalImages": 2677,
+    "avgHtmlKb": 62,
+    "maxDomNodes": 1037,
+    "externalScripts": []
+  },
+  "errors": [],
+  "warnings": [
+    "/contact/inquiry/: thin content (45 words)",
+    "/investors/audit/: description is only 48 chars",
+    "/investors/audit/: thin content (33 words)",
+    "/investors/report/: thin content (44 words)",
+    "/sustainability/report/: thin content (55 words)"
+  ]
+}

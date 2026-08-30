@@ -1,0 +1,33 @@
+---
+/**
+ * The Nongshim logo lockup.
+ *
+ * Uses the official wordmark artwork published by the source site
+ * (`/resources/nongshimCss/images/logo.png`, 186x39). It is served at its
+ * native size with explicit dimensions so it never shifts layout. It loads
+ * eagerly because it is in the header on every route, but it is never the LCP
+ * element, so it does not claim `fetchpriority="high"` from the real one.
+ *
+ * No mark is redrawn. The logo is the official raster, used unmodified.
+ */
+import { Image } from 'astro:assets';
+import logo from '../../assets/brand/logo.png';
+---
+
+<Image
+  src={logo}
+  alt="Nongshim"
+  width={186}
+  height={39}
+  densities={[1, 2]}
+  loading="eager"
+  class="brand-logo"
+/>
+
+<style>
+  .brand-logo {
+    width: clamp(7.5rem, 12vw, 9.25rem);
+    height: auto;
+    aspect-ratio: 186 / 39;
+  }
+</style>

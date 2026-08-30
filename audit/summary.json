@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-08-30T18:20:32.446Z",
+  "source": {
+    "urlsCrawled": 279,
+    "productFamilies": 68,
+    "recipes": 101
+  },
+  "rebuild": {
+    "routes": 223,
+    "redirects": 1074,
+    "products": 68,
+    "variants": 140,
+    "recipes": 101,
+    "assetsAcquired": 801,
+    "assetMegabytes": 116.5,
+    "assetsUnavailableAtSource": 37
+  },
+  "quality": {
+    "seoErrors": 0,
+    "seoWarnings": 5,
+    "a11yViolations": 0,
+    "brokenLinks": 0,
+    "orphanPages": 0,
+    "duplicateGroups": 0,
+    "worstMobileInitialKb": 80,
+    "lighthouseMin": {
+      "performance": 96,
+      "accessibility": 100,
+      "bestPractices": 96,
+      "seo": 100
+    }
+  }
+}

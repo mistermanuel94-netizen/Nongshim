@@ -1,0 +1,375 @@
+---
+/**
+ * Site header.
+ *
+ * Every navigation link is a real `<a href>` present in the server HTML, so the
+ * link graph is fully crawlable with JavaScript disabled. The mobile drawer and
+ * the desktop dropdowns are `<details>`-based, which gives keyboard operation,
+ * Escape-to-close and screen-reader expanded state from the platform — the one
+ * script on the page only closes open menus on outside click and route change.
+ */
+import Logo from '../ui/Logo.astro';
+import { NAV, isActiveSection } from '../navigation/navigation';
+
+interface Props {
+  currentPath: string;
+}
+const { currentPath } = Astro.props;
+---
+
+<header class="site-header">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="site-header__bar container">
+    <a class="site-header__logo" href="/" aria-label="Nongshim home">
+      <Logo />
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        {
+          NAV.map((section) => {
+            const active = isActiveSection(section, currentPath);
+            return (
+              <li class="site-nav__item">
+                {section.children.length > 1 ? (
+                  <details class="site-nav__disclosure" name="primary-nav">
+                    <summary class="site-nav__summary" aria-current={active ? 'true' : undefined}>
+                      <span>{section.label}</span>
+                      <svg class="site-nav__chevron" viewBox="0 0 10 6" width="10" height="6" aria-hidden="true">
+                        <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                      </svg>
+                    </summary>
+                    <div class="site-nav__panel">
+                      <ul class="site-nav__sublist">
+                        {section.children.map((child) => (
+                          <li>
+                            <a href={child.path} aria-current={currentPath === child.path ? 'page' : undefined}>
+                              <span class="site-nav__sublabel">{child.label}</span>
+                              {child.blurb && <span class="site-nav__blurb">{child.blurb}</span>}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </details>
+                ) : (
+                  <a
+                    class="site-nav__link"
+                    href={section.path}
+                    aria-current={currentPath === section.path ? 'page' : active ? 'true' : undefined}
+                  >
+                    {section.label}
+                  </a>
+                )}
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+
+    <div class="site-header__utils">
+      <a class="site-header__search" href="/search/" aria-label="Search this site">
+        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true">
+          <circle cx="8.5" cy="8.5" r="5.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+          <path d="M12.8 12.8L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </a>
+
+      <details class="lang-switch">
+        <summary aria-label="Change language. Current language: English">
+          <span aria-hidden="true">EN</span>
+        </summary>
+        <ul>
+          {/* Separate corporate sites, not translations of these URLs — so
+              these are plain links, never hreflang alternates. */}
+          <li><a href="https://www.nongshim.com" hreflang="ko" lang="ko">한국어</a></li>
+          <li><a href="https://cn.nongshim.com" hreflang="zh" lang="zh">中文</a></li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-header);
+    background: rgb(255 255 255 / 0.94);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-header__bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    min-height: var(--header-height);
+  }
+
+  .site-header__logo {
+    flex: none;
+    display: flex;
+    align-items: center;
+    padding-block: var(--space-2);
+  }
+
+  .site-nav {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .site-nav__list {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.25rem, 1vw, 0.75rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-nav__item {
+    position: relative;
+  }
+
+  .site-nav__link,
+  .site-nav__summary {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    min-height: 44px;
+    padding-inline: var(--space-3);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    letter-spacing: 0.02em;
+    color: var(--color-text-strong);
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+  }
+
+  .site-nav__summary {
+    list-style: none;
+  }
+  .site-nav__summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .site-nav__link:hover,
+  .site-nav__summary:hover {
+    color: var(--color-brand-primary-text);
+  }
+
+  .site-nav__link[aria-current],
+  .site-nav__summary[aria-current] {
+    color: var(--color-brand-primary-text);
+    box-shadow: inset 0 -3px 0 var(--color-brand-primary);
+  }
+
+  .site-nav__chevron {
+    transition: transform var(--duration-fast) var(--ease-out);
+  }
+
+  .site-nav__disclosure[open] .site-nav__chevron {
+    transform: rotate(180deg);
+  }
+
+  .site-nav__panel {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    left: 0;
+    min-width: 17rem;
+    padding: var(--space-3);
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .site-nav__sublist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-nav__sublist a {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .site-nav__sublist a:hover {
+    background: var(--color-surface);
+    color: var(--color-brand-primary-text);
+  }
+
+  .site-nav__sublist a[aria-current='page'] {
+    background: var(--color-surface);
+    box-shadow: inset 3px 0 0 var(--color-brand-primary);
+  }
+
+  .site-nav__sublabel {
+    display: block;
+    font-weight: 700;
+    font-size: var(--text-sm);
+  }
+
+  .site-nav__blurb {
+    display: block;
+    margin-top: 2px;
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    line-height: var(--leading-snug);
+  }
+
+  .site-header__utils {
+    flex: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+
+  .site-header__search,
+  .lang-switch > summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-strong);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: var(--text-sm);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .lang-switch {
+    position: relative;
+  }
+
+  .lang-switch > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .site-header__search:hover,
+  .lang-switch > summary:hover {
+    background: var(--color-surface);
+    color: var(--color-brand-primary-text);
+  }
+
+  .lang-switch ul {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.25rem);
+    margin: 0;
+    padding: var(--space-2);
+    min-width: 8rem;
+    list-style: none;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .lang-switch a {
+    display: block;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .lang-switch a:hover {
+    background: var(--color-surface);
+  }
+
+  /* ---- Below the desktop nav breakpoint, the bar becomes a scrolling rail.
+     Every link stays in the DOM and reachable; nothing is hidden from crawlers
+     or from keyboard users, and no hamburger state machine is needed. ---- */
+  @media (max-width: 1100px) {
+    .site-header__bar {
+      flex-wrap: wrap;
+      row-gap: 0;
+      padding-block: var(--space-2);
+    }
+
+    .site-nav {
+      order: 3;
+      flex-basis: 100%;
+      margin-inline: calc(var(--container-pad) * -1);
+      padding-inline: var(--container-pad);
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scrollbar-width: thin;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .site-nav__list {
+      gap: 0;
+    }
+
+    .site-nav__panel {
+      position: static;
+      min-width: 0;
+      margin-top: var(--space-2);
+      box-shadow: none;
+    }
+
+    /* A dropdown inside a horizontal scroller would be trapped, so on small
+       screens the section link itself navigates to the section landing page. */
+    .site-nav__disclosure > .site-nav__panel {
+      display: none;
+    }
+
+    .site-nav__disclosure[open] > .site-nav__panel {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: auto;
+      z-index: var(--z-overlay);
+      min-width: 15rem;
+      background: #fff;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+    }
+  }
+</style>
+
+<script>
+  /**
+   * The only behaviour `<details>` does not give us for free: closing an open
+   * menu when focus or a pointer moves elsewhere. Progressive enhancement —
+   * with this script blocked, menus still open, close and are keyboard-operable.
+   */
+  const closeAll = (except?: Element | null) => {
+    for (const d of document.querySelectorAll<HTMLDetailsElement>('.site-nav__disclosure[open], .lang-switch[open]')) {
+      if (d !== except) d.open = false;
+    }
+  };
+
+  document.addEventListener('pointerdown', (event) => {
+    const target = event.target as Element | null;
+    closeAll(target?.closest('.site-nav__disclosure, .lang-switch'));
+  });
+
+  document.addEventListener('focusin', (event) => {
+    const target = event.target as Element | null;
+    closeAll(target?.closest('.site-nav__disclosure, .lang-switch'));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const open = document.querySelector<HTMLDetailsElement>('.site-nav__disclosure[open], .lang-switch[open]');
+    if (!open) return;
+    open.open = false;
+    open.querySelector('summary')?.focus();
+  });
+</script>

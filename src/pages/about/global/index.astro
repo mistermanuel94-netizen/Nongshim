@@ -1,0 +1,272 @@
+---
+/**
+ * Global network.
+ *
+ * Nine Nongshim subsidiaries, each with its published description, address and
+ * phone number. The source rendered these inside per-subsidiary Swiper
+ * carousels and left an untranslated Korean definition list on the page; here
+ * each subsidiary is an `<article>` with a heading and structured contact data.
+ */
+import { Image } from 'astro:assets';
+import Base from '../../../layouts/Base.astro';
+import PageHero from '../../../components/ui/PageHero.astro';
+import { resolveImage } from '../../../lib/images';
+import { prepareLcpImage } from '../../../lib/lcp';
+import { network } from '../../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../../../lib/seo';
+
+const path = '/about/global/';
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about/overview/' },
+  { name: 'Global network', path },
+];
+
+const subsidiaries = network.subsidiaries;
+const description = `Nongshim's global network: ${subsidiaries.length} production and sales subsidiaries across China, the United States, Canada, Japan, Australia and Vietnam, with addresses and contact numbers.`;
+
+const hero = resolveImage(network.heroImage);
+const heroLcp = await prepareLcpImage(hero, { widths: [640, 960, 1280, 1920], sizes: '100vw' });
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: 'Nongshim global network',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  {
+    '@type': 'ItemList',
+    name: 'Nongshim subsidiaries',
+    numberOfItems: subsidiaries.length,
+    itemListElement: subsidiaries.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'Organization',
+        name: s.name,
+        parentOrganization: { '@id': `${canonical('/')}#organization` },
+        ...(s.contact?.address ? { address: s.contact.address } : {}),
+        ...(s.contact?.tel ? { telephone: s.contact.tel } : {}),
+      },
+    })),
+  },
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title="Global network"
+  description={description}
+  path={path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <PageHero
+    heading="Global network"
+    eyebrow="About"
+    description={network.description ?? 'Nongshim production and sales subsidiaries worldwide.'}
+    image={network.heroImage}
+    lcpImage={heroLcp}
+  />
+
+  <div class="container section">
+    <p class="lede">
+      Nongshim operates {subsidiaries.length} overseas subsidiaries. Each entry below shows the company's own published
+      description and contact details.
+    </p>
+
+    <nav class="subsidiary-nav" aria-label="Jump to a subsidiary">
+      <ul>
+        {
+          subsidiaries.map((s) => (
+            <li>
+              <a href={`#${s.slug}`}>{s.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="subsidiaries">
+      {
+        subsidiaries.map((s) => (
+          <article class="subsidiary" id={s.slug} aria-labelledby={`${s.slug}-heading`}>
+            <div class="subsidiary__body">
+              <h2 id={`${s.slug}-heading`}>{s.name}</h2>
+              {s.lead && <p class="lede">{s.lead}</p>}
+              {s.body.map((para) => (
+                <p>{para}</p>
+              ))}
+
+              {(s.contact?.address || s.contact?.tel) && (
+                <dl class="subsidiary__contact">
+                  {s.contact.address && (
+                    <>
+                      <dt>Address</dt>
+                      <dd>{s.contact.address}</dd>
+                    </>
+                  )}
+                  {s.contact.tel && (
+                    <>
+                      <dt>Telephone</dt>
+                      <dd>
+                        <a href={`tel:${s.contact.tel.replace(/[^\d+]/g, '')}`}>{s.contact.tel}</a>
+                      </dd>
+                    </>
+                  )}
+                </dl>
+              )}
+
+              {s.links.length > 0 && (
+                <ul class="subsidiary__links">
+                  {s.links.map((link) => (
+                    <li>
+                      <a href={link.href} rel="noopener">
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            {s.images.length > 0 && (
+              <ul class="subsidiary__gallery">
+                {s.images.slice(0, 3).map((img) => {
+                  const image = resolveImage(img);
+                  return image ? (
+                    <li>
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        widths={[240, 360, 480]}
+                        sizes="(min-width: 62rem) 15rem, 40vw"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </li>
+                  ) : null;
+                })}
+              </ul>
+            )}
+          </article>
+        ))
+      }
+    </div>
+
+    <p class="see-also">
+      See also: <a href="/contact/location/">Nongshim office locations and addresses</a>.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .subsidiary-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: var(--space-6) 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .subsidiary-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .subsidiary-nav a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+
+  .subsidiary {
+    display: grid;
+    gap: var(--space-5);
+    padding-block: var(--space-7);
+    border-top: 1px solid var(--color-border);
+    scroll-margin-top: calc(var(--header-height) + var(--space-4));
+  }
+
+  @media (min-width: 62rem) {
+    .subsidiary {
+      grid-template-columns: 1fr 17rem;
+      gap: var(--space-7);
+    }
+  }
+
+  .subsidiary h2 {
+    margin-top: 0;
+    font-size: var(--text-xl);
+  }
+
+  .subsidiary__contact {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--space-2) var(--space-4);
+    margin-top: var(--space-5);
+    padding: var(--space-4);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+  }
+
+  .subsidiary__contact dt {
+    font-weight: 700;
+    color: var(--color-text-muted);
+  }
+
+  .subsidiary__contact dd {
+    margin: 0;
+  }
+
+  .subsidiary__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--text-sm);
+  }
+
+  .subsidiary__gallery {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8rem), 1fr));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .subsidiary__gallery :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .see-also {
+    margin-top: var(--space-8);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+  }
+</style>

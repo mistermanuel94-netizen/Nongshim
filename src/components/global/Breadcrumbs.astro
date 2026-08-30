@@ -1,0 +1,79 @@
+---
+/**
+ * Breadcrumb trail. Renders the real content hierarchy, with the current page
+ * as plain text rather than a link to itself. The matching BreadcrumbList
+ * JSON-LD is emitted by each page's schema graph, so the markup and the
+ * structured data always describe the same trail.
+ */
+import type { Crumb } from '../../lib/seo';
+
+interface Props {
+  crumbs: Crumb[];
+}
+const { crumbs } = Astro.props;
+const trail = crumbs.slice(0, -1);
+const current = crumbs[crumbs.length - 1];
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      {
+        trail.map((crumb) => (
+          <li>
+            <a href={crumb.path}>{crumb.name}</a>
+            <svg viewBox="0 0 6 10" width="6" height="10" aria-hidden="true" focusable="false">
+              <path d="M1 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </li>
+        ))
+      }
+      <li><span aria-current="page">{current.name}</span></li>
+    </ol>
+  </div>
+</nav>
+
+<style>
+  .breadcrumbs {
+    border-bottom: 1px solid var(--color-border);
+    background: #fff;
+    font-size: var(--text-xs);
+  }
+
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    margin: 0;
+    padding-block: var(--space-3);
+    list-style: none;
+  }
+
+  .breadcrumbs li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-height: 24px;
+  }
+
+  .breadcrumbs a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .breadcrumbs a:hover {
+    color: var(--color-brand-primary-text);
+    text-decoration: underline;
+  }
+
+  .breadcrumbs svg {
+    color: var(--color-border-strong);
+    flex: none;
+  }
+
+  .breadcrumbs [aria-current='page'] {
+    color: var(--color-text-strong);
+    font-weight: 700;
+  }
+</style>

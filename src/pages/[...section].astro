@@ -1,0 +1,209 @@
+---
+/**
+ * Generic section page template — About, Sustainability, Press, Investors and
+ * Contact. One template, ~40 routes, each with its own title, description,
+ * breadcrumb trail, WebPage schema and sibling navigation.
+ */
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/ui/PageHero.astro';
+import SectionBody from '../components/company/SectionBody.astro';
+import {
+  genericSectionPages,
+  newPath,
+  describe,
+  titleFor,
+  crumbsFor,
+  siblingsOf,
+  isLanding,
+  sectionIndex,
+  tableSummary,
+} from '../lib/sections';
+import { resolveImage } from '../lib/images';
+import { prepareLcpImage } from '../lib/lcp';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../lib/seo';
+import type { SectionPage } from '../lib/content';
+
+export function getStaticPaths() {
+  return genericSectionPages.map((page) => ({
+    // Astro's rest param wants the path without leading/trailing slashes.
+    params: { section: newPath(page.path).replace(/^\/|\/$/g, '') },
+    props: { page },
+  }));
+}
+
+interface Props {
+  page: SectionPage;
+}
+
+const { page } = Astro.props;
+const path = newPath(page.path);
+const heading = page.heading ?? 'Nongshim';
+const title = titleFor(page);
+const landing = isLanding(page);
+const description = describe(page, { withChildren: landing });
+const crumbs = crumbsFor(page);
+const children = landing ? sectionIndex(page) : [];
+const siblings = landing ? [] : siblingsOf(page);
+const hero = resolveImage(page.heroImage);
+const heroLcp = await prepareLcpImage(hero, { widths: [640, 960, 1280, 1920], sizes: '100vw' });
+const summary = tableSummary(page);
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: title,
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+    publisher: { '@id': `${canonical('/')}#organization` },
+  },
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title={title}
+  description={description}
+  path={path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <PageHero heading={heading} description={page.heroDescription} image={page.heroImage} lcpImage={heroLcp} />
+
+  <div class="container section">
+    {summary && <p class="section-summary">This page lists {summary}</p>}
+    <SectionBody blocks={page.blocks} tables={page.tables} heading={heading} />
+  </div>
+
+  {
+    children.length > 0 && (
+      <section class="container section section-index" aria-labelledby="in-section-heading">
+        <h2 id="in-section-heading">In this section</h2>
+        <p class="lede">
+          {children.length} pages under {crumbs[crumbs.length - 1]?.name ?? heading}.
+        </p>
+        <ul>
+          {children.map((child) => (
+            <li>
+              <a href={child.path}>
+                <h3>{child.name}</h3>
+                <p>{child.summary}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  {
+    siblings.length > 0 && (
+      <aside class="container section related" aria-labelledby="related-heading">
+        <h2 id="related-heading">More in {crumbs[1]?.name ?? 'this section'}</h2>
+        <ul>
+          {siblings.map((s) => (
+            <li>
+              <a href={s.path}>{s.name}</a>
+            </li>
+          ))}
+        </ul>
+      </aside>
+    )
+  }
+</Base>
+
+<style>
+  .section-summary {
+    margin-bottom: var(--space-5);
+    color: var(--color-text-muted);
+  }
+
+  .section-index {
+    padding-top: 0;
+  }
+
+  .section-index ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: var(--space-4);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .section-index a {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    height: 100%;
+    padding: var(--space-5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color var(--duration-base) var(--ease-out),
+      box-shadow var(--duration-base) var(--ease-out);
+  }
+
+  .section-index a:hover {
+    border-color: var(--color-brand-primary);
+    box-shadow: var(--shadow-md);
+  }
+
+  .section-index h3 {
+    margin: 0;
+    font-size: var(--text-md);
+  }
+
+  .section-index p {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
+    color: var(--color-text-muted);
+  }
+
+  .related {
+    padding-top: 0;
+  }
+
+  .related h2 {
+    font-size: var(--text-lg);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .related ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .related a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: var(--space-2) var(--space-4);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-pill);
+    background: #fff;
+    font-size: var(--text-sm);
+    color: var(--color-text-strong);
+    text-decoration: none;
+  }
+
+  .related a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+</style>

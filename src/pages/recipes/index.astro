@@ -1,0 +1,14 @@
+---
+/** First page of the recipe index. */
+import RecipeIndex from '../../components/recipes/RecipeIndex.astro';
+import { recipes, RECIPES_PER_PAGE } from '../../lib/content';
+
+const totalPages = Math.ceil(recipes.length / RECIPES_PER_PAGE);
+---
+
+<RecipeIndex
+  recipes={recipes.slice(0, RECIPES_PER_PAGE)}
+  page={1}
+  totalPages={totalPages}
+  totalRecipes={recipes.length}
+/>

@@ -1,0 +1,170 @@
+---
+/**
+ * Product card.
+ *
+ * The whole card is one link with the product name as its accessible name — the
+ * source used `<a href="javascript:void(0)">` with a click handler, so cards
+ * were neither crawlable nor keyboard-operable.
+ */
+import { Image } from 'astro:assets';
+import LcpImage from '../ui/LcpImage.astro';
+import { resolveImage } from '../../lib/images';
+import type { PreparedImage } from '../../lib/lcp';
+import type { Product } from '../../lib/content';
+
+interface Props {
+  product: Product;
+  /** Cards above the fold on the first screen skip lazy-loading. */
+  priority?: boolean;
+  /** Feature cards span two columns and show more copy. */
+  featured?: boolean;
+  /** Heading level, so a card never skips a level in the page outline. */
+  headingLevel?: 2 | 3;
+  /** Set on the one card that is the page's LCP element; it is preloaded. */
+  lcp?: PreparedImage | null;
+}
+
+const { product, priority = false, featured = false, headingLevel = 3, lcp = null } = Astro.props;
+const Heading = `h${headingLevel}` as 'h2' | 'h3';
+const image = resolveImage(product.cardImage);
+const sizes = featured
+  ? '(min-width: 64rem) 32rem, (min-width: 40rem) 50vw, 100vw'
+  : '(min-width: 64rem) 15rem, (min-width: 40rem) 33vw, 50vw';
+---
+
+<article class={`product-card${featured ? ' product-card--featured' : ''}`}>
+  <a class="product-card__link" href={product.path}>
+    <div class="product-card__media">
+      {
+        lcp ? (
+          <LcpImage image={lcp} class="product-card__image" />
+        ) : image ? (
+          <Image
+            src={image.src}
+            alt={image.alt}
+            widths={featured ? [320, 480, 720, 960] : [200, 320, 480]}
+            sizes={sizes}
+            loading={priority ? 'eager' : 'lazy'}
+            fetchpriority={priority ? 'high' : 'auto'}
+            decoding="async"
+            class="product-card__image"
+          />
+        ) : (
+          /* The source publishes no usable image for this product. Render the
+             product's own initial rather than a stand-in photograph. */
+          <span class="product-card__fallback" aria-hidden="true">
+            {product.name.charAt(0)}
+          </span>
+        )
+      }
+    </div>
+    <div class="product-card__body">
+      {product.categoryName && <span class="product-card__category">{product.categoryName}</span>}
+      <Heading class="product-card__name">{product.name}</Heading>
+      {product.tagline && <p class="product-card__tagline">{product.tagline}</p>}
+    </div>
+  </a>
+</article>
+
+<style>
+  .product-card {
+    height: 100%;
+  }
+
+  .product-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition:
+      border-color var(--duration-base) var(--ease-out),
+      box-shadow var(--duration-base) var(--ease-out),
+      transform var(--duration-base) var(--ease-out);
+  }
+
+  .product-card__link:hover {
+    border-color: var(--color-brand-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .product-card__media {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    background: var(--color-surface);
+    overflow: hidden;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: var(--space-3);
+  }
+
+  .product-card__fallback {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-border-strong);
+  }
+
+  .product-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4);
+  }
+
+  .product-card__category {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-brand-primary-text);
+  }
+
+  .product-card__name {
+    margin: 0;
+    font-size: var(--text-md);
+    line-height: var(--leading-snug);
+  }
+
+  .product-card__tagline {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
+    color: var(--color-text-muted);
+  }
+
+  /* The source gave certain products a wide "best product" treatment; kept.
+     The column span lives on the grid item in the listing template. */
+  @media (min-width: 40rem) {
+    .product-card--featured .product-card__link {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .product-card--featured .product-card__media {
+      flex: 1 1 55%;
+      aspect-ratio: auto;
+      min-height: 15rem;
+    }
+
+    .product-card--featured .product-card__body {
+      flex: 1 1 45%;
+      justify-content: center;
+      padding: var(--space-6);
+    }
+
+    .product-card--featured .product-card__name {
+      font-size: var(--text-xl);
+    }
+  }
+</style>

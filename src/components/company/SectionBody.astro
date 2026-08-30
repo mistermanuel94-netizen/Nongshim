@@ -1,0 +1,226 @@
+---
+/**
+ * Renders an extracted section page's content blocks as a semantic document.
+ *
+ * The source pages carry their subject as an `<h2>` (their `<h1>` was the site
+ * logo). Here the subject becomes the page `<h1>` in the hero, so the block
+ * headings are promoted one level and the leading duplicate heading is dropped.
+ *
+ * Consecutive `li` blocks are regrouped into a real list, and `dt`/`dd` pairs
+ * into a description list — the flattened extraction loses that nesting.
+ */
+interface Block {
+  tag: string;
+  text: string;
+  /** Index into `tables` for a `table` block. */
+  table?: number;
+}
+
+interface TableData {
+  caption: string | null;
+  head: string[];
+  rows: string[][];
+}
+
+interface Props {
+  blocks: Block[];
+  tables?: TableData[];
+  /** The heading already shown in the hero; skipped if it leads the blocks. */
+  heading?: string | null;
+}
+
+const { blocks, tables = [], heading } = Astro.props;
+
+// Drop the leading heading that repeats the hero, and any exact repeat of a
+// block already rendered (several source pages duplicate whole paragraphs).
+const seen = new Set<string>();
+const cleaned: Block[] = [];
+for (const [i, block] of blocks.entries()) {
+  if (i === 0 && heading && block.tag === 'h2' && block.text.trim() === heading.trim()) continue;
+  const key = `${block.tag}:${block.text}:${block.table ?? ''}`;
+  if (seen.has(key)) continue;
+  seen.add(key);
+  cleaned.push(block);
+}
+
+/**
+ * The source's heading levels are decorative (a page can jump straight from an
+ * `h2` to an `h4`). Map the distinct source levels onto a contiguous sequence
+ * starting at 2, so the rendered outline is valid under the page's single `h1`.
+ */
+const sourceLevels = [...new Set(cleaned.filter((b) => /^h[2-6]$/.test(b.tag)).map((b) => Number(b.tag[1])))].sort(
+  (a, b) => a - b
+);
+const levelMap = new Map(sourceLevels.map((level, i) => [level, Math.min(2 + i, 4) as 2 | 3 | 4]));
+const mapLevel = (level: number): 2 | 3 | 4 => levelMap.get(level) ?? 2;
+
+/** Group runs of list items and definition pairs back into real containers. */
+type Node =
+  | { kind: 'heading'; level: 2 | 3 | 4; text: string }
+  | { kind: 'para'; text: string }
+  | { kind: 'list'; items: string[] }
+  | { kind: 'defs'; items: { term: string; details: string[] }[] }
+  | { kind: 'table'; caption: string | null; head: string[]; rows: string[][] };
+
+const nodes: Node[] = [];
+for (const block of cleaned) {
+  const last = nodes[nodes.length - 1];
+  switch (block.tag) {
+    case 'h2':
+    case 'h3':
+    case 'h4':
+    case 'h5':
+    case 'h6':
+      nodes.push({ kind: 'heading', level: mapLevel(Number(block.tag[1])), text: block.text });
+      break;
+    case 'caption':
+      // Captions arrive attached to their table; a stray one becomes a heading.
+      nodes.push({ kind: 'heading', level: mapLevel(3), text: block.text });
+      break;
+    case 'table': {
+      const data = block.table !== undefined ? tables[block.table] : undefined;
+      if (data) nodes.push({ kind: 'table', ...data });
+      break;
+    }
+    case 'li':
+      if (last?.kind === 'list') last.items.push(block.text);
+      else nodes.push({ kind: 'list', items: [block.text] });
+      break;
+    case 'dt':
+      if (last?.kind === 'defs') last.items.push({ term: block.text, details: [] });
+      else nodes.push({ kind: 'defs', items: [{ term: block.text, details: [] }] });
+      break;
+    case 'dd':
+      if (last?.kind === 'defs' && last.items.length) last.items[last.items.length - 1].details.push(block.text);
+      else nodes.push({ kind: 'para', text: block.text });
+      break;
+    default:
+      nodes.push({ kind: 'para', text: block.text });
+  }
+}
+---
+
+<div class="section-body prose">
+  {
+    nodes.map((node) => {
+      if (node.kind === 'heading') {
+        const Tag = `h${node.level}` as 'h2' | 'h3' | 'h4';
+        return <Tag>{node.text}</Tag>;
+      }
+      if (node.kind === 'para') return <p>{node.text}</p>;
+      if (node.kind === 'list') {
+        return (
+          <ul>
+            {node.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        );
+      }
+      if (node.kind === 'table') {
+        const width = Math.max(node.head.length, ...node.rows.map((r) => r.length), 1);
+        return (
+          <div class="scroll-x">
+            <table class="section-body__table">
+              {node.caption && <caption>{node.caption}</caption>}
+              {node.head.length > 0 && (
+                <thead>
+                  <tr>
+                    {node.head.map((cell) => (
+                      <th scope="col">{cell}</th>
+                    ))}
+                  </tr>
+                </thead>
+              )}
+              <tbody>
+                {node.rows.map((row) => (
+                  <tr>
+                    {Array.from({ length: width }, (_, i) => (
+                      <td>{row[i] ?? ''}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
+      return (
+        <dl>
+          {node.items.map((item) => (
+            <>
+              <dt>{item.term}</dt>
+              {item.details.map((d) => (
+                <dd>{d}</dd>
+              ))}
+            </>
+          ))}
+        </dl>
+      );
+    })
+  }
+</div>
+
+<style>
+  .section-body {
+    max-width: var(--container-narrow);
+  }
+
+  .section-body ul {
+    padding-left: var(--space-5);
+  }
+
+  .section-body li + li {
+    margin-top: var(--space-2);
+  }
+
+  .section-body dl {
+    display: grid;
+    gap: var(--space-2);
+    margin-block: var(--space-5);
+    padding: var(--space-5);
+    border-left: 3px solid var(--color-brand-primary);
+    background: var(--color-surface);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+
+  .section-body dt {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .section-body dt:not(:first-child) {
+    margin-top: var(--space-4);
+  }
+
+  .section-body dd {
+    margin: 0;
+  }
+
+  .section-body__table {
+    min-width: 32rem;
+    margin-block: var(--space-5);
+    font-size: var(--text-sm);
+  }
+
+  .section-body__table caption {
+    padding-bottom: var(--space-3);
+    text-align: left;
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .section-body__table th,
+  .section-body__table td {
+    padding: var(--space-3);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .section-body__table thead th {
+    background: var(--color-surface);
+    white-space: nowrap;
+  }
+</style>

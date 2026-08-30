@@ -1,0 +1,320 @@
+---
+/**
+ * SHIN — the Shin Ramyun brand character.
+ *
+ * On the source this content existed only inside a `display:none` JavaScript
+ * modal on the catalogue page, with no URL of its own, its headings unreachable
+ * as page content, and the word "SHIN" baked into images mid-sentence. The
+ * question "Who is SHIN?" was therefore unanswerable from the site.
+ *
+ * Here it is a document: one H1, a profile table, the story in reading order,
+ * and the pose gallery with English alt text (the source's was Korean).
+ */
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import LcpImage from '../../components/ui/LcpImage.astro';
+import { prepareLcpImage } from '../../lib/lcp';
+import { resolveImage } from '../../lib/images';
+import { character, getProductById } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, canonical } from '../../lib/seo';
+
+const hero = resolveImage(character.heroImage);
+const heroLcp = await prepareLcpImage(hero, { widths: [280, 420, 560], sizes: '(min-width: 48rem) 26rem, 70vw' });
+const storyImage = resolveImage(character.storyImage);
+const profileImage = resolveImage(character.profileImage);
+const gallery = character.gallery.map((g) => resolveImage(g)).filter((g): g is NonNullable<typeof g> => Boolean(g));
+
+const shinRamyun = getProductById('shinramyun');
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'SHIN', path: '/shin/' },
+];
+
+const description =
+  'SHIN is the Shin Ramyun brand character: a noodle-haired traveller who journeys the world delivering “spicy happiness”. Read his story, profile and character gallery.';
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'WebPage',
+    '@id': `${canonical('/shin/')}#webpage`,
+    url: canonical('/shin/'),
+    name: 'SHIN — the Shin Ramyun character',
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+    // The subject is a fictional character; describing it as such is accurate
+    // and keeps it from being read as a person.
+    about: {
+      '@type': 'Thing',
+      name: 'SHIN',
+      description: character.intro,
+      ...(shinRamyun ? { subjectOf: { '@id': `${canonical(shinRamyun.path)}#product` } } : {}),
+    },
+  },
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title="SHIN — the Shin Ramyun character"
+  description={description}
+  path="/shin/"
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <article class="shin">
+    <header class="shin__hero">
+      <div class="container shin__hero-inner">
+        <div>
+          <span class="eyebrow">Character</span>
+          <h1>SHIN</h1>
+          {/* The answer to "Who is SHIN?" sits immediately under the heading. */}
+          <p class="lede">{character.intro}</p>
+          {
+            shinRamyun && (
+              <p>
+                SHIN is the brand character of <a href={shinRamyun.path}>{shinRamyun.name}</a>, Nongshim’s
+                best-known instant noodle.
+              </p>
+            )
+          }
+        </div>
+        {heroLcp && <LcpImage image={heroLcp} class="shin__hero-image" />}
+      </div>
+    </header>
+
+    <section class="container section" aria-labelledby="profile-heading">
+      <h2 id="profile-heading">{character.profileHeading || 'This is SHIN.'}</h2>
+      <div class="shin__profile">
+        <div class="scroll-x">
+          <table class="shin__table">
+            <caption class="visually-hidden">SHIN character profile</caption>
+            <tbody>
+              {
+                character.profile.map((row) => (
+                  <tr>
+                    <th scope="row">{row.label}</th>
+                    <td>{row.value}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+        {
+          profileImage && (
+            <Image
+              src={profileImage.src}
+              alt={profileImage.alt}
+              widths={[200, 300, 400]}
+              sizes="(min-width: 48rem) 16rem, 50vw"
+              loading="lazy"
+              decoding="async"
+              class="shin__profile-image"
+            />
+          )
+        }
+      </div>
+    </section>
+
+    <section class="container section shin__story" aria-labelledby="story-heading">
+      <span class="eyebrow">Character story</span>
+      <h2 id="story-heading">{character.storyHeading || 'This is how my journey began.'}</h2>
+      <ol class="shin__panels">
+        {
+          character.story.map((panel) => (
+            <li>
+              <p>{panel}</p>
+            </li>
+          ))
+        }
+      </ol>
+      {
+        storyImage && (
+          <figure class="shin__story-figure">
+            <Image
+              src={storyImage.src}
+              alt={storyImage.alt}
+              widths={[480, 720, 1080]}
+              sizes="(min-width: 62rem) 60rem, 92vw"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>The illustrated telling of SHIN’s journey, as published by Nongshim.</figcaption>
+          </figure>
+        )
+      }
+    </section>
+
+    {
+      gallery.length > 0 && (
+        <section class="container section" aria-labelledby="gallery-heading">
+          <h2 id="gallery-heading">{character.galleryHeading || 'Meet the playful side of SHIN.'}</h2>
+          <p class="lede">{gallery.length} character illustrations published by Nongshim.</p>
+          {/* A plain lazy-loaded grid rather than the source's 39-slide carousel:
+              every image is in the document, indexable and keyboard-reachable. */}
+          <ul class="shin__gallery">
+            {gallery.map((img) => (
+              <li>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  widths={[120, 180, 240]}
+                  sizes="(min-width: 48rem) 10rem, 30vw"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</Base>
+
+<style>
+  .shin__hero {
+    background: linear-gradient(180deg, var(--color-surface), #fff);
+    padding-block: var(--space-8);
+  }
+
+  .shin__hero-inner {
+    display: grid;
+    gap: var(--space-6);
+    align-items: center;
+  }
+
+  @media (min-width: 48rem) {
+    .shin__hero-inner {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  .shin h1 {
+    font-size: var(--text-4xl);
+    color: var(--color-brand-red);
+  }
+
+  .shin__hero-image {
+    width: min(26rem, 70vw);
+    height: auto;
+    justify-self: center;
+  }
+
+  .shin__profile {
+    display: grid;
+    gap: var(--space-6);
+    align-items: start;
+  }
+
+  @media (min-width: 48rem) {
+    .shin__profile {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  .shin__table {
+    min-width: 22rem;
+    border-collapse: collapse;
+  }
+
+  .shin__table th,
+  .shin__table td {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .shin__table th {
+    width: 10rem;
+    font-family: var(--font-display);
+    color: var(--color-text-strong);
+    background: var(--color-surface);
+  }
+
+  .shin__profile-image {
+    width: min(16rem, 50vw);
+    height: auto;
+    justify-self: center;
+  }
+
+  .shin__story {
+    background: var(--color-surface);
+    max-width: none;
+  }
+
+  .shin__panels {
+    counter-reset: panel;
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .shin__panels li {
+    counter-increment: panel;
+    position: relative;
+    padding: var(--space-5);
+    padding-top: var(--space-7);
+    background: #fff;
+    border-radius: var(--radius-lg);
+  }
+
+  .shin__panels li::before {
+    content: counter(panel);
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-5);
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-brand-red);
+  }
+
+  .shin__panels p {
+    margin: 0;
+  }
+
+  .shin__story-figure {
+    margin-top: var(--space-7);
+  }
+
+  .shin__story-figure :global(img) {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+  }
+
+  .shin__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 8rem), 1fr));
+    gap: var(--space-3);
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .shin__gallery li {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    padding: var(--space-2);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+  }
+
+  .shin__gallery :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+</style>

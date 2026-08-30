@@ -1,0 +1,207 @@
+{
+  "/about/ci": {
+    "heading": "Introduction of CI",
+    "description": "Symbol of Nongshim- Nongshim Seed carries Nongshim’s belief you reap what you sow",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual_ci.png"
+  },
+  "/about/globalNongshim": {
+    "heading": "Global Nongshim",
+    "description": "People in many parts of the world can now enjoy the taste of Korea together with Nongshim",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/global/main_visual.png"
+  },
+  "/about/group": {
+    "heading": "Nongshim Holdings",
+    "description": "A powerful takeoff to become a global food company. Nongshim is moving toward the world together with our customers.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/holdings_visual.jpg"
+  },
+  "/about/group/holdings": {
+    "heading": "Nongshim Holdings",
+    "description": "A powerful takeoff to become a global food company. Nongshim is moving toward the world together with our customers.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/holdings_visual.jpg"
+  },
+  "/about/group/hotelNongshim": {
+    "heading": "Hotel Nongshim",
+    "description": "We will reward our customers with a better service and sincerity.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/hotel_visual.jpg"
+  },
+  "/about/group/megaMart": {
+    "heading": "Mega Mart",
+    "description": "‘Shinsundowon pursuing longevity without diseases (無病長壽 神仙桃園)’. Mega Mart makes our customers’ lives healthier and happier.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/megamart_visual.jpg"
+  },
+  "/about/group/nds": {
+    "heading": "NDS",
+    "description": "NDS is opening a new future by combining IT with healthcare sector based on the latest IT and project experience.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/nds_visual.jpg"
+  },
+  "/about/group/nongshimCommunication": {
+    "heading": "Nongshim Communication",
+    "description": "Nongshim Communication is committed to contributing the advancement of the 21st advertising industry such as advertising, PR, promotion and event.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/communication_visual.jpg"
+  },
+  "/about/group/nongshimDevelopment": {
+    "heading": "Nongshim Development Co.",
+    "description": "It promises the best service in Ildong Lake where beautiful mountains and the lake are in perfect harmony.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/ildonglakes_visual.jpg"
+  },
+  "/about/group/nongshimEngineering": {
+    "heading": "Nongshim Engineering",
+    "description": "Nongshim Engineering will provide the best solution promptly with an advanced technology. Total Engineering Solution Provider",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/engineering_visual.jpg"
+  },
+  "/about/group/rfm": {
+    "heading": "Noghshim Flour Mills",
+    "description": "We will lead the development of the rice processing industry.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/3sforu_visual.jpg"
+  },
+  "/about/group/taekyungNongsan": {
+    "heading": "Taekyung Nongsan",
+    "description": "Taekyung Nongsan is a Korean food ingredient company that is leading the market by formulating new tastes with high quality ingredients. It creates trustworthy and honest taste.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/taekyungnongsan_visual.jpg"
+  },
+  "/about/group/youlchonChemical": {
+    "heading": "Youlchon Chemical",
+    "description": "Smart Life with Our Coating",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/youlchon_cm_visual.jpg"
+  },
+  "/about/group/youlchonFoundation": {
+    "heading": "Youlchon Foundation",
+    "description": "Youlchon Foundation intends to provide more opportunity and passion to the youth through various scholarship programs and education support projects.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/group/youlchonfoundation_visual.jpg"
+  },
+  "/about/history": {
+    "heading": "History",
+    "description": "Thinking about customers and being with customers Footsteps of Nongshim",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_history_visual.png"
+  },
+  "/about/overview": {
+    "heading": "About",
+    "description": "Here is the information about Nongshim Group",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual.png"
+  },
+  "/about/profile/mission": {
+    "heading": "Management Philosophy",
+    "description": "A powerful takeoff to become a global food company. Nongshim is moving toward the world together with our customers.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual1.png"
+  },
+  "/about/profile/way": {
+    "heading": "Nongshim WAY",
+    "description": "Nongshim WAY is the standard of thoughts and actions to be always followed by Nongshim people.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual_way.png"
+  },
+  "/contact/inquiry": {
+    "heading": "Inquiry",
+    "description": "We will always listen to your valuable opinion. If you leave your questions about Nongshim, the person in charge will give you an answer.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_inquiry.png"
+  },
+  "/contact/inquiry_check": {
+    "heading": "Inquiry",
+    "description": "We will always listen to your valuable opinion. If you leave your questions about Nongshim, the person in charge will give you an answer.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_inquiry.png"
+  },
+  "/contact/location": {
+    "heading": "Location",
+    "description": "Location of Nongshim Headquarter and Plants",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_location.png"
+  },
+  "/contact/overview": {
+    "heading": "Contact",
+    "description": "Welcome to Nongshim Customer Support.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_overview.jpg"
+  },
+  "/investors/finance/audit_list": {
+    "heading": "Audit Report",
+    "description": "Nongshim financial information",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/investors/main_visual_annual.png"
+  },
+  "/investors/ir/list": {
+    "heading": "IR Hot News",
+    "description": "Earnings release You can check the business performance of Nongshim, a choice of investors.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/investors/main_visual_annual.png"
+  },
+  "/investors/overview": {
+    "heading": "Investors",
+    "description": "Nongshim IR information",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/investors/main_visual_annual.png"
+  },
+  "/investors/report": {
+    "heading": "Annual Report",
+    "description": "You can check the business performance of Nongshim, a choice of investors. A global brand representing Korea",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/investors/main_visual_annual.png"
+  },
+  "/pr/baduk": {
+    "heading": "Shinramyun Cup World Baduk Championship",
+    "description": "Nongshim, corp. holds Shinramyun Cup World Baduk Championship for the development of Baduk and enthusiastic fans of Baduk.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/pr_center/main_visual_championship.png"
+  },
+  "/pr/overview": {
+    "heading": "PR Center",
+    "description": null,
+    "heroImage": null
+  },
+  "/pr/pedia": {
+    "heading": "Ramyun Pedia",
+    "description": "All about ramyun, twisted and tasty noodle!",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/pr_center/main_visual.png"
+  },
+  "/sustainability/governance/compliance": {
+    "heading": "Compliance management",
+    "description": "Nongshim establishes transparent and fair compliance standards and practices them.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_compliance_visual.png"
+  },
+  "/sustainability/governance/governance": {
+    "heading": "Governance",
+    "description": "Nongshim's board consists of directors with expertise, independence and diversity",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/new/main_visual_governance_01.png"
+  },
+  "/sustainability/overview": {
+    "heading": "Sustainability",
+    "description": "Add Happy Value To Your Life Add Value To Your Daily Life",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_overview_visual.png"
+  },
+  "/sustainability/people/safety": {
+    "heading": "Safety & Health",
+    "description": "Nongshim is doing its best to achieve zero industrial accidents in all business sites.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/new/main_visual_people_01.png"
+  },
+  "/sustainability/people/shared": {
+    "heading": "Win-Win Growth",
+    "description": "We will lead the mutually beneficial growth with the mission “the growth of partners equals to the competitiveness of Nongshim”.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_together_visual.png"
+  },
+  "/sustainability/people/social": {
+    "heading": "Social Contribution",
+    "description": "Nongshim will take the lead in making the world a better place to live with the culture of giving back to the society.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_visual_contribution.png"
+  },
+  "/sustainability/people/youlchon": {
+    "heading": "Youlchon Foundation",
+    "description": "Making a world where we live together for tomorrow’s happiness, it is a small start of Youlchon Foundation.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_visual_youlchon.png"
+  },
+  "/sustainability/planet/response": {
+    "heading": "Response to Climate Crisis",
+    "description": "Nongshim strives to provide foods with environmental values as a global eco-friendly company.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_env_visual.png"
+  },
+  "/sustainability/planet/sustainable": {
+    "heading": "Sustainable Packaging",
+    "description": "Nongshim is working to establish a sustainable consumption culture through \"Green Packaging Story\"",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/new/main_visual_planet_01.png"
+  },
+  "/sustainability/prosperity/consumer": {
+    "heading": "Consumer Centered Management",
+    "description": "Nongshim is making an effort to promote consumer rights and contributing to the welfare of the customers through customer centered management (CCM) certification.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_customer_visual.png"
+  },
+  "/sustainability/prosperity/rnd": {
+    "heading": "R&D",
+    "description": "We've tried our best to develop various products through continuously investing on R &amp; D and innovating related systems, and provide customers with safe and healthy food.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_rnd_visual.png"
+  },
+  "/sustainability/report": {
+    "heading": "Sustainability Report",
+    "description": "We will be a food company that pursues environmental and human sustainability by adding the value of products and services.",
+    "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/new/main_visual_annual.png"
+  }
+}

@@ -1,0 +1,217 @@
+# SEO
+
+## The starting point
+
+The source site's technical SEO baseline, measured during the Phase 1 crawl of
+279 URLs:
+
+| Signal | Source site |
+| --- | --- |
+| `<title>` | `GLOBAL NONGSHIM` on essentially every page |
+| `<meta name="description">` | Present on 2 of 279 pages |
+| `<link rel="canonical">` | Absent site-wide |
+| `<h1>` | The logo, on every page |
+| Open Graph / Twitter cards | Absent site-wide |
+| JSON-LD | Absent site-wide |
+| `robots.txt` | HTTP 404 |
+| XML sitemap | HTTP 404 |
+| Product URLs | **None** — the 68-product catalogue was AJAX-only |
+| Recipe URLs | Two URL forms per recipe, no canonical between them |
+
+## What the rebuild does
+
+| Signal | Now |
+| --- | --- |
+| Unique `<title>` | 223 / 223 pages, enforced by the audit |
+| Unique meta description | 223 / 223 pages, enforced by the audit |
+| Canonical | Every page, absolute and trailing-slashed |
+| Exactly one `<h1>` | Every page, and it names the page's subject |
+| Open Graph + Twitter | Every page, with a page-specific image |
+| JSON-LD | 222 / 223 pages (the 404 is excluded) |
+| `robots.txt` | Deliberate, with the sitemap reference |
+| XML sitemap | 221 canonical, indexable URLs |
+| Product URLs | 68 product pages + 4 category pages |
+| Recipe URLs | 101 recipe pages, one canonical URL each |
+
+## Title strategy
+
+Titles are composed by `pageTitle()` in `src/lib/seo.ts`, which appends the
+brand only when it is not already present — so a title never reads
+"Nongshim | Nongshim".
+
+| Page type | Pattern | Example |
+| --- | --- | --- |
+| Home | Brand + what it makes | `Nongshim — Korean Instant Noodles, Snacks and Recipes` |
+| Product | Product name | `Shin Ramyun \| Nongshim` |
+| Category | Category name | `Instant Noodles \| Nongshim` |
+| Recipe | Recipe name | `Chapaguri \| Nongshim` |
+| Section | Page heading | `Global network \| Nongshim` |
+| Paginated | Heading + page | `Recipes — page 3 \| Nongshim` |
+
+**Collisions.** Two entities in the public catalogue share a display name, and
+the rebuild does not merge them:
+
+- Two products are both called *Champong Noodle Soup* (released 1992 and 2015,
+  different weights, different descriptions). Their titles are disambiguated by
+  release year — a published fact.
+- Two recipes are both called *Tray Doongji Cold Noodle*. Their titles are
+  disambiguated with the opening words of each recipe's own published summary.
+
+Both are recorded as content gaps in `audit/content-audit.md`: the right fix is
+for Nongshim to rename one of each pair.
+
+## Meta descriptions
+
+Composed by `composeDescription()` in `src/lib/text.ts`, which **only trims and
+joins copy that is already published**. It never writes a sentence about the
+subject.
+
+Order of preference:
+
+1. The page's own hero description from the source — but only when that string
+   is unique to the page. Several source pages share one generic brand line;
+   text reused across pages describes none of them, so it is discarded.
+2. The page's first substantial paragraph that no other page repeats.
+3. For product and recipe pages, a factual sentence assembled from published
+   attributes (`"{name} is a Nongshim instant noodle, 120g per pack, released
+   1986.10."`) followed by the product's own first published sentence.
+
+Long descriptions are trimmed at a sentence boundary; short ones are extended
+with more published facts, never with filler.
+
+## Canonicalisation
+
+- `trailingSlash: 'always'` and `build.format: 'directory'`, so there is one
+  URL form per page.
+- Every page emits an absolute canonical derived from `SITE_URL`. The audit
+  recomputes the expected canonical for every route and fails on any mismatch.
+- The two duplicate classes the source had are gone: the paginated recipe URL
+  (`?page=N&recipeId=X`) collapses to the recipe's own URL by 301, and
+  `/about/group` — which served a byte-identical copy of the Holdings page — is
+  now a real affiliates index.
+- The audit compares the first 2,000 characters of every page's main content.
+  Duplicate groups: **0**.
+
+## Query parameters
+
+| Parameter | Source use | Decision |
+| --- | --- | --- |
+| `tabType` | Client-side product category tabs | Replaced by four indexable category pages; 301 from each tab value |
+| `recipeId` | Recipe identity | Replaced by descriptive slugs; 301 for every ID |
+| `page` (recipes) | List pagination | Replaced by `/recipes/page/{n}/` |
+| `page` (recipe detail) | Carried through from the list; created a duplicate | Collapsed to the recipe URL |
+| `brandId`, `prodCode` | AJAX fragment identity | 301 to the product page and its variant anchor |
+| `langCd=E` | Default for this host | Dropped; it created pure duplicates |
+
+The rebuilt site emits **no crawlable query-parameter URL**. The catalogue
+filter and search write `?q=` and `?category=` with `history.replaceState`, but
+those pages are either `noindex` (`/search/`) or contain the complete list
+regardless of the parameter (`/products/`), so no thin parameter URL can be
+discovered or indexed.
+
+## robots.txt
+
+Generated by `src/pages/robots.txt.ts`. Decisions:
+
+- **Nothing that renders a page is blocked.** CSS, JavaScript and images stay
+  open so rendering crawlers see what a visitor sees.
+- `/search/` is disallowed *and* carries `noindex, follow`. robots.txt alone
+  would stop the crawl without stopping indexing, so both are applied.
+- `/search-index.json` is disallowed: it is a data file, not a page.
+- No `Crawl-delay`. Google ignores it, and the site is static behind a CDN.
+- The sitemap is referenced absolutely.
+
+## XML sitemap
+
+`@astrojs/sitemap` with an explicit filter, so the sitemap contains only
+canonical, indexable URLs — 221 of the 223 built pages (`/search/` and the 404
+are excluded). Priorities reflect real importance rather than being uniform:
+
+| Page type | Priority | Change frequency |
+| --- | ---: | --- |
+| Home | 1.0 | weekly |
+| Product / recipe indexes | 0.9 | weekly |
+| Product detail | 0.8 | monthly |
+| Recipe detail | 0.7 | monthly |
+| Everything else | 0.5 | monthly |
+
+The audit cross-checks the sitemap against the built pages in both directions:
+every listed URL must be a built, indexable page, and every indexable page must
+be listed.
+
+## Structured data
+
+See `audit/structured-data-report.md` for the full census. The policy:
+
+- One JSON-LD block per page containing a `@graph`, so `Organization` is defined
+  once and referenced by `@id` everywhere else.
+- Only properties the page actually shows. `Product` carries name, description,
+  image, category, weight, release date and certification — and **no** `offers`,
+  `price`, `availability`, `sku`, `gtin`, `aggregateRating` or `review`, because
+  the source publishes none of those. The SEO audit fails the build if one
+  appears.
+- `Recipe` is emitted only where the page has a name, an image and instructions.
+  Every instruction's text is verified to appear in the rendered page body.
+- `sameAs` lists only the six social profiles the source site itself links to.
+
+## Internal linking
+
+See `audit/internal-links.md`.
+
+- Maximum crawl depth from the homepage: **3**
+- Orphan pages: **0**
+- Non-descriptive anchors ("click here", "read more"): **0**
+
+The deliberate relationships:
+
+```
+Product  → its category            (68/68)
+Product  → related products        (68/68, same category, nearest by release)
+Product  → recipes that use it     (evidence-based; see below)
+Recipe   → products it uses        (41/101)
+Recipe   → related recipes         (via shared products)
+Category → its products, and the other categories
+SHIN     → Shin Ramyun
+Section landing → every page in its section, with each page's own description
+```
+
+A recipe links to a product **only where the recipe's own published ingredient
+list names that product**. Generic noodle nouns ("udon", "soba", "ramyun") are
+excluded from matching to avoid false positives. A test re-verifies every
+asserted relationship against the source text.
+
+## International
+
+The source links to `www.nongshim.com` (Korean) and `cn.nongshim.com` (Chinese)
+from a language switcher. **No `hreflang` is emitted**, because those are
+separate corporate sites with their own information architecture, not
+translations of these URLs. Emitting `hreflang` between pages that are not
+equivalents would be an incorrect relationship, and Google would ignore or
+mis-cluster it.
+
+The language links are plain `<a hreflang="ko">` / `hreflang="zh"` elements —
+the attribute correctly describes the *destination's* language, which is what
+`hreflang` on a link means, and is unrelated to `<link rel="alternate">`.
+
+If Nongshim later publishes true per-page translations, the architecture
+supports it: content is locale-neutral JSON and routing is table-driven.
+
+## What is deliberately not done
+
+- No keyword-stuffed copy. Page copy is the source's own, trimmed or
+  restructured, never expanded for search.
+- No FAQ blocks invented to win a rich result.
+- No `sameAs` beyond the profiles the source links to.
+- No dates, authors or ratings the source does not publish.
+- No indexable search-result pages.
+
+## Current audit state
+
+```
+0 errors, 5 warnings across 223 pages
+```
+
+The five warnings are genuine thinness on source pages that are document
+indexes (`/investors/audit/`, `/investors/report/`, `/sustainability/report/`)
+or a contact form. They are listed in `audit/final-qa.md` as accepted
+limitations rather than padded with filler.

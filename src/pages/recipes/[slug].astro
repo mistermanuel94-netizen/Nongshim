@@ -1,0 +1,382 @@
+---
+/**
+ * Recipe detail page.
+ *
+ * The source published real ingredient lists and photographed step-by-step
+ * instructions but emitted no structured data at all, and served every recipe
+ * at two URLs. Here each recipe is one canonical page with `Recipe` JSON-LD
+ * derived strictly from what the page shows.
+ */
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import LcpImage from '../../components/ui/LcpImage.astro';
+import { prepareLcpImage } from '../../lib/lcp';
+import RecipeCard from '../../components/recipes/RecipeCard.astro';
+import { resolveImage } from '../../lib/images';
+import { recipes, getProductById, type Recipe, type Product } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, recipeSchema, absolute } from '../../lib/seo';
+import { composeDescription, sentence } from '../../lib/text';
+
+export function getStaticPaths() {
+  return recipes.map((recipe) => ({ params: { slug: recipe.slug }, props: { recipe } }));
+}
+
+interface Props {
+  recipe: Recipe;
+}
+const { recipe } = Astro.props;
+
+const hero = resolveImage(recipe.heroImage);
+const heroLcp = await prepareLcpImage(hero, {
+  widths: [480, 720, 960, 1280],
+  sizes: '(min-width: 62rem) 36rem, 92vw',
+});
+const steps = recipe.steps.map((step) => ({ ...step, resolved: resolveImage(step.image) }));
+
+const usedProducts = recipe.relatedProducts
+  .map((r) => getProductById(r.id))
+  .filter((p): p is Product => Boolean(p));
+
+/** More recipes using the same products, else the next recipes in the library. */
+const related = (
+  usedProducts.length
+    ? recipes.filter((r) => r.slug !== recipe.slug && r.relatedProducts.some((p) => usedProducts.some((u) => u.id === p.id)))
+    : recipes.filter((r) => r.slug !== recipe.slug)
+).slice(0, 3);
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Recipes', path: '/recipes/' },
+  { name: recipe.name, path: recipe.path },
+];
+
+const description = composeDescription([
+  `How to make ${recipe.name}: a Nongshim recipe with ${recipe.ingredients.length} ingredients and ${recipe.steps.length} steps.`,
+  recipe.summary ? sentence(recipe.summary) : null,
+]);
+
+const schema = graph([
+  organizationSchema(),
+  recipeSchema(
+    recipe,
+    hero ? absolute(hero.src.src) : undefined,
+    steps.map((s) => (s.resolved ? absolute(s.resolved.src.src) : undefined))
+  ),
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title={recipe.displayTitle}
+  description={description}
+  path={recipe.path}
+  image={hero?.src.src}
+  ogType="article"
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={heroLcp?.preload}
+>
+  <article class="recipe">
+    <div class="container recipe__head">
+      <div class="recipe__intro">
+        <span class="eyebrow">Recipe</span>
+        <h1>{recipe.name}</h1>
+        {recipe.summary && <p class="lede">{recipe.summary}</p>}
+        {
+          /* Competition annotations arrive in the source title as unescaped
+             angle brackets, which browsers drop. Shown here as real text. */
+          recipe.annotation && <p class="recipe__annotation">{recipe.annotation}</p>
+        }
+        <dl class="recipe__facts">
+          <div>
+            <dt>Ingredients</dt>
+            <dd>{recipe.ingredients.length}</dd>
+          </div>
+          <div>
+            <dt>Steps</dt>
+            <dd>{recipe.steps.length}</dd>
+          </div>
+          {
+            usedProducts.length > 0 && (
+              <div>
+                <dt>Nongshim product{usedProducts.length > 1 ? 's' : ''}</dt>
+                <dd>{usedProducts.length}</dd>
+              </div>
+            )
+          }
+        </dl>
+      </div>
+
+      {
+        heroLcp && (
+          <figure class="recipe__media">
+            <LcpImage image={heroLcp} class="recipe__image" />
+          </figure>
+        )
+      }
+    </div>
+
+    <div class="container recipe__body">
+      {
+        recipe.ingredients.length > 0 && (
+          <section class="recipe__ingredients" aria-labelledby="ingredients-heading">
+            <h2 id="ingredients-heading">Ingredients</h2>
+            <ul>
+              {recipe.ingredients.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+            {usedProducts.length > 0 && (
+              <p class="recipe__uses">
+                Uses{' '}
+                {usedProducts.map((p, i) => (
+                  <>
+                    {i > 0 && (i === usedProducts.length - 1 ? ' and ' : ', ')}
+                    <a href={p.path}>{p.name}</a>
+                  </>
+                ))}
+                .
+              </p>
+            )}
+          </section>
+        )
+      }
+
+      <section class="recipe__method" aria-labelledby="method-heading">
+        <h2 id="method-heading">Method</h2>
+        <ol class="steps">
+          {
+            steps.map((step) => (
+              <li id={`step-${step.number}`} class="step">
+                <div class="step__text">
+                  <span class="step__number" aria-hidden="true">
+                    {step.number}
+                  </span>
+                  <p>
+                    <span class="visually-hidden">Step {step.number}: </span>
+                    {step.text}
+                  </p>
+                </div>
+                {step.resolved && (
+                  <Image
+                    src={step.resolved.src}
+                    alt={step.resolved.alt}
+                    widths={[240, 360, 480]}
+                    sizes="(min-width: 48rem) 15rem, 40vw"
+                    loading="lazy"
+                    decoding="async"
+                    class="step__image"
+                  />
+                )}
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+    </div>
+
+    {
+      related.length > 0 && (
+        <section class="container section" aria-labelledby="related-heading">
+          <h2 id="related-heading">
+            {usedProducts.length ? `More recipes with ${usedProducts[0].name}` : 'More recipes'}
+          </h2>
+          <ul class="grid grid--wide-cards related-grid">
+            {related.map((r) => (
+              <li>
+                <RecipeCard recipe={r} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </article>
+</Base>
+
+<style>
+  .recipe__head {
+    display: grid;
+    gap: var(--space-7);
+    padding-block: var(--space-8);
+    align-items: center;
+  }
+
+  @media (min-width: 62rem) {
+    .recipe__head {
+      grid-template-columns: 1fr minmax(0, 36rem);
+    }
+  }
+
+  .recipe h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .recipe__annotation {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .recipe__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+    margin: var(--space-6) 0 0;
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .recipe__facts dt {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .recipe__facts dd {
+    margin: var(--space-1) 0 0;
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-text-strong);
+  }
+
+  .recipe__media {
+    margin: 0;
+  }
+
+  .recipe__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .recipe__body {
+    display: grid;
+    gap: var(--space-8);
+    padding-bottom: var(--space-section);
+  }
+
+  @media (min-width: 62rem) {
+    .recipe__body {
+      grid-template-columns: minmax(0, 20rem) 1fr;
+      align-items: start;
+    }
+
+    .recipe__ingredients {
+      position: sticky;
+      top: calc(var(--header-height) + var(--space-5));
+    }
+  }
+
+  .recipe__ingredients {
+    padding: var(--space-5);
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+  }
+
+  .recipe__ingredients h2,
+  .recipe__method h2 {
+    margin-top: 0;
+    font-size: var(--text-xl);
+  }
+
+  .recipe__ingredients ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .recipe__ingredients li {
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .recipe__ingredients li:last-child {
+    border-bottom: 0;
+  }
+
+  .recipe__uses {
+    margin: var(--space-4) 0 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+  }
+
+  .steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+
+  .step {
+    display: grid;
+    gap: var(--space-4);
+    padding-block: var(--space-5);
+    border-bottom: 1px solid var(--color-border);
+    scroll-margin-top: calc(var(--header-height) + var(--space-4));
+  }
+
+  .step:last-child {
+    border-bottom: 0;
+  }
+
+  @media (min-width: 40rem) {
+    .step {
+      grid-template-columns: 1fr 15rem;
+      align-items: center;
+    }
+  }
+
+  .step__text {
+    display: flex;
+    gap: var(--space-4);
+    align-items: baseline;
+  }
+
+  .step__number {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: var(--radius-pill);
+    background: var(--color-brand-primary-text);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    transform: translateY(0.25rem);
+  }
+
+  .step__text p {
+    margin: 0;
+  }
+
+  .step__image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .related-grid {
+    margin: var(--space-6) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .related-grid > li {
+    display: flex;
+  }
+
+  .related-grid > li > :global(*) {
+    flex: 1;
+  }
+</style>

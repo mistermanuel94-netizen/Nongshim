@@ -1,0 +1,77 @@
+{
+  "heading": "Location",
+  "description": "Location of Nongshim Headquarter and Plants",
+  "heroImage": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_location.png",
+  "offices": [
+    {
+      "id": "network_01",
+      "name": "Korea | HQ",
+      "address": "112 Yeouidaebang-Ro, Dongjak-Gu, Seoul (Shindaebang-Dong)",
+      "phone": "080-023-5181",
+      "phoneNote": "Call us for details on location and how to find us.",
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-01.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4768692415205!2d126.91702561564672!3d37.49666953588328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9fafb5381bcd%3A0xb8b0c3be1761f097!2z7ISc7Jq47Yq567OE7IucIOuPmeyekeq1rCDsi6DrjIDrsKnrj5kg7Jes7J2Y64yA67Cp66GcIDExMg!5e0!3m2!1sko!2skr!4v1619783227659!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_02",
+      "name": "Shanghai Nongshim Foods Co., Ltd.",
+      "address": "中国 上海市 金山工业开发区 揽工路840号 (201506) 840HAO, Langong Road, Jinshangongyek Aifa District, Shanghai, China",
+      "phone": "86-21-6727-7711",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-02.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.4645221781566!2d121.3441303155283!3d30.81764758858544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b29419633230ed%3A0x72c6db3816dfb25a!2s840%20Lan%20Gong%20Lu%2C%20Jinshan%20Qu%2C%20Shanghai%20Shi%2C%20%EC%A4%91%EA%B5%AD%20201506!5e0!3m2!1sko!2skr!4v1619783512318!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_03",
+      "name": "Nongshim Holdings USA, Inc.",
+      "address": "2155 6Th Street, Rancho Cucamonga, Ca91730, USA",
+      "phone": "1-909-484-1888",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-06.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.371553674434!2d-117.54241478441692!3d34.08562092341706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34a7a8ee1467b%3A0x38348337cca54d1b!2sNongshim%20America%2C%20Inc.!5e0!3m2!1sko!2skr!4v1620023170744!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_04",
+      "name": "Nongshim Canada Inc.",
+      "address": "6255 Cantay Road Unit 4, Mississauga, On L5R 3Z4, Canada",
+      "phone": "1-905-501-7176",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-08.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.2243212242597!2d-79.69747428422335!3d43.62268986242054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4062b47e36ad%3A0x181f53026bc45ccf!2sNongshim%20Canada%20Inc.!5e0!3m2!1sko!2skr!4v1619784752390!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_05",
+      "name": "Nongshim Japan Inc.",
+      "address": "農心ジャパン 日本東京都千代田区霞が関1丁目4番2号 大同生命霞が関ビル4階 Daido Seimei Kasumigaseki, Bldg. 4F, 1-4-2,Kasumigaseki,Chiyoda-ku, Tokyo, Japan",
+      "phone": "81-3-3595-0882",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-09.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2615138291535!2d139.74936721561176!3d35.670562238163704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b92a37aaaab%3A0xc362a7d07768bc1b!2sDaido%20Seimei%20Kasumigaseki%20Building!5e0!3m2!1sko!2skr!4v1619784860405!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_06",
+      "name": "Nongshim Australia Pty Limited",
+      "address": "Suite 2.8, 56 Delhi Road North Ryde NSW 2113",
+      "phone": "+61 02-9870-7178~9",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-10.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315.6748391920946!2d151.1412337658059!3d-33.794894072659496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a31ecfcba6f1%3A0xf94f501936154c7!2sNongshim%20Australia%20Pty%20Ltd!5e0!3m2!1sko!2skr!4v1619784920573!5m2!1sko!2skr"
+    },
+    {
+      "id": "network_07",
+      "name": "Nongshim Vietnam Co., Ltd.",
+      "address": "2nd floor, Pax sky building, 13-15-17 Truong Dinh, Ward 6, District 3, Ho Chi Minh City",
+      "phone": "028-7307-4979",
+      "phoneNote": null,
+      "image": "https://eng.nongshim.com/resources/nongshimCss/images/contact/location-11.png",
+      "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.9322818224071!2d106.69119819697026!3d10.776171402127114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f22fcd149df%3A0x6946a44020da629!2sPAX%20SKY!5e0!3m2!1sko!2skr!4v1619785135853!5m2!1sko!2skr"
+    }
+  ],
+  "provenance": {
+    "sourceUrls": [
+      "https://eng.nongshim.com/contact/location"
+    ],
+    "sourceChecked": "2026-08-30",
+    "transformation": "structure-only: office cards normalised to JSON"
+  }
+}

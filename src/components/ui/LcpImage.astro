@@ -1,0 +1,18 @@
+---
+/**
+ * Renders a `PreparedImage` from `lib/lcp.ts`.
+ *
+ * A plain `<img>` rather than `<Image>` because the optimisation has already
+ * happened in frontmatter — that is what lets the same result also drive the
+ * `<link rel="preload">` in the document head.
+ */
+import type { PreparedImage } from '../../lib/lcp';
+
+interface Props {
+  image: PreparedImage;
+  class?: string;
+}
+const { image, class: className } = Astro.props;
+---
+
+<img {...image.attrs} class={className} />

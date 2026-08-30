@@ -1,0 +1,567 @@
+[
+  {
+    "url": "https://image.nongshim.com/brand/info/1620734841107.png",
+    "status": 404,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "product-card",
+        "entity": "angry-chapaguri",
+        "role": "card",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/brand/info/",
+    "status": 403,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "product-card",
+        "entity": "shin-ramyun-light",
+        "role": "card",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421130332691.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "hooroorook-captivated-noodle",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "hooroorook-captivated-noodle",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421126569739.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "taiwanese-fried-noodle-eggnet",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "taiwanese-fried-noodle-eggnet",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421133001698.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "rice-noodle-guobatang",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "rice-noodle-guobatang",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1460439618399.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "roasted-chicken-champong-noodle-soup#step-1",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1460439624484.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "roasted-chicken-champong-noodle-soup#step-3",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1460439632864.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "roasted-chicken-champong-noodle-soup#step-5",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421133261933.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "chalbibimmyun-salad-yam-un-sen",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "chalbibimmyun-salad-yam-un-sen",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_8632.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "cha-cheegg",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "cha-cheegg",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1395809067458.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "cha-cheegg#step-1",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_0315.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "cha-cheegg#step-2",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_0317.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "cha-cheegg#step-3",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_8633.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "cha-cheegg#step-4",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421125273341.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "jinjja-jinjja-komkomkom-mie-goreng",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "jinjja-jinjja-komkomkom-mie-goreng",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1395811877333.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "champaghetti",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "champaghetti",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1395811997887.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "champaghetti#step-1",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_0274.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "champaghetti#step-2",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1395812003428.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "champaghetti#step-3",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421133900320.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "salad-ni-oise-vegetable-soup-noodle",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "salad-ni-oise-vegetable-soup-noodle",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1415162045041.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "seafood-fried-udon",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "seafood-fried-udon",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_0468.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "seafood-fried-udon#step-1",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/IMG_0455.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "seafood-fried-udon#step-2",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1415162067101.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-step",
+        "entity": "seafood-fried-udon#step-4",
+        "role": "step",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1421132792372.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "japanesse-hot-pot-kalguksoo",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "japanesse-hot-pot-kalguksoo",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://image.nongshim.com/noo/foreign/recipe/1389002278173.jpg",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "recipe-hero",
+        "entity": "savory-rice-cake-noodle-pasta",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "recipe-gallery",
+        "entity": "savory-rice-cake-noodle-pasta",
+        "role": "gallery",
+        "aboveFold": false
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/global/main_visual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/about/globalNongshim",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/main_history_visual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/about/history",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/about/overview",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/main_visual1.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/about/profile/mission",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/contact/main_visual_location.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/contact/location",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/investors/main_visual_annual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/investors/finance/audit_list",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "page-hero",
+        "entity": "/investors/ir/list",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "page-hero",
+        "entity": "/investors/overview",
+        "role": "hero",
+        "aboveFold": true
+      },
+      {
+        "type": "page-hero",
+        "entity": "/investors/report",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_overview_visual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/sustainability/overview",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_visual_contribution.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/sustainability/people/social",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_visual_youlchon.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/sustainability/people/youlchon",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/sustainability/main_rnd_visual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/sustainability/prosperity/rnd",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  },
+  {
+    "url": "https://eng.nongshim.com/resources/nongshimCss/images/new/main_visual_annual.png",
+    "status": 200,
+    "bytes": 0,
+    "usages": [
+      {
+        "type": "page-hero",
+        "entity": "/sustainability/report",
+        "role": "hero",
+        "aboveFold": true
+      }
+    ]
+  }
+]

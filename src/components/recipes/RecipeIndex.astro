@@ -1,0 +1,219 @@
+---
+/**
+ * Recipe index, shared by `/recipes/` and `/recipes/page/{n}/`.
+ *
+ * Pagination is crawlable path-based navigation with rel prev/next, replacing
+ * the source's `?page=` query strings — which also produced a second, duplicate
+ * URL for every recipe with no canonical.
+ */
+import Base from '../../layouts/Base.astro';
+import PageHero from '../ui/PageHero.astro';
+import RecipeCard from './RecipeCard.astro';
+import { resolveImage } from '../../lib/images';
+import { prepareLcpImage } from '../../lib/lcp';
+import type { Recipe } from '../../lib/content';
+import { graph, organizationSchema, breadcrumbSchema, itemListSchema, canonical } from '../../lib/seo';
+
+interface Props {
+  recipes: Recipe[];
+  page: number;
+  totalPages: number;
+  totalRecipes: number;
+}
+const { recipes, page, totalPages, totalRecipes } = Astro.props;
+
+const path = page === 1 ? '/recipes/' : `/recipes/page/${page}/`;
+const prevPath = page === 2 ? '/recipes/' : page > 2 ? `/recipes/page/${page - 1}/` : null;
+const nextPath = page < totalPages ? `/recipes/page/${page + 1}/` : null;
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Recipes', path: '/recipes/' },
+  ...(page > 1 ? [{ name: `Page ${page}`, path }] : []),
+];
+
+const description =
+  page === 1
+    ? `${totalRecipes} cooking recipes built on Nongshim noodles, each with its ingredient list and step-by-step instructions.`
+    : `Nongshim recipes, page ${page} of ${totalPages}. ${totalRecipes} recipes in total, each with ingredients and step-by-step instructions.`;
+
+const lead = resolveImage(recipes[0]?.heroImage);
+const leadLcp = await prepareLcpImage(lead, {
+  widths: [240, 360, 540, 720],
+  sizes: '(min-width: 64rem) 20rem, (min-width: 40rem) 33vw, 100vw',
+});
+
+const schema = graph([
+  organizationSchema(),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${canonical(path)}#webpage`,
+    url: canonical(path),
+    name: page === 1 ? 'Nongshim recipes' : `Nongshim recipes — page ${page}`,
+    description,
+    inLanguage: 'en',
+    isPartOf: { '@id': `${canonical('/')}#website` },
+  },
+  itemListSchema(
+    recipes.map((r) => ({ name: r.name, path: r.path })),
+    'Nongshim recipes'
+  ),
+  breadcrumbSchema(crumbs),
+]);
+---
+
+<Base
+  title={page === 1 ? 'Recipes' : `Recipes — page ${page}`}
+  description={description}
+  path={path}
+  image={lead?.src.src}
+  breadcrumbs={crumbs}
+  schema={schema}
+  preloadImage={leadLcp?.preload}
+>
+  <Fragment slot="head">
+    {prevPath && <link rel="prev" href={canonical(prevPath)} />}
+    {nextPath && <link rel="next" href={canonical(nextPath)} />}
+  </Fragment>
+
+  <PageHero
+    heading="Recipes"
+    eyebrow="Cooking"
+    description={`${totalRecipes} recipes built on Nongshim noodles. Every recipe lists its ingredients and its steps, and links to the products it uses.`}
+  />
+
+  <div class="container section">
+    {
+      page > 1 && (
+        <p class="recipes__position">
+          Page {page} of {totalPages}
+        </p>
+      )
+    }
+
+    <ul class="grid grid--wide-cards recipe-grid">
+      {
+        recipes.map((recipe, i) => (
+          <li class="recipe-grid__item">
+            <RecipeCard recipe={recipe} headingLevel={2} lcp={i === 0 ? leadLcp : null} />
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      totalPages > 1 && (
+        <nav class="pagination" aria-label="Recipe pages">
+          {prevPath ? (
+            <a class="pagination__step" href={prevPath} rel="prev">
+              ← Previous
+            </a>
+          ) : (
+            <span class="pagination__step pagination__step--off">← Previous</span>
+          )}
+
+          <ol class="pagination__pages">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => {
+              const href = n === 1 ? '/recipes/' : `/recipes/page/${n}/`;
+              return (
+                <li>
+                  {n === page ? (
+                    <span aria-current="page">{n}</span>
+                  ) : (
+                    <a href={href} aria-label={`Recipes page ${n}`}>
+                      {n}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+
+          {nextPath ? (
+            <a class="pagination__step" href={nextPath} rel="next">
+              Next →
+            </a>
+          ) : (
+            <span class="pagination__step pagination__step--off">Next →</span>
+          )}
+        </nav>
+      )
+    }
+  </div>
+</Base>
+
+<style>
+  .recipes__position {
+    margin-bottom: var(--space-5);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+
+  .recipe-grid {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .recipe-grid__item {
+    display: flex;
+  }
+
+  .recipe-grid__item > :global(*) {
+    flex: 1;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .pagination__pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pagination a,
+  .pagination span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-text-strong);
+    background: #fff;
+  }
+
+  .pagination a:hover {
+    border-color: var(--color-brand-primary);
+    color: var(--color-brand-primary-text);
+  }
+
+  .pagination [aria-current='page'] {
+    background: var(--color-brand-primary-text);
+    border-color: var(--color-brand-primary-text);
+    color: #fff;
+  }
+
+  .pagination__step--off {
+    color: var(--color-text-muted);
+    border-color: var(--color-border);
+    opacity: 0.6;
+  }
+</style>
